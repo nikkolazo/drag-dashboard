@@ -73,9 +73,9 @@ const yearlyData = years.map(year => {
     <header class="bg-slate-800 border-b border-slate-700">
       <div class="container mx-auto px-6 py-6">
         <div class="flex items-center gap-4 mb-4">
-          <a href={`${Astro.base}`} class="text-slate-400 hover:text-emerald-400 transition-colors">
+          <a href={`${Astro.base ?? '/'}`} class="text-slate-400 hover:text-emerald-400 transition-colors">
+            ← Back to Companies
           </a>
-          <a href={`${base}`} class="text-slate-400 hover:text-emerald-400 transition-colors">
         </div>
         <h1 class="text-4xl font-bold text-slate-100 mb-2">
           {company}
@@ -179,7 +179,7 @@ const yearlyData = years.map(year => {
                   </td>
                   <td class="text-center p-3">
                     <a
-                      href={`/${company.toLowerCase()}/${data.year}`}
+                      href={`${Astro.base ?? '/'}${company.toLowerCase()}/${data.year}`}
                       class="px-3 py-1 bg-emerald-500 hover:bg-emerald-600 text-white rounded text-xs font-medium transition-colors"
                     >
                       View Details
