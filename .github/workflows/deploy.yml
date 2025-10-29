@@ -4,6 +4,10 @@ on:
   push:
     branches: [ main ]
 
+# Allow the workflow to push to the repository using the GITHUB_TOKEN
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -27,9 +31,9 @@ jobs:
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.DEPLOY_SSH_KEY }}
-          # fallback to GITHUB_TOKEN if no deploy key is set
+          # Use the built-in GITHUB_TOKEN to push. If repository settings prevent
+          # the token from pushing, create a deploy SSH key and set the
+          # secret DEPLOY_SSH_KEY instead.
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: gh-pages
-          keep_history: true
