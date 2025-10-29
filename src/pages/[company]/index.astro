@@ -1,0 +1,196 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TimelineChart from '../../components/TimelineChart.astro';
+import MatrixView from '../../components/MatrixView.astro';
+import ClassificationBar from '../../components/ClassificationBar.astro';
+import {
+  loadCompanyResults,
+  getCompanyYears,
+  calculateApplicableQuestions,
+  getAvailableCompanies
+} from '../../utils/dataLoader';
+import { calculateCategoryStats } from '../../utils/categoryMapper';
+
+// Static path generation for build
+export async function getStaticPaths() {
+  const companies = await getAvailableCompanies();
+  return companies.map(company => ({
+    params: { company: company.toLowerCase() }
+  }));
+}
+
+// Get company from URL
+const { company } = Astro.params;
+if (!company) {
+  return Astro.redirect('/');
+}
+
+// Load company data
+const results = await loadCompanyResults(company);
+if (results.length === 0) {
+  return Astro.redirect('/');
+}
+
+// Get years and sort
+const years = await getCompanyYears(company);
+years.sort();
+
+// Calculate statistics
+const allQuestions = results.flatMap(r => r.questions);
+const stats = calculateCategoryStats(allQuestions);
+
+// Calculate applicable questions
+const applicableInfo = await calculateApplicableQuestions(company, allQuestions);
+
+// Organize data by year for timeline and matrix
+const questionsByYear = new Map();
+results.forEach(result => {
+  const yearQuestions = new Map();
+  result.questions.forEach(q => {
+    yearQuestions.set(q.question_id, q);
+  });
+  questionsByYear.set(result.metadata.fiscal_year, yearQuestions);
+});
+
+// Yearly breakdown
+const yearlyData = years.map(year => {
+  const result = results.find(r => r.metadata.fiscal_year === year);
+  if (!result) return null;
+
+  const yearStats = calculateCategoryStats(result.questions);
+  return {
+    year,
+    stats: yearStats,
+    questionCount: result.questions.length,
+    analysisDate: result.metadata.analysis_date
+  };
+}).filter(Boolean);
+---
+
+<Layout title={`${company} - Disclosure Analysis`}>
+  <div class="min-h-screen bg-slate-900">
+    <!-- Header -->
+    <header class="bg-slate-800 border-b border-slate-700">
+      <div class="container mx-auto px-6 py-6">
+        <div class="flex items-center gap-4 mb-4">
+          <a href="/" class="text-slate-400 hover:text-emerald-400 transition-colors">
+            ← Back to Companies
+          </a>
+        </div>
+        <h1 class="text-4xl font-bold text-slate-100 mb-2">
+          {company}
+        </h1>
+        <div class="flex gap-6 text-sm text-slate-400">
+          <span>📅 {years.length} years analyzed</span>
+          <span>📊 {results.length} total analyses</span>
+          <span>❓ {allQuestions.length} total questions</span>
+          <span>🎯 Sector: {applicableInfo.companySector === 'P' ? 'Pesticide' : applicableInfo.companySector === 'F' ? 'Fertilizer' : 'Both'}</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+      <!-- Summary Stats -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold text-slate-100 mb-4">Overview</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div class="card">
+            <div class="text-xs text-slate-400 mb-1">YES Responses</div>
+            <div class="text-2xl font-bold text-emerald-400">{stats.byClassification.YES}</div>
+            <div class="text-xs text-slate-500 mt-1">
+              {((stats.byClassification.YES / stats.total) * 100).toFixed(1)}% of total
+            </div>
+          </div>
+          <div class="card">
+            <div class="text-xs text-slate-400 mb-1">PARTIAL Responses</div>
+            <div class="text-2xl font-bold text-amber-400">{stats.byClassification.PARTIAL}</div>
+            <div class="text-xs text-slate-500 mt-1">
+              {((stats.byClassification.PARTIAL / stats.total) * 100).toFixed(1)}% of total
+            </div>
+          </div>
+          <div class="card">
+            <div class="text-xs text-slate-400 mb-1">UNCLEAR Responses</div>
+            <div class="text-2xl font-bold text-orange-400">{stats.byClassification.UNCLEAR}</div>
+            <div class="text-xs text-slate-500 mt-1">
+              {((stats.byClassification.UNCLEAR / stats.total) * 100).toFixed(1)}% of total
+            </div>
+          </div>
+          <div class="card">
+            <div class="text-xs text-slate-400 mb-1">NONE Responses</div>
+            <div class="text-2xl font-bold text-red-400">{stats.byClassification.NONE}</div>
+            <div class="text-xs text-slate-500 mt-1">
+              {((stats.byClassification.NONE / stats.total) * 100).toFixed(1)}% of total
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Classification Distribution -->
+      <section class="mb-8">
+        <ClassificationBar stats={stats} />
+      </section>
+
+      <!-- Timeline Chart -->
+      <section class="mb-8">
+        <TimelineChart
+          years={years}
+          dragData={questionsByYear}
+        />
+      </section>
+
+      <!-- Matrix View -->
+      <section class="mb-8">
+        <MatrixView
+          questions={allQuestions}
+          years={years}
+          company={company}
+          questionsByYear={questionsByYear}
+        />
+      </section>
+
+      <!-- Yearly Breakdown Table -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-bold text-slate-100 mb-4">Yearly Breakdown</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="border-b border-slate-700">
+                <th class="text-left p-3 text-slate-300">Year</th>
+                <th class="text-right p-3 text-emerald-400">YES</th>
+                <th class="text-right p-3 text-amber-400">PARTIAL</th>
+                <th class="text-right p-3 text-orange-400">UNCLEAR</th>
+                <th class="text-right p-3 text-red-400">NONE</th>
+                <th class="text-right p-3 text-slate-300">Total Questions</th>
+                <th class="text-right p-3 text-slate-300">Analysis Date</th>
+                <th class="text-center p-3 text-slate-300">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {yearlyData.map((data) => (
+                <tr class="border-b border-slate-800 hover:bg-slate-800/50">
+                  <td class="p-3 text-slate-300 font-semibold">{data.year}</td>
+                  <td class="text-right p-3 text-emerald-400">{data.stats.byClassification.YES}</td>
+                  <td class="text-right p-3 text-amber-400">{data.stats.byClassification.PARTIAL}</td>
+                  <td class="text-right p-3 text-orange-400">{data.stats.byClassification.UNCLEAR}</td>
+                  <td class="text-right p-3 text-red-400">{data.stats.byClassification.NONE}</td>
+                  <td class="text-right p-3 text-slate-300">{data.questionCount}</td>
+                  <td class="text-right p-3 text-slate-400 text-xs">
+                    {new Date(data.analysisDate).toLocaleDateString()}
+                  </td>
+                  <td class="text-center p-3">
+                    <a
+                      href={`/${company.toLowerCase()}/${data.year}`}
+                      class="px-3 py-1 bg-emerald-500 hover:bg-emerald-600 text-white rounded text-xs font-medium transition-colors"
+                    >
+                      View Details
+                    </a>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</Layout>

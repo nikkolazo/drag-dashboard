@@ -1,0 +1,564 @@
+{
+  "metadata": {
+    "company": "SQM",
+    "year": "2024",
+    "analysis_date": "2025-10-22T19:18:58.004113",
+    "model_used": "D-RAG",
+    "source": "D-Rag baseline data (imported)",
+    "documents_analyzed": [
+      "Unknown - D-Rag data"
+    ],
+    "processing_info": {
+      "total_cost": "$0.00 (imported data)",
+      "total_tokens": 0,
+      "questions_analyzed": 15
+    }
+  },
+  "completeness_summary": {
+    "total_questions": 15,
+    "classified_YES": 7,
+    "classified_PARTIAL": 4,
+    "classified_UNCLEAR": 1,
+    "classified_NONE": 3,
+    "total_financial_disclosures_found": 0
+  },
+  "analysis_results": [
+    {
+      "question_id": "99916",
+      "question_number": 1,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to negative public perception of chemical-intensive agriculture",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "The company acknowledges reputational risks, including \"Stigmatization of the sector\" and \"Increased concerns among stakeholders or negative comments from stakeholders,\" which are direct consequences of negative public perception. These are listed under \"Climate-Related Risks\" and can lead to \"Reduced production.\" However, the company has not provided specific financial valuations or estimations of the financial impact of this risk.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/2024 SQM Sustainability Report_content.md",
+            "text": "| Reputational Risks | Short- and Medium Term | • Stigmatization of the sector <br> • Increased concerns among stakeholders or negative comments from stakeholders. <br> • Reduced production due to interruption of the supply chain by the value chain. |"
+          }
+        ],
+        "summary": "The company acknowledges reputational risks, including \"Stigmatization of the sector\" and \"Increased concerns among stakeholders or negative comments from stakeholders,\" which are direct consequences of negative public perception. These are listed under \"Climate-Related Risks\" and can lead to \"Reduced production.\" However, the company has not provided specific financial valuations or estimations of the financial impact of this risk.",
+        "notes": "D-Rag evidence count: 1. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-20T17:27:44.595690",
+        "programme_code": "FLU",
+        "evidence_count": 1,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99901",
+      "question_number": 2,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to pesticide resistance? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "No relevant documents available to analyse for year 2024",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "No relevant documents available to analyse for year 2024",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T09:04:42.421962",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99907",
+      "question_number": 3,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to drinking water contamination from leaching of applied products?",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "The company acknowledges \"Accidental groundwater contamination\" as a \"Potential negative impact\" and a \"Risk\" in its \"Material impacts, risks and opportunities\" table. While it does not quantify specific financial impacts from drinking water contamination due to leaching of applied products, it does list \"Fines for non-compliance with water regulations\" as a financial risk. Furthermore, regulatory inspections mention \"leachate management,\" indicating awareness of this aspect of their operations.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/2024 SQM Sustainability Report_content.md",
+            "text": "Accidental groundwater contamination | Potential negative impact | Own operations | Employees, communities and authorities | Ongoing"
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/2024 SQM Sustainability Report_content.md",
+            "text": "Fines for non-compliance with water regulations and/or RCAs exceeding US$ 10,000 | Risk | Own operations | Employees, communities and authorities | Ongoing"
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/2024 SQM Sustainability Report_content.md",
+            "text": "The inspection reviewed biotic commitments, leachate management and nitrate production."
+          }
+        ],
+        "summary": "The company acknowledges \"Accidental groundwater contamination\" as a \"Potential negative impact\" and a \"Risk\" in its \"Material impacts, risks and opportunities\" table. While it does not quantify specific financial impacts from drinking water contamination due to leaching of applied products, it does list \"Fines for non-compliance with water regulations\" as a financial risk. Furthermore, regulatory inspections mention \"leachate management,\" indicating awareness of this aspect of their operations.",
+        "notes": "D-Rag evidence count: 3. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-16T15:33:36.858248",
+        "programme_code": "FLU",
+        "evidence_count": 3,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99918",
+      "question_number": 4,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to high energy production processes and N2O emissions from field application?",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "The company explicitly discloses paying a carbon tax of ThUS$ 410 in 2024 for emissions from a boiler, which directly relates to high energy production processes and the emissions generated. They also detail N2O emissions as part of their total GHG footprint and discuss quantifying CBAM footprint, indicating a clear financial consideration of emissions. Furthermore, they link investments in energy efficiency directly to reducing fuel expenses and operating costs.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/2024 SQM Sustainability Report_content.md",
+            "text": "Our emissions are not covered by a tax or cap & trade. However, there is a carbon tax in Chile for stationary sources (turbines and/or boilers) of US$ 5/tCO₂. We are already seeing changes following the adjustment of the tax threshold for facilities with equipment with more than 50 thermal MW of installed capacity. Based on this criterion, SQM Iodine Plant Nutrition paid approximately ThUS$ 410 in 2024 for emissions from the Coya Sur boiler."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/2024 SQM Sustainability Report_content.md",
+            "text": "| Direct GHG Emissions (Scope 1)    | CO₂, CH₄, N₂O    | t CO₂   | 193,605 | 197,898 | 210,527 | 198,419 |"
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/2024 SQM Sustainability Report_content.md",
+            "text": "GRI 201: Economic Performance (2016) | 201-2 | Financial implications and other risks and opportunities due to climate change | 180 | - | ✅ | 7, 8 and 9"
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/2024 SQM Sustainability Report_content.md",
+            "text": "The Randon Hybrid R semi-trailer line includes technology and innovation to recover energy generated during descent and breaking. This lowers fuel expenses, decreases wear on components and generates less waste."
+          },
+          {
+            "evidence_number": 5,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/2024 SQM Sustainability Report_content.md",
+            "text": "Next generation Liebherr excavators (R 9300 G8) were incorporated at our Nueva Victoria operations in 2024. These state-of-the-art machines perform excellently in the field, optimizing cycle times, generating greater productivity and cutting fuel consumption, which directly impacts greenhouse gas emissions."
+          },
+          {
+            "evidence_number": 6,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2024 (Spanish) - PDF - 4 _ 4_20250305-52968c0c-dcf9-ef11-ac02-12bc89a8f273_3_content.md",
+            "text": "Eficiencia Energ\u0019etica en Pozos con Partida Directa y Regulaci\u0019on reduciendo el consumo de energ\u0019ia, costos de operaci\u0019on y emisiones de CO2 al medio ambiente."
+          },
+          {
+            "evidence_number": 7,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/2024 SQM Sustainability Report_content.md",
+            "text": "to implement a methodology to quantify the CBAM footprint for the transitional reporting period between 2023 and 2025. In addition, this risk can be transformed into an opportunity, as we are evaluating investments in more efficient equipment to reduce our carbon footprint."
+          }
+        ],
+        "summary": "The company explicitly discloses paying a carbon tax of ThUS$ 410 in 2024 for emissions from a boiler, which directly relates to high energy production processes and the emissions generated. They also detail N2O emissions as part of their total GHG footprint and discuss quantifying CBAM footprint, indicating a clear financial consideration of emissions. Furthermore, they link investments in energy efficiency directly to reducing fuel expenses and operating costs.",
+        "notes": "D-Rag evidence count: 7. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-20T17:36:37.320262",
+        "programme_code": "FLU",
+        "evidence_count": 7,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99911",
+      "question_number": 5,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks or liabilities related to restoration of mining sites?",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "The company explicitly discloses provisions for \"costs of decommissioning, restoration, and rehabilitation\" related to its productive facilities, including specific monetary values. These costs are calculated at discounted present value using projected cash flows over several years. This indicates a quantified financial risk disclosure.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2024 (Spanish) - PDF - 4 _ 4_20250305-52968c0c-dcf9-ef11-ac02-12bc89a8f273_3_content.md",
+            "text": "Se han incorporado los compromisos relacionados con el Sernageomin para la restauración del lugar en donde están situadas las faenas productivas, además de SQM Australia Pty. Este valor de costo se encuentra calculado a valor actual descontado, usando flujos asociados a planes con un horizonte de evaluación que fluctúa entre 8 y 25 años para faenas relacionadas a potasio-litio y 11 a 22 años para faenas relacionadas a nitrato-yodo. Las tasas utilizadas para descontar los flujos futuros son basadas en tasa mercado para los plazos mencionados."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2024 (Spanish) - PDF - 4 _ 4_20250305-52968c0c-dcf9-ef11-ac02-12bc89a8f273_3_content.md",
+            "text": "|Provisión por costos de dejar fuera de servicio, restauración y rehabilitación (2)|Provisión por costos de dejar fuera de servicio, restauración y rehabilitación (2)|Provisión por costos de dejar fuera de servicio, restauración y rehabilitación (2)|Provisión por costos de dejar fuera de servicio, restauración y rehabilitación (2)|-|58.459|58.459|"
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2024 (Spanish) - PDF - 4 _ 4_20250305-52968c0c-dcf9-ef11-ac02-12bc89a8f273_3_content.md",
+            "text": "|Provisión por costos de dejar fuera de servicio, restauración y rehabilitación|Otras provisiones|Total| |---|---|---| |**Descripción de los ítems que dieron origen a las variaciones, al**<br>**31 de diciembre de 2024**|~~**MUS$**~~|~~**MUS$**~~|~~**MUS$**~~|~~**MUS$**~~| |**Provisión total, saldo inicial**|**1.301**|**58.459**|**393.012**|**452.772**|"
+          }
+        ],
+        "summary": "The company explicitly discloses provisions for \"costs of decommissioning, restoration, and rehabilitation\" related to its productive facilities, including specific monetary values. These costs are calculated at discounted present value using projected cash flows over several years. This indicates a quantified financial risk disclosure.",
+        "notes": "D-Rag evidence count: 3. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-13T10:39:01.319569",
+        "programme_code": "FLU",
+        "evidence_count": 3,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99912",
+      "question_number": 6,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks of of increasing pesticide bans and restrictions reducing market access?",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "No relevant documents available to analyse for year 2024",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "No relevant documents available to analyse for year 2024",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T22:36:33.510671",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99903",
+      "question_number": 7,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to human health problems from its products? Please return NONE if there is no disclose at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks related to human health problems.",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "The company discloses actual financial impacts in the form of fines incurred in 2024 due to breaches of regulations related to product information, labeling, and composition. These regulations often directly relate to human health and safety regarding product use. The disclosure of these specific fines indicates a quantified financial consequence, even if the exact monetary value of each fine in USD is not provided in all cases, the occurrence of \"a fine\" or \"fines\" is a numerical financial impact.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/2024 SQM Sustainability Report_content.md",
+            "text": "In regard to breaches of regulations related to product information and labeling, the following was identified during 2024: * One case of non-compliance related to labeling in 2024. Pallets transported by road to Ukraine that originated at SQM Holland did not include the word \\\"Overpack” as stipulated in section 5.1.2 of the ADR (European Agreement concerning the International Highway Transport of Hazardous Merchandise). The non-compliance resulted in a fine."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/2024 SQM Sustainability Report_content.md",
+            "text": "There were two violations involving SQMC in 2024. They involved labeling issues that resulted in fines. * One fine corresponds to the official notice issued by SAG due to a difference in the nitrogen composition of a product. * The other fine involved a SAG infraction issued to a distributor for 110 bags of Amintec."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/2024 SQM Sustainability Report_content.md",
+            "text": "All of the products are covered and assessed in order to identify hazards to human health and safety. The identification of these hazards is based on the criteria established under the UN Globally Harmonized System of Classification and Labeling of Chemicals (GHS)."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/2024 SQM Sustainability Report_content.md",
+            "text": "Some of our products in the plant nutrition line may contain boron (in the form of boric acid) as an impurity or desired element. Boron levels are monitored during production. When their levels of impurity or intentional ingredients exceed the limits based on the Globally Harmonized System, the products are classified as toxic to reproduction category 1B and labeled as such to call attention to potential hazards posed by these products."
+          }
+        ],
+        "summary": "The company discloses actual financial impacts in the form of fines incurred in 2024 due to breaches of regulations related to product information, labeling, and composition. These regulations often directly relate to human health and safety regarding product use. The disclosure of these specific fines indicates a quantified financial consequence, even if the exact monetary value of each fine in USD is not provided in all cases, the occurrence of \"a fine\" or \"fines\" is a numerical financial impact.",
+        "notes": "D-Rag evidence count: 4. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-15T02:00:51.375279",
+        "programme_code": "FLU",
+        "evidence_count": 4,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99910",
+      "question_number": 8,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to disposal of chemical waste, such as gypstacks? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "SQM discloses financial risks related to waste disposal and environmental remediation through specific accounting provisions and project expenditures in their 2024 financial statements. The company has established quantified provisions for \"decommissioning, restoration and rehabilitation costs\" (MUS$ 53,011 as of December 31, 2024) and reports specific environmental projects including \"Ordering, Removal and Cleaning of Industrial Waste Deposit\" with associated costs. However, while these provisions demonstrate financial risk acknowledgment and quantification, the documents do not provide explicit narrative disclosure linking gypstacks or chemical waste disposal specifically to financial risk impacts, nor do they quantify the company's own estimate of financial exposure from these specific waste streams.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2024 (Spanish) - PDF - 4 _ 4_20250305-52968c0c-dcf9-ef11-ac02-12bc89a8f273_3_content.md",
+            "text": "Provisión por costos de dejar fuera de servicio, restauración y rehabilitación [Provision for decommissioning, restoration and rehabilitation costs]: Total of MUS$ 53,011 as of December 31, 2024, with increases in existing provisions of MUS$ 522,328 during 2024."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2024 (Spanish) - PDF - 4 _ 4_20250305-52968c0c-dcf9-ef11-ac02-12bc89a8f273_3_content.md",
+            "text": "19-L042900 - Ordenamiento, Retiro y Limpieza de Depósito Residuos Industriales SdA [Ordering, Removal and Cleaning of Industrial Waste Deposit]. Gasto 251 142 100 30-06-2025 [Expense 251 142 100]. This project involves management of industrial waste deposits with associated financial allocations."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2024 (Spanish) - PDF - 4 _ 4_20250305-52968c0c-dcf9-ef11-ac02-12bc89a8f273_3_content.md",
+            "text": "Las sociedades del Grupo SQM siguen, en general, el criterio de considerar como gasto de tipo medioambiental los importes destinados a la protección y mejora del medio ambiente. Sin embargo, los importes de elementos incorporados en instalaciones, maquinarias y equipos destinados al mismo fin son considerados como propiedades, plantas y equipos [SQM Group companies generally follow the criterion of considering amounts destined for environmental protection and improvement as environmental expenses. However, amounts for elements incorporated in facilities, machinery and equipment for the same purpose are considered as property, plant and equipment]."
+          }
+        ],
+        "summary": "SQM discloses financial risks related to waste disposal and environmental remediation through specific accounting provisions and project expenditures in their 2024 financial statements. The company has established quantified provisions for \"decommissioning, restoration and rehabilitation costs\" (MUS$ 53,011 as of December 31, 2024) and reports specific environmental projects including \"Ordering, Removal and Cleaning of Industrial Waste Deposit\" with associated costs. However, while these provisions demonstrate financial risk acknowledgment and quantification, the documents do not provide explicit narrative disclosure linking gypstacks or chemical waste disposal specifically to financial risk impacts, nor do they quantify the company's own estimate of financial exposure from these specific waste streams.",
+        "notes": "D-Rag evidence count: 3. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T14:48:01.134870",
+        "programme_code": "FLU",
+        "evidence_count": 3,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99917",
+      "question_number": 9,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to class action lawsuits and legal challenges from health/environmental claims?",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "The company has disclosed specific financial penalties (fines) resulting from administrative-environmental contingencies, such as infractions of the water code and water monitoring regulations. These are quantified in UTM (Unidad Tributaria Mensual) units, demonstrating a direct financial impact from legal challenges related to environmental claims.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2024 (Spanish) - PDF - 4 _ 4_20250305-52968c0c-dcf9-ef11-ac02-12bc89a8f273_3_content.md",
+            "text": "Por resolución de fecha 14 de abril de 2020, la Dirección General de Aguas aplicó una multa a SQM Salar ascendente a 4.180 UTM por supuesta infracción del artículo 294 del Código de Aguas."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2024 (Spanish) - PDF - 4 _ 4_20250305-52968c0c-dcf9-ef11-ac02-12bc89a8f273_3_content.md",
+            "text": "Por resolución de fecha 15 de octubre de 2024, la Dirección General de Aguas aplicó una multa a SQM Salar ascendente a 1.285 UTM por supuesta infracción de los artículos 5 y 6 de las Resolución D.G.A N°1238 sobre sistema de monitoreo y transmisión de extracciones efectivas en las obras de captación de aguas subterráneas."
+          }
+        ],
+        "summary": "The company has disclosed specific financial penalties (fines) resulting from administrative-environmental contingencies, such as infractions of the water code and water monitoring regulations. These are quantified in UTM (Unidad Tributaria Mensual) units, demonstrating a direct financial impact from legal challenges related to environmental claims.",
+        "notes": "D-Rag evidence count: 2. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-20T17:31:00.228929",
+        "programme_code": "FLU",
+        "evidence_count": 2,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99913",
+      "question_number": 10,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks or liabilities related to restoration of contaminated manufacturing sites?",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "The company explicitly states that commitments related to the restoration of productive operations sites have been incorporated and their cost is calculated at a discounted present value, indicating a specific financial valuation for this liability.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2024 (Spanish) - PDF - 4 _ 4_20250305-52968c0c-dcf9-ef11-ac02-12bc89a8f273_3_content.md",
+            "text": "Se han incorporado los compromisos relacionados con el Sernageomin para la restauraci  del lugar en donde est  situadas las faenas productivas, adem  de SQM Australia Pty. Este valor de costo se encuentra calculado a valor actual descontado, usando flujos asociados a planes con un horizonte de evaluaci  que fluct  entre 8 y 25 a  para faenas relacionadas a potasio-litio y 11 a 22 a  para faenas relacionadas a nitrato-yodo. Las tasas utilizadas para descontar los flujos futuros son basadas en tasa mercado para los plazos mencionados."
+          }
+        ],
+        "summary": "The company explicitly states that commitments related to the restoration of productive operations sites have been incorporated and their cost is calculated at a discounted present value, indicating a specific financial valuation for this liability.",
+        "notes": "D-Rag evidence count: 1. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T16:05:33.052196",
+        "programme_code": "FLU",
+        "evidence_count": 1,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99902",
+      "question_number": 11,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to soil degradation caused by its fertiliser products?  Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "UNCLEAR",
+        "classification_justification": "The company acknowledges a \"potential negative impact\" from \"Changes in the quality of water and/or farming soils\" in its downstream operations, affecting customers. However, this potential impact is not explicitly framed as a financial risk to the company itself, nor are any financial implications or valuations disclosed.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/2024 SQM Sustainability Report_content.md",
+            "text": "Changes in the quality of water and/or farming soils | Potential negative impact | Downstream operations | Customers | Ongoing"
+          }
+        ],
+        "summary": "The company acknowledges a \"potential negative impact\" from \"Changes in the quality of water and/or farming soils\" in its downstream operations, affecting customers. However, this potential impact is not explicitly framed as a financial risk to the company itself, nor are any financial implications or valuations disclosed.",
+        "notes": "D-Rag evidence count: 1. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-15T00:29:11.161951",
+        "programme_code": "FLU",
+        "evidence_count": 1,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99909",
+      "question_number": 12,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to waterway pollution and eutrophication from nutrient runoff when the company's products are applied by farmers? Do not consider factory sources of pollution.",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "SQM acknowledges that changes in water quality and farming soils from their products represent a \"potential negative impact\" in their materiality assessment, indicating recognition of this as a business concern. However, the company does not provide specific financial valuations, estimates of value at risk, or quantified financial exposure related to waterway pollution and eutrophication from nutrient runoff when their products are applied by farmers. The disclosure identifies the risk category but lacks the financial quantification needed for a \"YES\" finding.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/2024 SQM Sustainability Report_content.md",
+            "text": "Changes in the quality of water and/or farming soils | Potential negative impact | Downstream operations | Customers | Ongoing"
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/2024 SQM Sustainability Report_content.md",
+            "text": "Water Soluble Fertilizers: Reducing Food Loss and Waste and Improving Farming Practices. This type of fertilizer optimizes water use in fertigation, improving the quality and performance of various crops by reducing soil and water use."
+          }
+        ],
+        "summary": "SQM acknowledges that changes in water quality and farming soils from their products represent a \"potential negative impact\" in their materiality assessment, indicating recognition of this as a business concern. However, the company does not provide specific financial valuations, estimates of value at risk, or quantified financial exposure related to waterway pollution and eutrophication from nutrient runoff when their products are applied by farmers. The disclosure identifies the risk category but lacks the financial quantification needed for a \"YES\" finding.",
+        "notes": "D-Rag evidence count: 2. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T14:36:24.544118",
+        "programme_code": "FLU",
+        "evidence_count": 2,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99908",
+      "question_number": 13,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to demand destruction as organic farming and alternatives gain market share? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "The company does not disclose financial risks specifically related to demand destruction as organic farming and alternatives gain market share. The documents mention general market volatility and an inability to predict demand for their products, which can have significant financial impacts, but do not link this to organic farming or alternative products.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "The company does not disclose financial risks specifically related to demand destruction as organic farming and alternatives gain market share. The documents mention general market volatility and an inability to predict demand for their products, which can have significant financial impacts, but do not link this to organic farming or alternative products.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-16T15:54:39.345556",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99915",
+      "question_number": 14,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks associated with rising compliance and testing costs for registration and re-registration?",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "The company explicitly discloses specific financial amounts for environmental compliance, permits, and regulatory adherence, classifying them as both expenses and assets. This includes costs for sectoral regularizations, environmental impact assessments (EIA), and compliance with specific regulations (DS-43, DS-594).",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2024 (Spanish) - PDF - 4 _ 4_20250305-52968c0c-dcf9-ef11-ac02-12bc89a8f273_3_content.md",
+            "text": "04-J015800 - Otras regularizaciones sectoriales 2019 ... Sustentación: Prev. de Riesgo y Medio Ambiente ... Gasto 39 ... 31-12-2024"
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2024 (Spanish) - PDF - 4 _ 4_20250305-52968c0c-dcf9-ef11-ac02-12bc89a8f273_3_content.md",
+            "text": "04-J022700 - DIA Integración Faena Coya Sur ... Sustentación: Prev. de Riesgo y Medio Ambiente ... Tramitación Ambiental ... Activo 20 4 - 31-12-2024"
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2024 (Spanish) - PDF - 4 _ 4_20250305-52968c0c-dcf9-ef11-ac02-12bc89a8f273_3_content.md",
+            "text": "04-J023700 - Regularización Decreto Sustancias Peligrosas SQM Industrial ... Sustentación: Prev. de Riesgo y Medio Ambiente ... Gasto - 27 - 31-12-2024"
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2024 (Spanish) - PDF - 4 _ 4_20250305-52968c0c-dcf9-ef11-ac02-12bc89a8f273_3_content.md",
+            "text": "04-J031700 - Estandarización Planta Prilado y Secado según DS-43 y RCA ... Sustentación: Prev. de Riesgo y Medio Ambiente ... Activo 52 61 - 31-12-2024"
+          },
+          {
+            "evidence_number": 5,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2024 (Spanish) - PDF - 4 _ 4_20250305-52968c0c-dcf9-ef11-ac02-12bc89a8f273_3_content.md",
+            "text": "19-L046100 - EIA 2022 2023 ... Sustentación: Prev. de Riesgo y Medio Ambiente ... Tramitación Ambiental ... Gasto 113 56 112 30-06-2025"
+          },
+          {
+            "evidence_number": 6,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2024 (Spanish) - PDF - 4 _ 4_20250305-52968c0c-dcf9-ef11-ac02-12bc89a8f273_3_content.md",
+            "text": "19-C023000 - Modificación estructural y Cumplimiento normativa DS43 ... Sustentación: Prev. de Riesgo y Medio Ambiente ... Activo 123 150 574 31-03-2025"
+          },
+          {
+            "evidence_number": 7,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2024 (Spanish) - PDF - 4 _ 4_20250305-52968c0c-dcf9-ef11-ac02-12bc89a8f273_3_content.md",
+            "text": "19-C023500 - Cumplimiento normativa DS594 ... Sustentación: Prev. de Riesgo y Medio Ambiente ... Activo - 24 35 31-03-2025"
+          },
+          {
+            "evidence_number": 8,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2024 (Spanish) - PDF - 4 _ 4_20250305-52968c0c-dcf9-ef11-ac02-12bc89a8f273_3_content.md",
+            "text": "16-I039100 - Permisos Sectoriales y cumplimiento compromisos ambientales EIA Proyecto Orcoma ... Sustentación: Prev. de Riesgo y Medio Ambiente ... Gasto 65 1.679 - 31-12-2024"
+          }
+        ],
+        "summary": "The company explicitly discloses specific financial amounts for environmental compliance, permits, and regulatory adherence, classifying them as both expenses and assets. This includes costs for sectoral regularizations, environmental impact assessments (EIA), and compliance with specific regulations (DS-43, DS-594).",
+        "notes": "D-Rag evidence count: 8. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-14T01:08:38.162704",
+        "programme_code": "FLU",
+        "evidence_count": 8,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99904",
+      "question_number": 15,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to carbon taxes? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "SQM explicitly disclosed that it paid approximately ThUS$ 410 in 2024 for emissions from its Coya Sur boiler due to the Chilean carbon tax. This is a direct quantification of the financial impact of carbon taxes on the company's operations for the specified year.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/2024 SQM Sustainability Report_content.md",
+            "text": "Our emissions are not covered by a tax or cap & trade. However, there is a carbon tax in Chile for stationary sources (turbines and/or boilers) of US$ 5/tCO₂. We are already seeing changes following the adjustment of the tax threshold for facilities with equipment with more than 50 thermal MW of installed capacity. Based on this criterion, SQM Iodine Plant Nutrition paid approximately ThUS$ 410 in 2024 for emissions from the Coya Sur boiler."
+          }
+        ],
+        "summary": "SQM explicitly disclosed that it paid approximately ThUS$ 410 in 2024 for emissions from its Coya Sur boiler due to the Chilean carbon tax. This is a direct quantification of the financial impact of carbon taxes on the company's operations for the specified year.",
+        "notes": "D-Rag evidence count: 1. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-15T02:21:28.224284",
+        "programme_code": "FLU",
+        "evidence_count": 1,
+        "evidence_validation_passed": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,528 @@
+{
+  "metadata": {
+    "company": "Nutrien",
+    "year": "2021",
+    "analysis_date": "2025-10-22T19:18:48.458526",
+    "model_used": "D-RAG",
+    "source": "D-Rag baseline data (imported)",
+    "documents_analyzed": [
+      "Unknown - D-Rag data"
+    ],
+    "processing_info": {
+      "total_cost": "$0.00 (imported data)",
+      "total_tokens": 0,
+      "questions_analyzed": 13
+    }
+  },
+  "completeness_summary": {
+    "total_questions": 13,
+    "classified_YES": 2,
+    "classified_PARTIAL": 8,
+    "classified_UNCLEAR": 3,
+    "classified_NONE": 0,
+    "total_financial_disclosures_found": 0
+  },
+  "analysis_results": [
+    {
+      "question_id": "99908",
+      "question_number": 1,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to demand destruction as organic farming and alternatives gain market share? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "Nutrien acknowledges transitional risks to its grower customers, including the impact of changing growing practices and crop inputs due to the global transition to lower-carbon food options. It further states that climate change, which drives these transitions, is a strategic risk with potential financial implications for the company. While the company identifies the specific risk and its potential financial impact, it does not provide any quantified financial figures.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "As the globe transitions to lower-carbon options for all consumer products including food, it is expected that growers could potentially be impacted by key stakeholder expectations for changing growing practices and crop inputs used. Climate change is a strategic risk with potential financial implications for our company, capital providers, suppliers and customers."
+          }
+        ],
+        "summary": "Nutrien acknowledges transitional risks to its grower customers, including the impact of changing growing practices and crop inputs due to the global transition to lower-carbon food options. It further states that climate change, which drives these transitions, is a strategic risk with potential financial implications for the company. While the company identifies the specific risk and its potential financial impact, it does not provide any quantified financial figures.",
+        "notes": "D-Rag evidence count: 1. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T02:56:09.960544",
+        "programme_code": "FLU",
+        "evidence_count": 1,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99910",
+      "question_number": 2,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to disposal of chemical waste, such as gypstacks? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "[UPDATED BY CONSISTENCY CHECK] The evidence snippets for 2021 indicate general environmental liabilities and asset retirement obligations for phosphate sites, but they lack explicit financial figures directly quantified for 'gypstack closure' or similar specific chemical waste disposal risks. This level of detail is more consistent with a 'PARTIAL' finding, as also exemplified by the 2022 finding based on similar evidence.. Original explanation: Nutrien discloses specific financial figures for environmental remediation liabilities and asset retirement obligations, which include costs associated with phosphogypsum byproduct and phosphate sites where gypstacks are located. This quantifies the financial risk related to chemical waste disposal.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Total non-hazardous waste: | million tonnes | 27 | 26 | 31 | Includes potash mining tailings and phosphogypsum byproduct."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Environmental Remediation Liabilities | $ million | 550 | 544 | 534 | Calculated on a discounted basis."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Reuse of phosphogypsum for alternate purposes could reduce the environmental footprint and liabilities associated with gypstack closure."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Each year, we estimate the cost and timing of future reclamation expenditures. At the end of 2020, our discounted asset retirement obligations (\\\"AROs\\\") were $1.2 billion. Retirement obligations and their estimated costs to reclaim a site are initiated when the asset reaches its end of life; for phosphate sites, the majority of these costs are expected to be paid over the next 55 years, while costs for potash are expected to be paid after that time."
+          }
+        ],
+        "summary": "[UPDATED BY CONSISTENCY CHECK] The evidence snippets for 2021 indicate general environmental liabilities and asset retirement obligations for phosphate sites, but they lack explicit financial figures directly quantified for 'gypstack closure' or similar specific chemical waste disposal risks. This level of detail is more consistent with a 'PARTIAL' finding, as also exemplified by the 2022 finding based on similar evidence.. Original explanation: Nutrien discloses specific financial figures for environmental remediation liabilities and asset retirement obligations, which include costs associated with phosphogypsum byproduct and phosphate sites where gypstacks are located. This quantifies the financial risk related to chemical waste disposal.",
+        "notes": "D-Rag evidence count: 4. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T03:03:48.507926",
+        "programme_code": "FLU",
+        "evidence_count": 4,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99913",
+      "question_number": 3,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks or liabilities related to restoration of contaminated manufacturing sites?",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "Nutrien has disclosed specific financial valuations for asset retirement obligations and accrued environmental costs, which explicitly include costs to restore potash and phosphate sites and environmental remediation provisions. The company provides a total discounted cash flow for these obligations, as well as a breakdown for different segments and a sensitivity analysis for discount rate changes.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Nutrien/2021 Nutrien Annual Report_content.md",
+            "text": "NOTE 22 ASSET RETIREMENT OBLIGATIONS AND ACCRUED ENVIRONMENTAL COSTS A provision is an estimated liability with uncertainty over the timing or amount that will be paid. The most significant asset retirement and environmental remediation provisions relate to costs to restore potash and phosphate sites to their original, or another specified, condition. The pre-tax risk-free discount rate, expected cash flow payments and sensitivity to changes in the discount rate on the recorded liability for asset retirement obligations and accrued environmental costs as at December 31, 2021, were as follows: | Asset retirement obligations    | Cash Flow Payments (years) 1 | Discounted Cash Flows 2,3 | Discount Rate +0.5% | -0.5% | | :---- | :----: | ----: | ----: | ----: | |    |    |    | (75)    | 85    | | Retail    | 1 – 30    | 23    |    |    | | Potash    | 31 – 440    | 96    |    |    | | Phosphate    | 1 – 79    | 496    |    |    | | Corporate and other 4,5    | 1 – 485    | 616    |    |    | | Accrued environmental costs    |    |    | (5)    | 5    | | Retail    | 1 – 30    | 86    |    |    | | Corporate and other    | 1 – 24    | 419    |    |    | | **Total**    |    | **1,736**    |    |    |"
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Nutrien/2021 Nutrien Annual Report_content.md",
+            "text": "Balance – December 31, 2021    | 1,231    | 505    | 1,736  | | Balance – December 31, 2021 comprised of:    |    |    |    | | Current liabilities    |    |    |    | | Payables and accrued charges (Note 20)    | 115    | 55    | 170    | | Non-current liabilities    |    |    |    | | Asset retirement obligations and accrued environmental costs | 1,116    | 450    | 1,566  |  We are subject to numerous environmental requirements under federal, provincial, state and local laws in the countries in which we operate. We have gypsum stack capping, and closure and post-closure obligations through our subsidiaries, PCS Phosphate Company, Inc. in White Springs, Florida, and PCS Nitrogen Inc. in Geismar, Louisiana, pursuant to the financial assurance regulatory requirements in those states. The recorded provisions may not necessarily reflect our obligations under these financial assurances."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "1 ASSET RETIREMENT OBLIGATIONS Each year, we estimate the cost and timing of future reclamation expenditures. At the end of 2020, our discounted asset retirement obligations (\\\"AROs\\\") were $1.2 billion. Retirement obligations and their estimated costs to reclaim a site are initiated when the asset reaches its end of life; for phosphate sites, the majority of these costs are expected to be paid over the next 55 years, while costs for potash are expected to be paid after that time. We have spent $190 million toward our AROS over the last two years."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Nutrien/2021 Nutrien Annual Report_content.md",
+            "text": "Asset Retirement Obligations and Accrued Environmental Costs include: * reclamation and restoration costs at our potash and phosphate mining operations, including management of materials generated by mining and mineral processing, such as various mine tailings and gypsum; * land reclamation and revegetation programs; * decommissioning of underground and surface operating facilities; * general cleanup activities aimed at returning the areas to an environmentally acceptable condition; and * post-closure care and maintenance. We consider the following factors as we estimate our provisions: * environmental laws and regulations and interpretations by regulatory authorities, including updates on climate change, could change or circumstances affecting our operations could change, either of that could result in significant changes to current plans; * the nature, extent and timing of current and proposed reclamation and closure techniques in view of present environmental laws and regulations; * appropriate technical resources, including outside consultants, assist us in developing specific site closure and post-closure plans in accordance with the jurisdiction requirements; and * timing of settlement of the obligations, which is typically correlated with mine life estimates except for certain land reclamation programs. It is reasonably possible that the ultimate costs could change in the future and that changes to these estimates could have a material effect on our consolidated financial statements. We review our estimates for any changes in assumptions at the end of each reporting period."
+          }
+        ],
+        "summary": "Nutrien has disclosed specific financial valuations for asset retirement obligations and accrued environmental costs, which explicitly include costs to restore potash and phosphate sites and environmental remediation provisions. The company provides a total discounted cash flow for these obligations, as well as a breakdown for different segments and a sensitivity analysis for discount rate changes.",
+        "notes": "D-Rag evidence count: 4. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-19T22:52:47.568786",
+        "programme_code": "FLU",
+        "evidence_count": 4,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99904",
+      "question_number": 4,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to carbon taxes? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "Nutrien acknowledges that existing and potential carbon taxation by governments can lead to \"increasingly costly carbon tax regimes\" and that reducing emissions can \"decrease carbon taxes paid,\" indicating a clear understanding of the financial implications. However, the company does not provide specific quantified financial estimates or valuations of these carbon tax risks to its operations.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Existing and potential carbon taxation by governments | Changing regulatory frameworks to support societal decarbonization goals can impact our business through increasingly costly carbon tax regimes."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "By reducing our emissions, we can decrease carbon taxes paid or potentially decrease the risk of any other regulatory action against GHG emitters."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Targeting emission reductions also addresses a key transition risk in our fertilizer operations related to regulations and existing and potential regional carbon taxes."
+          }
+        ],
+        "summary": "Nutrien acknowledges that existing and potential carbon taxation by governments can lead to \"increasingly costly carbon tax regimes\" and that reducing emissions can \"decrease carbon taxes paid,\" indicating a clear understanding of the financial implications. However, the company does not provide specific quantified financial estimates or valuations of these carbon tax risks to its operations.",
+        "notes": "D-Rag evidence count: 3. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T02:50:17.699858",
+        "programme_code": "FLU",
+        "evidence_count": 3,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99912",
+      "question_number": 5,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks of technological developments such as new seeds requiring fewer pesticides/fertiliser?  Please return NONE if there is no disclosure at all, UNSURE if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "Nutrien acknowledges climate change as a strategic risk with potential financial implications for the company. It also notes transitional risks for grower customers due to changing growing practices and crop inputs as the globe transitions to lower-carbon options. While the company is actively involved in developing seed varieties that require fewer pesticides/fertilizers, it does not explicitly disclose the specific financial risks to its business model that could arise from these technological developments reducing the demand for its traditional products, nor does it attach numbers to these financial risks. The disclosure is a general mention of financial implications in a relevant context, but not specific enough for a \"YES\" finding.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Climate change is a strategic risk with potential financial implications for our company, capital providers, suppliers and customers."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "TRANSITIONAL RISKS | Transitional risks for our grower customers | As the globe transitions to lower-carbon options for all consumer products including food, it is expected that growers could potentially be impacted by key stakeholder expectations for changing growing practices and crop inputs used."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Our seed breeding programs are dedicated to developing elite hybrids, varieties and traits for growers with a focus on high-yielding and yield-stable varieties across geographies. Seed breeding is the process of combining the traits of different seeds to produce improved characteristics in crops for specific environments or conditions."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Pest- and disease-resistant seed: Through Nutrien's seed breeding programs, we maintain seed genetic diversity and develop pest- and disease-resistant seed. By providing built-in protection against pests and diseases, we can help reduce the need for additional disease and pest management tools."
+          }
+        ],
+        "summary": "Nutrien acknowledges climate change as a strategic risk with potential financial implications for the company. It also notes transitional risks for grower customers due to changing growing practices and crop inputs as the globe transitions to lower-carbon options. While the company is actively involved in developing seed varieties that require fewer pesticides/fertilizers, it does not explicitly disclose the specific financial risks to its business model that could arise from these technological developments reducing the demand for its traditional products, nor does it attach numbers to these financial risks. The disclosure is a general mention of financial implications in a relevant context, but not specific enough for a \"YES\" finding.",
+        "notes": "D-Rag evidence count: 4. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-09-23T15:43:57.522582",
+        "programme_code": "FLU",
+        "evidence_count": 4,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99905",
+      "question_number": 6,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to reduced soil fertility caused by its pesticides?  Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "UNCLEAR",
+        "classification_justification": "[UPDATED BY CONSISTENCY CHECK] The explanation for 2021 states that the company acknowledges stakeholder concerns related to chemical use and identifies 'Soil health' and 'Environmental impacts of products' as material topics. This constitutes 'some mention of risk but no link to financial risk', which fits the definition of UNCLEAR, not NONE.. Original explanation: The company acknowledges stakeholder concerns related to the use of chemicals in agriculture and identifies \"Soil health\" and \"Environmental impacts of products\" as material topics. However, there is no disclosure that the company considers financial risks specifically related to reduced soil fertility caused by its pesticides. In fact, the company often highlights how its products and practices support and improve soil health, or focuses on managing other environmental impacts of chemicals (e.g., impacts on pollinators, runoff). The specific financial risk regarding reduced soil fertility caused by its own pesticides is not mentioned.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "[UPDATED BY CONSISTENCY CHECK] The explanation for 2021 states that the company acknowledges stakeholder concerns related to chemical use and identifies 'Soil health' and 'Environmental impacts of products' as material topics. This constitutes 'some mention of risk but no link to financial risk', which fits the definition of UNCLEAR, not NONE.. Original explanation: The company acknowledges stakeholder concerns related to the use of chemicals in agriculture and identifies \"Soil health\" and \"Environmental impacts of products\" as material topics. However, there is no disclosure that the company considers financial risks specifically related to reduced soil fertility caused by its pesticides. In fact, the company often highlights how its products and practices support and improve soil health, or focuses on managing other environmental impacts of chemicals (e.g., impacts on pollinators, runoff). The specific financial risk regarding reduced soil fertility caused by its own pesticides is not mentioned.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T02:53:31.348442",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99909",
+      "question_number": 7,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to waterway pollution and eutrophication from nutrient runoff? Please return NONE if there is no disclose at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks related to human health problems.",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "Nutrien acknowledges the environmental risks associated with nutrient runoff and its impact on water quality, stating that they strive to \"protect water quality to reduce costs\" at their manufacturing sites. They also note \"product loss through runoff into the coral reef a significant risk\" related to pesticide applications. However, the company does not provide any specific financial valuations or estimations of these costs or losses.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "At our manufacturing sites, we strive to reduce freshwater use and protect water quality to reduce costs and environmental impacts."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Heavy rainfall common in this area makes product loss through runoff into the coral reef a significant risk. Our agronomists use a third-party digital app that indicates when and where pesticide applications should ideally occur. The app assists with good planning and application practices that reduce product loss by mapping and forecasting buffer zones from sensitive areas and time prior to rainfall based on pesticides use information."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Loss to water: When fertilizers containing nitrogen and phosphorus are improperly applied to crops, some nutrients may leach into groundwater or reach surface water by runoff. Nutrient enrichment of water bodies contributes to algae growth and reduced oxygen availability, which can adversely affect water quality and aquatic life. Runoff or overapplication of crop protection products can also impact ground and surface waters. We promote improved management practices and products where appropriate to minimize the risk of runoff and leaching."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Water stewardship"
+          }
+        ],
+        "summary": "Nutrien acknowledges the environmental risks associated with nutrient runoff and its impact on water quality, stating that they strive to \"protect water quality to reduce costs\" at their manufacturing sites. They also note \"product loss through runoff into the coral reef a significant risk\" related to pesticide applications. However, the company does not provide any specific financial valuations or estimations of these costs or losses.",
+        "notes": "D-Rag evidence count: 4. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T02:59:36.918636",
+        "programme_code": "FLU",
+        "evidence_count": 4,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99916",
+      "question_number": 8,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to negative public perception of chemical-intensive agriculture",
+      "priority": "standard",
+      "answer": {
+        "classification": "UNCLEAR",
+        "classification_justification": "The company acknowledges stakeholder concerns related to the use of chemicals in agriculture and increasing consumer demand for sustainably sourced food. It discusses product stewardship and safe use of products. However, it does not explicitly frame negative public perception of chemical-intensive agriculture as a financial risk, nor does it quantify any financial impacts related to such perception.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Use of chemicals: We acknowledge stakeholder concerns related to the use of some chemicals in agriculture. Consumer demand for sustainably sourced food is on the rise and producing enough nutritious and accessible food for our growing population is expected to strain existing land and water resources. This challenge requires science-based solutions, including the responsible use of chemicals, to increase production on existing land while protecting the environment. We make informed decisions about product suitability and use based on available science and empirical evidence. We promote the safe and responsible use of our products by providing information to customers on appropriate use, handling and application. We have a strong product stewardship program to manage environmental and safety impacts while maintaining product functionality. Our recent acquisitions and innovations have also increased our ag biological portfolio of products."
+          }
+        ],
+        "summary": "The company acknowledges stakeholder concerns related to the use of chemicals in agriculture and increasing consumer demand for sustainably sourced food. It discusses product stewardship and safe use of products. However, it does not explicitly frame negative public perception of chemical-intensive agriculture as a financial risk, nor does it quantify any financial impacts related to such perception.",
+        "notes": "D-Rag evidence count: 1. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-20T16:28:13.795776",
+        "programme_code": "FLU",
+        "evidence_count": 1,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99907",
+      "question_number": 9,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to drinking water contamination from leaching of applied products? Please return NONE if there is no disclosure at all, UNSURE if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "Nutrien identifies 'Environmental impacts of products' as a Level 1 material ESG topic, indicating it can have a broad impact on financial performance. The company also describes how fertilizers and crop protection products can leach into groundwater and surface water, affecting water quality. However, no specific financial risks or associated monetary values related to drinking water contamination from product leaching are disclosed.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Nutrien's material ESG topics can have impacts beyond our own operations. We recognize that each of the topics can have impacts broadly, but the table below depicts where impacts related to our most relevant topics predominantly occur. | Value Chain | Upstream Indirect | | Direct Operations | | | Downstream Indirect | Read more | | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | | | **Sourcing** | **Mining** | **Manufacturing** | **Distribution and Logistics** | **Retail** | **Product Use** | | | **Level 1** | | | | | | | | | *Environment* | | | | | | | | | Climate-related risks | | | • | • | • | • | 26 | | GHG emissions and energy use | • | | • | • | • | • | 15 | | Soil health | | | | | | • | 27 | | Environmental impacts of products | | | | | | • | 31 |"
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "| **Stakeholder surveys and engagement** | **LEVEL 1** | Risks that can have broad impact on financial performance, operations or reputation or have legal implications | • Internal cross-functional working group review | Extensive discussion of management approach | | • Potential to affect Nutrien's value, reputation or operations | | Significant interest to stakeholders and opportunities for Nutrien for which we expect to set targets | | Data in graphics |"
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Loss to water: When fertilizers containing nitrogen and phosphorus are improperly applied to crops, some nutrients may leach into groundwater or reach surface water by runoff. Nutrient enrichment of water bodies contributes to algae growth and reduced oxygen availability, which can adversely affect water quality and aquatic life. Runoff or overapplication of crop protection products can also impact ground and surface waters."
+          }
+        ],
+        "summary": "Nutrien identifies 'Environmental impacts of products' as a Level 1 material ESG topic, indicating it can have a broad impact on financial performance. The company also describes how fertilizers and crop protection products can leach into groundwater and surface water, affecting water quality. However, no specific financial risks or associated monetary values related to drinking water contamination from product leaching are disclosed.",
+        "notes": "D-Rag evidence count: 3. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-09-23T16:12:54.366569",
+        "programme_code": "FLU",
+        "evidence_count": 3,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99915",
+      "question_number": 10,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks associated with rising compliance and testing costs for registration and re-registration?",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "The company acknowledges that changing regulations, including environmental ones, could increase its compliance costs and impact its financial performance. While it discusses efforts to minimize these costs, it does not provide specific financial valuations or estimations for rising compliance and testing costs related to registration and re-registration.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Nutrien/2021 Nutrien Annual Report_content.md",
+            "text": "Changing laws, regulations and government policies – including those relating to health and safety, taxes and royalties, environment and climate change, including regulation of GHG emissions – could affect our ability to produce or sell certain products, reduce our efficiency and competitive advantage, increase our costs of raw materials, energy, transportation or compliance, or require us to make capital improvements to our operations – all of which could impact our strategy, operations, financial performance or reputation."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Nutrien/2021 Nutrien Annual Report_content.md",
+            "text": "We work to minimize our Canadian, US and other international compliance costs through the implementation of various efficiency and GHG emissions reduction projects such as cogeneration and carbon capture."
+          }
+        ],
+        "summary": "The company acknowledges that changing regulations, including environmental ones, could increase its compliance costs and impact its financial performance. While it discusses efforts to minimize these costs, it does not provide specific financial valuations or estimations for rising compliance and testing costs related to registration and re-registration.",
+        "notes": "D-Rag evidence count: 2. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-14T00:10:38.677757",
+        "programme_code": "FLU",
+        "evidence_count": 2,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99903",
+      "question_number": 11,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to human health problems from its products? Please return NONE if there is no disclose at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks related to human health problems.",
+      "priority": "standard",
+      "answer": {
+        "classification": "UNCLEAR",
+        "classification_justification": "The company acknowledges that its products have the potential to impact human health, especially when misused. It also states a general commitment to reducing legal and financial exposure through strong safety standards and mentions \"Loss of Containment\" events that could impact human health. However, there is no direct disclosure of financial risks specifically related to human health problems *from its products*, nor any quantification of such risks or liabilities.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Use outside the mandated scope as defined on the label, in contravention of crop advisor guidance or misuse in general have the potential to negatively impact human and animal health or the environment."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Our stakeholders expect us to minimize impacts on human and animal health related to the agricultural products we manufacture and sell. This is a responsibility we take seriously as a company."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "We consider the social impacts of our products from development to point of sale, especially their impacts on human health and the environment."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Strong safety standards and programs help us maintain our reputation as an industry leader and responsible employer while reducing our legal and financial exposure."
+          },
+          {
+            "evidence_number": 5,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Develop Loss of Containment reduction strategy and provide related target by 2023. An unplanned release of material from its process that has the potential to impact human health and/or the environment."
+          }
+        ],
+        "summary": "The company acknowledges that its products have the potential to impact human health, especially when misused. It also states a general commitment to reducing legal and financial exposure through strong safety standards and mentions \"Loss of Containment\" events that could impact human health. However, there is no direct disclosure of financial risks specifically related to human health problems *from its products*, nor any quantification of such risks or liabilities.",
+        "notes": "D-Rag evidence count: 5. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T02:47:07.850060",
+        "programme_code": "FLU",
+        "evidence_count": 5,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99911",
+      "question_number": 12,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks or liabilities related to restoration of mining sites?  Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "Nutrien explicitly discloses financial liabilities related to the restoration of mining sites under \"Asset Retirement Obligations and Accrued Environmental Costs.\" The company quantifies these liabilities, reporting total discounted cash flows of $1,736 million and total undiscounted cash flows of $3.3 billion as of December 31, 2021, for these obligations related to potash and phosphate mining operations.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Nutrien/2021 Nutrien Annual Report_content.md",
+            "text": "Asset Retirement Obligations and Accrued Environmental Costs include: * reclamation and restoration costs at our potash and phosphate mining operations, including management of materials generated by mining and mineral processing, such as various mine tailings and gypsum; * land reclamation and revegetation programs; * decommissioning of underground and surface operating facilities; * general cleanup activities aimed at returning the areas to an environmentally acceptable condition; and * post-closure care and maintenance."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Nutrien/2021 Nutrien Annual Report_content.md",
+            "text": "A provision is an estimated liability with uncertainty over the timing or amount that will be paid. The most significant asset retirement and environmental remediation provisions relate to costs to restore potash and phosphate sites to their original, or another specified, condition. The pre-tax risk-free discount rate, expected cash flow payments and sensitivity to changes in the discount rate on the recorded liability for asset retirement obligations and accrued environmental costs as at December 31, 2021, were as follows: | Asset retirement obligations    | Cash Flow Payments (years) 1 | Discounted Cash Flows 2,3 | Discount Rate +0.5% | -0.5% | | :---- | :----: | ----: | ----: | ----: | |    |    |    | (75)    | 85    | | Retail    | 1 – 30    | 23    |    |    | | Potash    | 31 – 440    | 96    |    |    | | Phosphate    | 1 – 79    | 496    |    |    | | Corporate and other 4,5    | 1 – 485    | 616    |    |    | | Accrued environmental costs    |    |    | (5)    | 5    | | Retail    | 1 – 30    | 86    |    |    | | Corporate and other    | 1 – 24    | 419    |    |    | | **Total**    |    | **1,736**    |    |    |"
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Nutrien/2021 Nutrien Annual Report_content.md",
+            "text": "Note 22 and Note 30    | **Asset retirement obligations (–cAROs–) and accrued environmental costs (–cERLs–) – measurement** | |    | The Potash and Phosphate segments have these liabilities (which have a high degree of estimation uncertainty for future costs and estimated timelines) associated with their mining operations while the Corporate and Others segment has AROs and ERLs associated with non-operational mines."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Nutrien/2021 Nutrien Annual Report_content.md",
+            "text": "Total undiscounted cash flows are $3.3 billion. For the Potash segment, this represents total undiscounted cash flows in the first year of decommissioning. This excludes subsequent years of tailings dissolution, fine tails capping, tailings management area reclamation, post-reclamation activities and monitoring, and final decommissioning, which are estimated to take an additional 126 to 409 years."
+          }
+        ],
+        "summary": "Nutrien explicitly discloses financial liabilities related to the restoration of mining sites under \"Asset Retirement Obligations and Accrued Environmental Costs.\" The company quantifies these liabilities, reporting total discounted cash flows of $1,736 million and total undiscounted cash flows of $3.3 billion as of December 31, 2021, for these obligations related to potash and phosphate mining operations.",
+        "notes": "D-Rag evidence count: 4. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-10T16:50:22.700023",
+        "programme_code": "FLU",
+        "evidence_count": 4,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99902",
+      "question_number": 13,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to soil degradation caused by its fertiliser products?  Please return NONE if there is no disclosure at all, UNSURE if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "Nutrien acknowledges that 'Soil health' and 'Environmental impacts of products' (which includes impacts from their fertilizer products) are 'Level 1' material topics, indicating they can have a broad impact on financial performance, operations, reputation, or legal implications. The company is also developing a 'risk-based product impact rating approach' for its fertilizer products, which considers the 'potential to contribute to ecosystem degradation'. While these statements clearly link potential environmental impacts from their products, including soil degradation, to financial and legal risks, no specific financial valuations or estimates are provided.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Nutrien's material ESG topics can have impacts beyond our own operations. We recognize that each of the topics can have impacts broadly, but the table below depicts where impacts related to our most relevant topics predominantly occur. ... Level 1: *Environment* ... Soil health (Product Use) ... Environmental impacts of products (Product Use) ... Risks that can have broad impact on financial performance, operations or reputation or have legal implications"
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Nutrien is developing a holistic risk-based product rating approach to create impact profiles for our fertilizer manufactured products. Each profile incorporates information on ingredient origin, regulatory compliance, product chemical hazard classification (for example, not hazardous, toxic to the environment, corrosive), sustainability (for example, potential to contribute to ecosystem degradation, conflict material rating) and supply chain risk factors (for example, security potential for illegal use). These profiles will be used to include environmental and social impact in product decision making."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2021 ENVIRONMENTAL, SOCIAL ESG AND GOVERNANCE (ESG) REPORT_20201231-0FC91030-94DA-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Our product stewardship team takes a lifecycle approach to lowering product environmental, safety and social impacts of concern. We are developing a holistic risk-based product impact rating approach for use in decision making, initially for our fertilizer manufactured products with additional profile development through 2021."
+          }
+        ],
+        "summary": "Nutrien acknowledges that 'Soil health' and 'Environmental impacts of products' (which includes impacts from their fertilizer products) are 'Level 1' material topics, indicating they can have a broad impact on financial performance, operations, reputation, or legal implications. The company is also developing a 'risk-based product impact rating approach' for its fertilizer products, which considers the 'potential to contribute to ecosystem degradation'. While these statements clearly link potential environmental impacts from their products, including soil degradation, to financial and legal risks, no specific financial valuations or estimates are provided.",
+        "notes": "D-Rag evidence count: 3. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T00:38:16.893968",
+        "programme_code": "FLU",
+        "evidence_count": 3,
+        "evidence_validation_passed": true
+      }
+    }
+  ]
+}

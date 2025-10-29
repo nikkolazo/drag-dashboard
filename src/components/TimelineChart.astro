@@ -1,0 +1,540 @@
+---
+import type { Question } from '../utils/dataLoader';
+import { getClassificationInfo, getCategoryGroup } from '../utils/categoryMapper';
+
+interface Props {
+  years: string[];
+  dragData: Map<string, Map<string, Question>>; // year -> questionId -> Question
+}
+
+const { years, dragData } = Astro.props;
+
+// Helper: Get all unique question IDs from a dataset
+function getAllQuestionIds(dataMap: Map<string, Map<string, Question>>): string[] {
+  const allIds = new Set<string>();
+  dataMap.forEach(yearMap => {
+    yearMap.forEach((_, questionId) => {
+      allIds.add(questionId);
+    });
+  });
+  return Array.from(allIds).sort();
+}
+
+const allQuestions = getAllQuestionIds(dragData);
+
+// Generate color palette for many questions
+function generateColors(count: number): string[] {
+  const base = [
+    '#10b981', '#f59e0b', '#3b82f6', '#ef4444', '#8b5cf6',
+    '#06b6d4', '#f97316', '#84cc16', '#ec4899', '#14b8a6',
+    '#6366f1', '#f43f5e', '#a855f7', '#22c55e', '#fb923c'
+  ];
+
+  const colors = [];
+  for (let i = 0; i < count; i++) {
+    if (i < base.length) {
+      colors.push(base[i]);
+    } else {
+      const hue = (i * 137.5) % 360;
+      colors.push(`hsl(${hue}, 70%, 55%)`);
+    }
+  }
+  return colors;
+}
+
+// CATEGORY-BASED CALCULATION
+function calculateCategoryScores(yearMap: Map<string, Question> | undefined) {
+  const scores = {
+    'Environmental Risks': 0,
+    'Human Health Risks': 0,
+    'Transition Risks': 0
+  };
+
+  if (!yearMap) {
+    return { ...scores, total: 0 };
+  }
+
+  yearMap.forEach((question) => {
+    const categoryInfo = getCategoryGroup(question);
+    const categoryName = categoryInfo.name;
+    const classificationScore = getClassificationInfo(question.answer.classification).score;
+
+    if (scores.hasOwnProperty(categoryName)) {
+      scores[categoryName as keyof typeof scores] += classificationScore;
+    }
+  });
+
+  const total = scores['Environmental Risks'] + scores['Human Health Risks'] + scores['Transition Risks'];
+  return { ...scores, total };
+}
+
+// QUESTION-BASED CALCULATION
+function calculateQuestionScores(yearMap: Map<string, Question> | undefined, questionList: string[]) {
+  const scores: Record<string, number> = {};
+
+  // Initialize all questions to 0
+  questionList.forEach(qId => {
+    scores[qId] = 0;
+  });
+
+  if (!yearMap) {
+    return { scores, total: 0 };
+  }
+
+  yearMap.forEach((question, questionId) => {
+    if (scores.hasOwnProperty(questionId)) {
+      scores[questionId] = getClassificationInfo(question.answer.classification).score;
+    }
+  });
+
+  const total = Object.values(scores).reduce((sum, val) => sum + val, 0);
+  return { scores, total };
+}
+
+// Category data with D-RAG normalization (alignment method)
+const dragCategoryData = years.map(year => {
+  const yearMap = dragData.get(year);
+  const scores = calculateCategoryScores(yearMap);
+
+  // D-RAG method: Divide by maximum possible score (num_questions × 3)
+  const numQuestions = yearMap ? yearMap.size : 0;
+  const maxPossible = numQuestions * 3;
+
+  return {
+    year,
+    absolute: scores,
+    normalized: maxPossible > 0 ? {
+      'Environmental Risks': (scores['Environmental Risks'] / maxPossible) * 100,
+      'Human Health Risks': (scores['Human Health Risks'] / maxPossible) * 100,
+      'Transition Risks': (scores['Transition Risks'] / maxPossible) * 100
+    } : { 'Environmental Risks': 0, 'Human Health Risks': 0, 'Transition Risks': 0 }
+  };
+});
+
+// Question data
+const dragQuestionData = years.map(year => {
+  const result = calculateQuestionScores(dragData.get(year), allQuestions);
+
+  // D-RAG method: Divide by maximum possible score (num_questions × 3)
+  const maxPossible = allQuestions.length * 3;
+
+  const normalized: Record<string, number> = {};
+  Object.keys(result.scores).forEach(qId => {
+    normalized[qId] = maxPossible > 0 ? (result.scores[qId] / maxPossible) * 100 : 0;
+  });
+
+  return { year, absolute: result.scores, normalized };
+});
+
+// Generate colors
+const categoryColors = { 'Environmental Risks': '#10b981', 'Human Health Risks': '#f59e0b', 'Transition Risks': '#3b82f6' };
+const questionColors = generateColors(allQuestions.length);
+
+// Package all data for JSON embedding
+const chartData = {
+  years: years.map(y => `${y}`),
+  category: dragCategoryData,
+  question: dragQuestionData,
+  questionList: allQuestions,
+  colors: {
+    category: categoryColors,
+    question: questionColors
+  },
+  meta: {
+    totalQuestions: allQuestions.length
+  }
+};
+---
+
+<div class="timeline-chart">
+  <h2 class="text-2xl font-bold text-slate-100 mb-6">📈 Timeline: Risk Disclosure Trends</h2>
+
+  <div class="card">
+    <!-- Controls -->
+    <div class="flex justify-between items-start mb-6 flex-wrap gap-4">
+      <div class="flex flex-col gap-2">
+        <div class="text-sm text-slate-400">
+          Track how risk disclosure evolves over time
+        </div>
+        <div id="filter-info" class="text-xs text-emerald-400"></div>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <!-- Group By & View Mode -->
+        <div class="flex gap-2 flex-wrap">
+          <button id="toggle-category" class="px-3 py-1 text-sm rounded bg-slate-700 text-slate-300">
+            By Category
+          </button>
+          <button id="toggle-question" class="px-3 py-1 text-sm rounded bg-purple-500 text-white font-medium">
+            By Question
+          </button>
+          <span class="border-l border-slate-600 mx-1"></span>
+          <button id="toggle-absolute" class="px-3 py-1 text-sm rounded bg-blue-500 text-white font-medium">
+            Absolute
+          </button>
+          <button id="toggle-normalized" class="px-3 py-1 text-sm rounded bg-slate-700 text-slate-300">
+            Normalized
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Canvas -->
+    <div class="relative h-96">
+      <canvas id="timeline-chart"></canvas>
+    </div>
+
+    <!-- Y-Axis Zoom Controls (shown only in normalized mode) -->
+    <div id="zoom-controls" class="mt-4 flex gap-2 items-center hidden">
+      <span class="text-xs text-slate-400">Y-axis range:</span>
+      <button id="zoom-auto" class="px-2 py-1 text-xs rounded bg-indigo-500 text-white font-medium">
+        Auto
+      </button>
+      <button id="zoom-25" class="px-2 py-1 text-xs rounded bg-slate-700 text-slate-300">
+        0-25%
+      </button>
+      <button id="zoom-50" class="px-2 py-1 text-xs rounded bg-slate-700 text-slate-300">
+        0-50%
+      </button>
+      <button id="zoom-100" class="px-2 py-1 text-xs rounded bg-slate-700 text-slate-300">
+        0-100%
+      </button>
+    </div>
+
+    <!-- Stats Table (Category Mode) -->
+    <div id="stats-category" class="mt-6 overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="border-b border-slate-700">
+            <th class="text-left p-2 text-slate-400">Year</th>
+            <th class="text-right p-2 text-emerald-400">Environmental</th>
+            <th class="text-right p-2 text-amber-400">Human Health</th>
+            <th class="text-right p-2 text-blue-400">Transition</th>
+            <th class="text-right p-2 text-slate-300">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          {dragCategoryData.map((data) => (
+            <tr class="border-b border-slate-800 hover:bg-slate-800/50">
+              <td class="p-2 text-slate-300">{data.year}</td>
+              <td class="text-right p-2 text-emerald-400">{data.absolute['Environmental Risks'].toFixed(1)}</td>
+              <td class="text-right p-2 text-amber-400">{data.absolute['Human Health Risks'].toFixed(1)}</td>
+              <td class="text-right p-2 text-blue-400">{data.absolute['Transition Risks'].toFixed(1)}</td>
+              <td class="text-right p-2 text-slate-300 font-semibold">{data.absolute.total.toFixed(1)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Stats Info (Question Mode) -->
+    <div id="stats-question" class="mt-6 hidden">
+      <div class="mb-4 flex flex-wrap gap-2 items-center">
+        <span class="text-sm text-slate-400">Showing individual question trends. Hover over chart legend or areas to see question details.</span>
+        <span class="text-xs text-emerald-400">
+          <span class="font-semibold">Total questions:</span>
+          <span id="question-count">{allQuestions.length}</span>
+        </span>
+      </div>
+
+      <!-- Question Filter Controls -->
+      <div class="mb-4 flex flex-wrap gap-2 items-center">
+        <span class="text-xs text-slate-400">Show in table:</span>
+        <button id="filter-top10" class="px-2 py-1 text-xs rounded bg-indigo-500 text-white font-medium">
+          Top 10
+        </button>
+        <button id="filter-all-table" class="px-2 py-1 text-xs rounded bg-slate-700 text-slate-300">
+          All Questions
+        </button>
+      </div>
+
+      <!-- Question Summary Table -->
+      <div class="overflow-x-auto">
+        <table id="question-table" class="w-full text-xs">
+          <thead>
+            <tr class="border-b border-slate-700">
+              <th class="text-left p-2 text-slate-400 sticky left-0 bg-slate-800">Question ID</th>
+              {years.map(year => (
+                <th class="text-right p-1 text-slate-300">{year}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody id="question-table-body">
+            <!-- Populated by JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script id="timeline-data" type="application/json" set:html={JSON.stringify(chartData)}></script>
+
+<script>
+  import { Chart, registerables } from 'chart.js';
+  Chart.register(...registerables);
+
+  const dataScript = document.getElementById('timeline-data');
+  const chartData = JSON.parse(dataScript.textContent);
+
+  let chart = null;
+  let groupBy = 'question'; // 'category', 'question' - DEFAULT: question
+  let viewMode = 'absolute'; // 'absolute', 'normalized'
+  let yAxisZoom = 'auto'; // 'auto', '25', '50', '100'
+  let tableFilter = 'top10'; // 'top10', 'all'
+
+  function updateFilterInfo() {
+    const info = document.getElementById('filter-info');
+    if (!info) return;
+
+    if (groupBy === 'question') {
+      info.textContent = `Showing ${chartData.meta.totalQuestions} individual questions`;
+      info.classList.remove('hidden');
+    } else {
+      info.classList.add('hidden');
+    }
+  }
+
+  // Calculate optimal Y-axis maximum based on actual data
+  function calculateYAxisMax(datasets, isNormalized) {
+    if (!isNormalized || yAxisZoom !== 'auto') {
+      if (yAxisZoom === '25') return 25;
+      if (yAxisZoom === '50') return 50;
+      if (yAxisZoom === '100') return 100;
+      if (!isNormalized) return undefined; // Chart.js auto-scale for absolute
+    }
+
+    // Auto mode: calculate from data
+    let maxValue = 0;
+    datasets.forEach(dataset => {
+      dataset.data.forEach(value => {
+        maxValue = Math.max(maxValue, value || 0);
+      });
+    });
+
+    // For stacked charts, we need to sum all values per year
+    if (datasets.length > 0) {
+      const yearCount = datasets[0].data.length;
+      for (let i = 0; i < yearCount; i++) {
+        let stackSum = 0;
+        datasets.forEach(dataset => {
+          stackSum += (dataset.data[i] || 0);
+        });
+        maxValue = Math.max(maxValue, stackSum);
+      }
+    }
+
+    // Add 10% padding and round up to nearest 5
+    const withPadding = maxValue * 1.1;
+    return Math.ceil(withPadding / 5) * 5;
+  }
+
+  function createChart() {
+    const ctx = document.getElementById('timeline-chart');
+    if (!ctx) return;
+
+    if (chart) chart.destroy();
+
+    const datasets = [];
+    const isNormalized = viewMode === 'normalized';
+    const dataKey = isNormalized ? 'normalized' : 'absolute';
+
+    if (groupBy === 'category') {
+      // Category-based stacking
+      const categories = ['Environmental Risks', 'Human Health Risks', 'Transition Risks'];
+
+      categories.forEach(cat => {
+        datasets.push({
+          label: cat,
+          data: chartData.category.map(d => d[dataKey][cat]),
+          backgroundColor: chartData.colors.category[cat] + '80',
+          borderColor: chartData.colors.category[cat],
+          borderWidth: 2,
+          fill: true
+        });
+      });
+    } else {
+      // Question-based stacking
+      chartData.questionList.forEach((qId, idx) => {
+        datasets.push({
+          label: `Q${qId}`,
+          data: chartData.question.map(d => d[dataKey][qId] || 0),
+          backgroundColor: chartData.colors.question[idx] + '80',
+          borderColor: chartData.colors.question[idx],
+          borderWidth: 1,
+          fill: true
+        });
+      });
+    }
+
+    const yMax = calculateYAxisMax(datasets, isNormalized);
+
+    chart = new Chart(ctx, {
+      type: 'line',
+      data: { labels: chartData.years, datasets },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: {
+          legend: {
+            position: 'bottom',
+            labels: { color: '#cbd5e1', usePointStyle: true, padding: 10, boxWidth: 10, font: { size: 10 } }
+          },
+          tooltip: {
+            backgroundColor: '#1e293b',
+            titleColor: '#f1f5f9',
+            bodyColor: '#cbd5e1',
+            borderColor: '#475569',
+            borderWidth: 1,
+            padding: 12,
+            displayColors: true,
+            callbacks: {
+              label: (ctx) => {
+                let label = ctx.dataset.label || '';
+                if (label) label += ': ';
+                label += isNormalized ? ctx.parsed.y.toFixed(1) + '%' : ctx.parsed.y.toFixed(1);
+                return label;
+              }
+            }
+          }
+        },
+        scales: {
+          x: { stacked: true, grid: { color: '#334155' }, ticks: { color: '#94a3b8' } },
+          y: {
+            stacked: true,
+            grid: { color: '#334155' },
+            ticks: {
+              color: '#94a3b8',
+              callback: (val) => isNormalized ? val.toFixed(0) + '%' : val.toFixed(0)
+            },
+            max: yMax,
+            min: 0
+          }
+        }
+      }
+    });
+
+    // Update UI
+    document.getElementById('stats-category').style.display = groupBy === 'category' ? 'block' : 'none';
+    document.getElementById('stats-question').style.display = groupBy === 'question' ? 'block' : 'none';
+
+    // Show/hide zoom controls (only for normalized mode)
+    const zoomControls = document.getElementById('zoom-controls');
+    if (zoomControls) {
+      zoomControls.style.display = viewMode === 'normalized' ? 'flex' : 'none';
+    }
+
+    if (groupBy === 'question') {
+      populateQuestionTable();
+    }
+
+    updateFilterInfo();
+  }
+
+  // Populate the question summary table
+  function populateQuestionTable() {
+    const dataKey = viewMode === 'normalized' ? 'normalized' : 'absolute';
+
+    // Prepare question data with totals for sorting/filtering
+    const questionData = chartData.questionList.map(qId => {
+      const total = chartData.question.reduce((sum, yearData) =>
+        sum + (yearData[dataKey][qId] || 0), 0);
+      return { qId, total };
+    });
+
+    // Apply table filter
+    let filteredQuestions = [...questionData];
+    if (tableFilter === 'top10') {
+      filteredQuestions = questionData
+        .sort((a, b) => b.total - a.total)
+        .slice(0, 10);
+    }
+
+    // Build table body
+    const tbody = document.getElementById('question-table-body');
+    let bodyHTML = '';
+
+    filteredQuestions.forEach(({ qId }) => {
+      bodyHTML += `
+        <tr class="border-b border-slate-800 hover:bg-slate-800/50">
+          <td class="p-2 text-slate-300 font-mono text-xs sticky left-0 bg-slate-800">Q${qId}</td>
+      `;
+
+      chartData.question.forEach(yearData => {
+        const value = yearData[dataKey][qId] || 0;
+        const displayValue = viewMode === 'normalized' ?
+          value.toFixed(1) + '%' :
+          value.toFixed(1);
+        const colorClass = value > 0 ? 'text-cyan-400' : 'text-slate-600';
+        bodyHTML += `<td class="text-right p-1 ${colorClass}">${displayValue}</td>`;
+      });
+
+      bodyHTML += '</tr>';
+    });
+
+    tbody.innerHTML = bodyHTML;
+  }
+
+  function updateButtons() {
+    // Group buttons
+    ['toggle-category', 'toggle-question'].forEach(id => {
+      const btn = document.getElementById(id);
+      if (!btn) return;
+      const active = (id === 'toggle-category' && groupBy === 'category') ||
+                     (id === 'toggle-question' && groupBy === 'question');
+      btn.className = `px-3 py-1 text-sm rounded font-medium ${active ? 'bg-purple-500 text-white' : 'bg-slate-700 text-slate-300'}`;
+    });
+
+    // View buttons
+    ['toggle-absolute', 'toggle-normalized'].forEach(id => {
+      const btn = document.getElementById(id);
+      if (!btn) return;
+      const active = (id === 'toggle-absolute' && viewMode === 'absolute') ||
+                     (id === 'toggle-normalized' && viewMode === 'normalized');
+      btn.className = `px-3 py-1 text-sm rounded font-medium ${active ? 'bg-blue-500 text-white' : 'bg-slate-700 text-slate-300'}`;
+    });
+
+    // Zoom buttons
+    ['zoom-auto', 'zoom-25', 'zoom-50', 'zoom-100'].forEach(id => {
+      const btn = document.getElementById(id);
+      if (!btn) return;
+      const active = (id === 'zoom-auto' && yAxisZoom === 'auto') ||
+                     (id === 'zoom-25' && yAxisZoom === '25') ||
+                     (id === 'zoom-50' && yAxisZoom === '50') ||
+                     (id === 'zoom-100' && yAxisZoom === '100');
+      btn.className = `px-2 py-1 text-xs rounded font-medium ${active ? 'bg-indigo-500 text-white' : 'bg-slate-700 text-slate-300'}`;
+    });
+
+    // Table filter buttons
+    ['filter-top10', 'filter-all-table'].forEach(id => {
+      const btn = document.getElementById(id);
+      if (!btn) return;
+      const active = (id === 'filter-top10' && tableFilter === 'top10') ||
+                     (id === 'filter-all-table' && tableFilter === 'all');
+      btn.className = `px-2 py-1 text-xs rounded font-medium ${active ? 'bg-indigo-500 text-white' : 'bg-slate-700 text-slate-300'}`;
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    createChart();
+
+    // Event listeners - Group by
+    document.getElementById('toggle-category')?.addEventListener('click', () => { groupBy = 'category'; createChart(); updateButtons(); });
+    document.getElementById('toggle-question')?.addEventListener('click', () => { groupBy = 'question'; createChart(); updateButtons(); });
+
+    // Event listeners - View mode
+    document.getElementById('toggle-absolute')?.addEventListener('click', () => { viewMode = 'absolute'; createChart(); updateButtons(); });
+    document.getElementById('toggle-normalized')?.addEventListener('click', () => { viewMode = 'normalized'; createChart(); updateButtons(); });
+
+    // Event listeners - Y-axis zoom
+    document.getElementById('zoom-auto')?.addEventListener('click', () => { yAxisZoom = 'auto'; createChart(); updateButtons(); });
+    document.getElementById('zoom-25')?.addEventListener('click', () => { yAxisZoom = '25'; createChart(); updateButtons(); });
+    document.getElementById('zoom-50')?.addEventListener('click', () => { yAxisZoom = '50'; createChart(); updateButtons(); });
+    document.getElementById('zoom-100')?.addEventListener('click', () => { yAxisZoom = '100'; createChart(); updateButtons(); });
+
+    // Event listeners - Table filters
+    document.getElementById('filter-top10')?.addEventListener('click', () => { tableFilter = 'top10'; populateQuestionTable(); updateButtons(); });
+    document.getElementById('filter-all-table')?.addEventListener('click', () => { tableFilter = 'all'; populateQuestionTable(); updateButtons(); });
+  });
+</script>

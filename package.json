@@ -1,0 +1,29 @@
+{
+  "name": "drag-dashboard",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Disclosure of Companies - D-RAG Analysis Dashboard",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build --force",
+    "clean": "rm -rf dist .astro",
+    "rebuild": "npm run clean && npm run build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.14.5",
+    "chart.js": "^4.5.1",
+    "date-fns": "^4.1.0",
+    "lucide-react": "^0.545.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "tailwindcss": "^4.1.14"
+  }
+  ,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carbon-tracker-initiative/drag-dashboard.git"
+  }
+}

@@ -1,0 +1,496 @@
+{
+  "metadata": {
+    "company": "SQM",
+    "year": "2020",
+    "analysis_date": "2025-10-22T19:18:58.005385",
+    "model_used": "D-RAG",
+    "source": "D-Rag baseline data (imported)",
+    "documents_analyzed": [
+      "Unknown - D-Rag data"
+    ],
+    "processing_info": {
+      "total_cost": "$0.00 (imported data)",
+      "total_tokens": 0,
+      "questions_analyzed": 15
+    }
+  },
+  "completeness_summary": {
+    "total_questions": 15,
+    "classified_YES": 3,
+    "classified_PARTIAL": 4,
+    "classified_UNCLEAR": 2,
+    "classified_NONE": 6,
+    "total_financial_disclosures_found": 0
+  },
+  "analysis_results": [
+    {
+      "question_id": "99907",
+      "question_number": 1,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to drinking water contamination from leaching of applied products?",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "The company discloses pending lawsuits in its consolidated financial statements that involve claims for financial damages related to groundwater contamination from perchlorate, allegedly originating from its fertilizers. While specific amounts are mentioned as claims from plaintiffs (e.g., US$ 36 million), these are not presented as the company's own quantified financial estimations of its liability or value at risk for this issue. Therefore, the company acknowledges the financial nature of the risk without providing its own specific quantification.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2020 (Spanish) - PDF - 1 _ 4_20210303-6f6f8347-a47c-eb11-8110-8cdcd4af21e4_0_content.md",
+            "text": "En diciembre de 2010, la ciudad de Pomona en el estado de California en Estados Unidos, interpuso una demanda en contra de SQM NA que se conoce ante la Corte de Distrito Central de California. La demandante reclama el pago de gastos y otros valores relacionados con el tratamiento de aguas subterráneas para permitir su consumo previa extracción del perclorato existente en ellas y que supuestamente provendría de fertilizantes chilenos, por un monto aproximado de US$ 36 millones. Con fecha 17 de mayo de 2018, el juez de distrito señor Gary Klausner dictaminó sentencia favorable en favor de SQM NA tras veredicto del jurado. Con fecha 6 de febrero de 2020, la Corte de Apelaciones del IX Circuito de los Estados Unidos ordenó la repetición del juicio ante la Corte de Distrito, el cual ha sido postergado hasta el segundo trimestre de 2021."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2020 (Spanish) - PDF - 1 _ 4_20210303-6f6f8347-a47c-eb11-8110-8cdcd4af21e4_0_content.md",
+            "text": "En diciembre de 2010, la ciudad de Lindsay en California en Estados Unidos, interpuso una demanda en contra de SQM NA que se conoce ante la Corte de Distrito Este de California. La demandante reclama el pago de gastos y otros valores relacionados con el tratamiento de aguas subterráneas para permitir su consumo previa extracción del perclorato existente en ellas y que supuestamente provendría de fertilizantes chilenos. La tramitación del juicio se encuentra suspendida."
+          }
+        ],
+        "summary": "The company discloses pending lawsuits in its consolidated financial statements that involve claims for financial damages related to groundwater contamination from perchlorate, allegedly originating from its fertilizers. While specific amounts are mentioned as claims from plaintiffs (e.g., US$ 36 million), these are not presented as the company's own quantified financial estimations of its liability or value at risk for this issue. Therefore, the company acknowledges the financial nature of the risk without providing its own specific quantification.",
+        "notes": "D-Rag evidence count: 2. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-16T15:33:36.858248",
+        "programme_code": "FLU",
+        "evidence_count": 2,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99915",
+      "question_number": 2,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks associated with rising compliance and testing costs for registration and re-registration?",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "[UPDATED BY CONSISTENCY CHECK] Evidence from 2019 (specifically for 'Tramitación Ambiental' disbursements in 2020) provides quantified financial data relevant to compliance costs, contradicting the 'NONE' finding and 'no documents' explanation for 2020.. Original explanation: No relevant documents available to analyse for year 2020",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "[UPDATED BY CONSISTENCY CHECK] Evidence from 2019 (specifically for 'Tramitación Ambiental' disbursements in 2020) provides quantified financial data relevant to compliance costs, contradicting the 'NONE' finding and 'no documents' explanation for 2020.. Original explanation: No relevant documents available to analyse for year 2020",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-14T01:08:38.162704",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99904",
+      "question_number": 3,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to carbon taxes? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "The company acknowledges carbon taxes as a financial risk, discussing potential for more operations to become subject to the tax, a considerable increase in the tax rate, and market entry barriers due to international carbon taxes. However, it does not provide specific financial valuations or estimations of its own exposure to these risks beyond mentioning the current external tax rate of US$5/tCO2.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/SQM Sustainability 2020_20201231-F6A219E1-70DE-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Mechanism for setting the price of carbon in the countries where we operate. For example: The limits on facilities subject to this tax in Chile are less than 50 thermal megawatts (MWt). As such, the risk is that a larger number of operations become subject to it or that the current tax is levied on other industrial sectors (tax indexed to the price of fuels). Another risk is a considerable increase in the carbon tax, which is currently US$5/tCO2."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/SQM Sustainability 2020_20201231-F6A219E1-70DE-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "International regulations associated with climate change that generate a barrier to entry for our products in destination markets. For example: Carbon taxes at the border."
+          }
+        ],
+        "summary": "The company acknowledges carbon taxes as a financial risk, discussing potential for more operations to become subject to the tax, a considerable increase in the tax rate, and market entry barriers due to international carbon taxes. However, it does not provide specific financial valuations or estimations of its own exposure to these risks beyond mentioning the current external tax rate of US$5/tCO2.",
+        "notes": "D-Rag evidence count: 2. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-15T02:21:28.224284",
+        "programme_code": "FLU",
+        "evidence_count": 2,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99901",
+      "question_number": 4,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to pesticide resistance? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "The provided documents, primarily the 2019 Annual Report, discuss the company's financial performance, risk management policies, and product lines (including specialty plant nutrition and fertilizers). However, there is no mention of \"pesticide resistance\" or any related financial risks. The company does not appear to disclose financial risks pertaining to pesticide resistance.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "The provided documents, primarily the 2019 Annual Report, discuss the company's financial performance, risk management policies, and product lines (including specialty plant nutrition and fertilizers). However, there is no mention of \"pesticide resistance\" or any related financial risks. The company does not appear to disclose financial risks pertaining to pesticide resistance.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T09:04:42.421962",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99918",
+      "question_number": 5,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to high energy production processes and N2O emissions from field application?",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "The company acknowledges financial risks related to N2O emissions (as part of GHG emissions) and high energy production processes, primarily through discussions of carbon taxation and the unanticipated costs of transitioning to a low-carbon economy. While it mentions the current carbon tax rate in Chile, it does not provide specific, quantified financial valuations of its own exposure or estimated costs for these risks.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/SQM Sustainability 2020_20201231-F6A219E1-70DE-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "Mechanism for setting the price of carbon in the countries where we operate. For example: The limits on facilities subject to this tax in Chile are less than 50 thermal megawatts (MWt). As such, the risk is that a larger number of operations become subject to it or that the current tax is levied on other industrial sectors (tax indexed to the price of fuels). Another risk is a considerable increase in the carbon tax, which is currently US$5/tCO2."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/SQM Sustainability 2020_20201231-F6A219E1-70DE-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "International regulations associated with climate change that generate a barrier to entry for our products in destination markets. For example: Carbon taxes at the border."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/SQM Sustainability 2020_20201231-F6A219E1-70DE-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "TECHNOLOGICAL RISKS: * The Company failing to adapt to a low-carbon economy, which would have an unanticipated cost for meeting targets. For example: The transition to more sustainable transportation, replacing fossil fuel boilers with electric ones or other shifts that involve technological changes."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/SQM Sustainability 2020_20201231-F6A219E1-70DE-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "| GHG Emissions | Unit | Gases Included | 2020 | 2019 | 2018 | 2017 | | :---- | :--- | :---- | :--- | :--- | :--- | :--- | | **Direct GHG emissions (Scope 1)** | Tons CO₂ eq | CO₂, CH₄, N₂O | 271,008 | 244,793 | 235,268 | 179,538 |"
+          }
+        ],
+        "summary": "The company acknowledges financial risks related to N2O emissions (as part of GHG emissions) and high energy production processes, primarily through discussions of carbon taxation and the unanticipated costs of transitioning to a low-carbon economy. While it mentions the current carbon tax rate in Chile, it does not provide specific, quantified financial valuations of its own exposure or estimated costs for these risks.",
+        "notes": "D-Rag evidence count: 4. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-20T17:36:37.320262",
+        "programme_code": "FLU",
+        "evidence_count": 4,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99916",
+      "question_number": 6,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to negative public perception of chemical-intensive agriculture",
+      "priority": "standard",
+      "answer": {
+        "classification": "UNCLEAR",
+        "classification_justification": "The company acknowledges and actively measures its public image and perception through various studies. While this indicates an awareness of how it is perceived by the public and communities, it does not explicitly disclose financial risks associated with negative public perception of chemical-intensive agriculture, nor does it quantify any such risks. The focus is on image assessment and community engagement rather than financial risk disclosure in this specific context.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/SQM Sustainability 2020_20201231-F6A219E1-70DE-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "In order to measure our programs and impacts, we evaluate current programs, their performance and the level of acceptance through direct conversation with communities prior to making new commitments. We also study the local perception of SQM through tools like the studies conducted in 2020: \\\"Assessment of SQM’s Image and Positioning in Public Opinion– and \\\"Assessment of the Image and Positioning,\\\" both of which were conducted by CADEM in April, and \\\"Tarapacá Region SQM Image and Perception Survey,\\\" conducted by Feedback in December."
+          }
+        ],
+        "summary": "The company acknowledges and actively measures its public image and perception through various studies. While this indicates an awareness of how it is perceived by the public and communities, it does not explicitly disclose financial risks associated with negative public perception of chemical-intensive agriculture, nor does it quantify any such risks. The focus is on image assessment and community engagement rather than financial risk disclosure in this specific context.",
+        "notes": "D-Rag evidence count: 1. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-20T17:27:44.595690",
+        "programme_code": "FLU",
+        "evidence_count": 1,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99908",
+      "question_number": 7,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to demand destruction as organic farming and alternatives gain market share? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "The company documents for 2020 do not contain any disclosure regarding financial risks related to demand destruction stemming from the growth of organic farming or alternative products. The discussions around \"Nutrición Vegetal de Especialidad\" focus on current performance and market growth expectations, without acknowledging these specific competitive threats or their financial implications.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "The company documents for 2020 do not contain any disclosure regarding financial risks related to demand destruction stemming from the growth of organic farming or alternative products. The discussions around \"Nutrición Vegetal de Especialidad\" focus on current performance and market growth expectations, without acknowledging these specific competitive threats or their financial implications.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-16T15:54:39.345556",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99912",
+      "question_number": 8,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks of of increasing pesticide bans and restrictions reducing market access?",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "The provided document discusses general financial risks related to exchange rates, commodity prices, and market volatility for its products, including fertilizers and chemical products. However, it does not specifically mention or disclose financial risks associated with increasing pesticide bans and restrictions reducing market access. Therefore, there is no evidence of this specific financial risk disclosure.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "The provided document discusses general financial risks related to exchange rates, commodity prices, and market volatility for its products, including fertilizers and chemical products. However, it does not specifically mention or disclose financial risks associated with increasing pesticide bans and restrictions reducing market access. Therefore, there is no evidence of this specific financial risk disclosure.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T22:36:33.510671",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99909",
+      "question_number": 9,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to waterway pollution and eutrophication from nutrient runoff when the company's products are applied by farmers? Do not consider factory sources of pollution.",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "Based on a thorough review of the provided documents for SQM through 2020, there is no evidence that the company discloses financial risks related to waterway pollution and eutrophication from nutrient runoff when the company's products are applied by farmers. While the documents discuss water management, environmental monitoring, and various legal contingencies related to groundwater contamination from fertilizers (perchlorate cases), there is no specific disclosure of financial risks associated with waterway pollution or eutrophication from nutrient runoff caused by farmer application of SQM's products. The company's environmental disclosures focus on operational water extraction, discharge management, and factory-level environmental impacts rather than downstream agricultural application impacts.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2020 (Spanish) - PDF - 1 _ 4_20210303-6f6f8347-a47c-eb11-8110-8cdcd4af21e4_0_content.md",
+            "text": "En diciembre de 2010, la ciudad de Pomona en el estado de California en Estados Unidos, interpuso una demanda en contra de SQM NA que se conoce ante la Corte de Distrito Central de California. La demandante reclama el pago de gastos y otros valores relacionados con el tratamiento de aguas subterráneas para permitir su consumo previa extracción del perclorato existente en ellas y que supuestamente provendría de fertilizantes chilenos, por un monto aproximado de US$ 36 millones."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/SQM Sustainability 2020_20201231-F6A219E1-70DE-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "GRI 303: Water and Effluents (2018) | 303-1 | Interacting with water as a shared resource | 118 | Committed to the Environment | – | • | 7, 8, 9 | | | 303-2 | Managing impact of water discharge | 120 | Committed to the Environment | – | • | 7, 8, 9 | | | 303-3 | Water extraction | 120 | Committed to the Environment | – | • | 7, 8, 9"
+          }
+        ],
+        "summary": "Based on a thorough review of the provided documents for SQM through 2020, there is no evidence that the company discloses financial risks related to waterway pollution and eutrophication from nutrient runoff when the company's products are applied by farmers. While the documents discuss water management, environmental monitoring, and various legal contingencies related to groundwater contamination from fertilizers (perchlorate cases), there is no specific disclosure of financial risks associated with waterway pollution or eutrophication from nutrient runoff caused by farmer application of SQM's products. The company's environmental disclosures focus on operational water extraction, discharge management, and factory-level environmental impacts rather than downstream agricultural application impacts.",
+        "notes": "D-Rag evidence count: 2. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T14:36:24.544118",
+        "programme_code": "FLU",
+        "evidence_count": 2,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99902",
+      "question_number": 10,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to soil degradation caused by its fertiliser products?  Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "The company mentions its fertilizer products but does not disclose any financial risks related to soil degradation caused by these products in the provided 2020 financial statements. There is no mention of environmental impact or financial implications associated with soil degradation.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "The company mentions its fertilizer products but does not disclose any financial risks related to soil degradation caused by these products in the provided 2020 financial statements. There is no mention of environmental impact or financial implications associated with soil degradation.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-15T00:29:11.161951",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99903",
+      "question_number": 11,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to human health problems from its products? Please return NONE if there is no disclose at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks related to human health problems.",
+      "priority": "standard",
+      "answer": {
+        "classification": "UNCLEAR",
+        "classification_justification": "The company mentions assessing the health and safety impacts of its products and reports no registered cases of non-compliance with regulations that resulted in fines or penalties. While this indicates a commitment to product safety and regulatory compliance (which has implicit financial implications), the documents do not explicitly disclose human health problems from its products as a financial risk to the company, nor do they quantify any potential financial impact from such risks.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/SQM Sustainability 2020_20201231-F6A219E1-70DE-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "All products have a safety sheet in accordance with destination market requirements. The health and safety impacts of 100% of the products have been assessed."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/SQM Sustainability 2020_20201231-F6A219E1-70DE-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "We have not registered any cases of non-compliance with regulations that result in fines, penalties or warnings."
+          }
+        ],
+        "summary": "The company mentions assessing the health and safety impacts of its products and reports no registered cases of non-compliance with regulations that resulted in fines or penalties. While this indicates a commitment to product safety and regulatory compliance (which has implicit financial implications), the documents do not explicitly disclose human health problems from its products as a financial risk to the company, nor do they quantify any potential financial impact from such risks.",
+        "notes": "D-Rag evidence count: 2. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-15T02:00:51.375279",
+        "programme_code": "FLU",
+        "evidence_count": 2,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99911",
+      "question_number": 12,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks or liabilities related to restoration of mining sites?",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "The company explicitly discloses \"Provision for site closure\" with specific financial values (ThUS$) in its 2019 annual report. Furthermore, it mentions \"provisions related to commitments with Sernageomin... for the restoration of the place where the production sites are located\", indicating a quantified financial liability for site restoration.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/CHEMICAL & MINING CO OF CHILE ... files (20-F) Annual report by foreign private issuers, for period end 31-Dec-19 (0000909037)_0001104659-20-049813-1.html",
+            "text": "Site Closure</TD><TD STYLE=\\\"font: 10pt Times New Roman,serif\\\">&nbsp;</TD>      <TD STYLE=\\\"font: 10pt Times New Roman,serif; text-align: right\\\">12,056</TD><TD STYLE=\\\"font: 10pt Times New Roman,serif; text-align: left\\\">&nbsp;</TD><TD STYLE=\\\"font: 10pt Times New Roman,serif\\\">&nbsp;</TD>      <TD STYLE=\\\"font: 10pt Times New Roman,serif; text-align: right\\\">12,967</TD>"
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/CHEMICAL & MINING CO OF CHILE ... files (20-F) Annual report by foreign private issuers, for period end 31-Dec-19 (0000909037)_0001104659-20-049813-1.html",
+            "text": "Provision for site closure</TD><TD STYLE=\\\"font: 10pt Times New Roman,serif\\\">&nbsp;</TD>      <TD STYLE=\\\"font: 10pt Times New Roman,serif; text-align: right\\\">(911)</TD><TD STYLE=\\\"font: 10pt Times New Roman,serif; text-align: left\\\">)</TD><TD STYLE=\\\"font: 10pt Times New Roman,serif\\\">&nbsp;</TD>      <TD STYLE=\\\"font: 10pt Times New Roman,serif; text-align: right\\\">(2,045)</TD><TD STYLE=\\\"font: 10pt Times New Roman,serif; text-align: left\\\">)</TD><TD STYLE=\\\"font: 10pt Times New Roman,serif\\\">&nbsp;</TD>      <TD STYLE=\\\"font: 10pt Times New Roman,serif; text-align: right\\\">(2,960)</TD>"
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/CHEMICAL & MINING CO OF CHILE ... files (20-F) Annual report by foreign private issuers, for period end 31-Dec-19 (0000909037)_0001104659-20-049813-1.html",
+            "text": "(2) The provisions related to commitments with Sernageomin have been incorporated  through the issuance of a guarantee for the restoration of the place where the production sites are located."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/CHEMICAL & MINING CO OF CHILE ... files (20-F) Annual report by foreign private issuers, for period end 31-Dec-19 (0000909037)_0001104659-20-049813-1.html",
+            "text": "The amount recognized as a provision, including legal,  contractual or constructive obligations, is the best estimate of the consideration required to settle the related liability, including  any related interest charges, taking into account the risks and uncertainties surrounding the obligation."
+          }
+        ],
+        "summary": "The company explicitly discloses \"Provision for site closure\" with specific financial values (ThUS$) in its 2019 annual report. Furthermore, it mentions \"provisions related to commitments with Sernageomin... for the restoration of the place where the production sites are located\", indicating a quantified financial liability for site restoration.",
+        "notes": "D-Rag evidence count: 4. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-13T10:39:01.319569",
+        "programme_code": "FLU",
+        "evidence_count": 4,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99913",
+      "question_number": 13,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks or liabilities related to restoration of contaminated manufacturing sites?",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "The company acknowledges environmental liabilities and has a framework for evaluating and provisioning for contingencies, including those arising from environmental laws. It also details a specific project for the remediation of PCBs and mentions updating closure plans with associated risk analysis, which often includes site restoration. While these indicate a consideration of financial implications related to contamination and restoration, the company does not provide specific, quantified financial valuations or estimates for the overall financial risks or liabilities related to the restoration of contaminated manufacturing sites.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2020 (Spanish) - PDF - 1 _ 4_20210303-6f6f8347-a47c-eb11-8110-8cdcd4af21e4_0_content.md",
+            "text": "Contingencias - El monto reconocido como provisión, incluyendo las exposiciones u obligaciones legales, contractuales, constructivas y de otro tipo, es la mejor estimación de la contraprestación requerida para liquidar el pasivo relacionado, incluyendo los cargos de interés relacionados, teniendo en cuenta los riesgos e incertidumbres de la obligación. Además, las contingencias sólo se resolverán cuando se produzcan o no ocurran uno o más eventos futuros. Por lo tanto, la evaluación de contingencias implica inherentemente el ejercicio de un juicio significativo y estimaciones del resultado de eventos futuros. La Sociedad evalúa sus pasivos y contingencias basándose en la mejor información disponible, las leyes fiscales, ambientales, laborales, así como las regulaciones establecidas en otras jurisdicciones en donde opera la Sociedad (ver Nota 22)."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2020 (Spanish) - PDF - 1 _ 4_20210303-6f6f8347-a47c-eb11-8110-8cdcd4af21e4_0_content.md",
+            "text": "**J0135:** El proyecto consiste en remediar la totalidad de los aceites y componentes que contengan Policlorobife (PCB) en una concentraci mayor a 50ppm, con plazo no superior al 2025."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2020 (Spanish) - PDF - 1 _ 4_20210303-6f6f8347-a47c-eb11-8110-8cdcd4af21e4_0_content.md",
+            "text": "**J0157:** El proyecto contempla la actualizaci  de los planes de cierre conforme a lo solicitado para el r imen normal que establece la normativa vigente. Entre otros aspectos se requiere la realizaci  de una auditoria inicial externa, an lisis detallado de los riesgos y la forma de control asociada."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/SQM/SQM Sustainability 2020_20201231-F6A219E1-70DE-EB11-811C-8CDCD4AF21E4_content.md",
+            "text": "In the year 2020, no significant spills contaminating the soil or water (surface or groundwater) were reported at the Company's operating facilities and production sites."
+          }
+        ],
+        "summary": "The company acknowledges environmental liabilities and has a framework for evaluating and provisioning for contingencies, including those arising from environmental laws. It also details a specific project for the remediation of PCBs and mentions updating closure plans with associated risk analysis, which often includes site restoration. While these indicate a consideration of financial implications related to contamination and restoration, the company does not provide specific, quantified financial valuations or estimates for the overall financial risks or liabilities related to the restoration of contaminated manufacturing sites.",
+        "notes": "D-Rag evidence count: 4. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T16:05:33.052196",
+        "programme_code": "FLU",
+        "evidence_count": 4,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99910",
+      "question_number": 14,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to disposal of chemical waste, such as gypstacks? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "The provided documents do not contain any disclosure regarding financial risks related to disposal of chemical waste or gypstacks. While the 2020 Sustainability Report discusses climate change risks, environmental monitoring, and sustainability initiatives, and the financial statements mention general environmental accounting policies and contingencies, neither document specifically addresses chemical waste disposal, gypstacks, or associated financial risks. The financial statements reference environmental provisions in general terms but provide no specific disclosure about waste disposal liabilities or their financial impact.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "The provided documents do not contain any disclosure regarding financial risks related to disposal of chemical waste or gypstacks. While the 2020 Sustainability Report discusses climate change risks, environmental monitoring, and sustainability initiatives, and the financial statements mention general environmental accounting policies and contingencies, neither document specifically addresses chemical waste disposal, gypstacks, or associated financial risks. The financial statements reference environmental provisions in general terms but provide no specific disclosure about waste disposal liabilities or their financial impact.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T14:48:01.134870",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99917",
+      "question_number": 15,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to class action lawsuits and legal challenges from health/environmental claims?",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "The company discloses specific financial risks related to environmental and health claims. It details a lawsuit regarding perchlorate contamination in groundwater, quantifying the claim at approximately US$36 million, and notes the case was ordered for a new trial in 2020. Additionally, it mentions a lawsuit seeking US$1.2 million for damages related to an explosion that caused worker deaths, with an appeal pending in 2020. These are specific, quantified financial impacts from health/environmental legal challenges.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2020 (Spanish) - PDF - 1 _ 4_20210303-6f6f8347-a47c-eb11-8110-8cdcd4af21e4_0_content.md",
+            "text": "(c) En diciembre de 2010, la ciudad de Pomona en el estado de California en Estados Unidos, interpuso una demanda en contra de SQM NA que se conoce ante la Corte de Distrito Central de California. La demandante reclama el pago de gastos y otros valores relacionados con el tratamiento de aguas subterráneas para permitir su consumo previa extracción del perclorato existente en ellas y que supuestamente provendría de fertilizantes chilenos, por un monto aproximado de US$ 36 millones. Con fecha 17 de mayo de 2018, el juez de distrito señor Gary Klausner dictaminó sentencia favorable en favor de SQM NA tras veredicto del jurado. Con fecha 6 de febrero de 2020, la Corte de Apelaciones del IX Circuito de los Estados Unidos ordenó la repetición del juicio ante la Corte de Distrito, el cual ha sido postergado hasta el segundo trimestre de 2021."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HZV9-E/Sociedad Quimica y Minera de Chile SA (SQM-CL) - Annual Report for period end 31-Dec-2020 (Spanish) - PDF - 1 _ 4_20210303-6f6f8347-a47c-eb11-8110-8cdcd4af21e4_0_content.md",
+            "text": "(e) En mayo de 2014, se interpuso una demanda de indemnización de perjuicios contra SQM Nitratos por su supuesta responsabilidad civil extracontractual derivada de una explosión ocurrida el 2010 en las cercanías de la localidad de Baquedano y que causó la muerte de seis trabajadores. El monto de la demanda, en aquella parte que no ha sido objeto de transacciones judiciales, es cerca de US$ 1,2 millones. Con fecha 7 de mayo de 2019, el 18° Juzgado Civil Santiago rechazó la demanda. La causa se encuentra en la Corte de Apelaciones de Santiago, la que conocerá del recurso de apelación y casación en la forma interpuesto por la parte demandante."
+          }
+        ],
+        "summary": "The company discloses specific financial risks related to environmental and health claims. It details a lawsuit regarding perchlorate contamination in groundwater, quantifying the claim at approximately US$36 million, and notes the case was ordered for a new trial in 2020. Additionally, it mentions a lawsuit seeking US$1.2 million for damages related to an explosion that caused worker deaths, with an appeal pending in 2020. These are specific, quantified financial impacts from health/environmental legal challenges.",
+        "notes": "D-Rag evidence count: 2. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-20T17:31:00.228929",
+        "programme_code": "FLU",
+        "evidence_count": 2,
+        "evidence_validation_passed": true
+      }
+    }
+  ]
+}

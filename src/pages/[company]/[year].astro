@@ -1,0 +1,203 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ClassificationBar from '../../components/ClassificationBar.astro';
+import {
+  loadYearResult,
+  getAvailableCompanies,
+  getCompanyYears
+} from '../../utils/dataLoader';
+import { calculateCategoryStats, getClassificationInfo, getCategoryGroup } from '../../utils/categoryMapper';
+
+// Static path generation for build
+export async function getStaticPaths() {
+  const companies = await getAvailableCompanies();
+  const paths = [];
+
+  for (const company of companies) {
+    const years = await getCompanyYears(company);
+    for (const year of years) {
+      paths.push({
+        params: {
+          company: company.toLowerCase(),
+          year: year
+        }
+      });
+    }
+  }
+
+  return paths;
+}
+
+// Get params from URL
+const { company, year } = Astro.params;
+if (!company || !year) {
+  return Astro.redirect('/');
+}
+
+// Load year data
+const result = await loadYearResult(company, year);
+if (!result) {
+  return Astro.redirect(`/${company.toLowerCase()}`);
+}
+
+// Calculate stats
+const stats = calculateCategoryStats(result.questions);
+
+// Group questions by category
+const questionsByCategory = result.questions.reduce((acc, q) => {
+  const category = getCategoryGroup(q).name;
+  if (!acc[category]) acc[category] = [];
+  acc[category].push(q);
+  return acc;
+}, {} as Record<string, typeof result.questions>);
+---
+
+<Layout title={`${company} ${year} - Risk Disclosure Analysis`}>
+  <div class="min-h-screen bg-slate-900">
+    <!-- Header -->
+    <header class="bg-slate-800 border-b border-slate-700">
+      <div class="container mx-auto px-6 py-6">
+        <div class="flex items-center gap-4 mb-4">
+          <a href={`/${company.toLowerCase()}`} class="text-slate-400 hover:text-emerald-400 transition-colors">
+            ← Back to {company}
+          </a>
+        </div>
+        <h1 class="text-4xl font-bold text-slate-100 mb-2">
+          {company} - {year}
+        </h1>
+        <div class="flex gap-6 text-sm text-slate-400">
+          <span>❓ {result.questions.length} questions analyzed</span>
+          <span>📅 {new Date(result.metadata.analysis_date).toLocaleDateString()}</span>
+          <span>🤖 {result.metadata.model_used}</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+      <!-- Summary Stats -->
+      <section class="mb-8">
+        <ClassificationBar stats={stats} />
+      </section>
+
+      <!-- Questions by Category -->
+      {Object.entries(questionsByCategory).map(([category, questions]) => (
+        <section class="mb-12" id={`category-${category.toLowerCase().replace(/\s+/g, '-')}`}>
+          <div class="flex items-center gap-4 mb-6">
+            <h2 class="text-2xl font-bold text-slate-100">{category}</h2>
+            <span class="px-3 py-1 bg-slate-700 text-slate-300 rounded-full text-sm">
+              {questions.length} questions
+            </span>
+          </div>
+
+          <div class="space-y-6">
+            {questions.map((question) => {
+              const classInfo = getClassificationInfo(question.answer.classification);
+
+              return (
+                <div
+                  id={`question-${question.question_id}`}
+                  class="card border-l-4 transition-all"
+                  style={`border-left-color: ${classInfo.bgColor}`}
+                >
+                  <!-- Question Header -->
+                  <div class="flex justify-between items-start mb-4">
+                    <div class="flex-1">
+                      <div class="flex items-center gap-3 mb-2">
+                        <span class="text-xs font-mono text-slate-500">
+                          Q{question.question_id}
+                        </span>
+                        <span
+                          class="px-2 py-1 rounded text-xs font-semibold"
+                          style={`background-color: ${classInfo.bgColor}; color: ${classInfo.color}`}
+                        >
+                          {question.answer.classification}
+                        </span>
+                      </div>
+                      <h3 class="text-lg font-semibold text-slate-200 mb-2">
+                        {question.question_text}
+                      </h3>
+                    </div>
+                  </div>
+
+                  <!-- Answer Details -->
+                  <div class="space-y-4">
+                    <!-- Justification -->
+                    <div>
+                      <div class="text-xs font-semibold text-slate-400 mb-2">Justification:</div>
+                      <div class="text-sm text-slate-300 leading-relaxed">
+                        {question.answer.classification_justification}
+                      </div>
+                    </div>
+
+                    <!-- Financial Quantification -->
+                    {question.answer.financial_quantification &&
+                     question.answer.financial_quantification !== 'Not disclosed' &&
+                     question.answer.financial_quantification !== 'Not disclosed by D-Rag' && (
+                      <div>
+                        <div class="text-xs font-semibold text-emerald-400 mb-2">💰 Financial Quantification:</div>
+                        <div class="text-sm text-slate-300 leading-relaxed">
+                          {question.answer.financial_quantification}
+                        </div>
+                      </div>
+                    )}
+
+                    <!-- Evidence -->
+                    {question.answer.evidence && question.answer.evidence.length > 0 && (
+                      <div>
+                        <div class="text-xs font-semibold text-slate-400 mb-2">Evidence:</div>
+                        <div class="space-y-2">
+                          {question.answer.evidence.map((ev, idx) => (
+                            <div class="bg-slate-800/50 border border-slate-700 rounded p-3 text-xs">
+                              {ev.quote && (
+                                <div class="text-slate-300 italic mb-2">"{ev.quote}"</div>
+                              )}
+                              {ev.text && (
+                                <div class="text-slate-300 mb-2">{ev.text}</div>
+                              )}
+                              {ev.source && (
+                                <div class="text-slate-500">
+                                  Source: {ev.source}
+                                  {ev.page && ` (Page ${ev.page})`}
+                                </div>
+                              )}
+                              {ev.source_url && (
+                                <div class="text-slate-500">
+                                  URL: <a href={ev.source_url} target="_blank" class="text-cyan-400 hover:underline">{ev.source_url}</a>
+                                </div>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      ))}
+
+      <!-- Back to Top -->
+      <div class="text-center mt-12">
+        <a
+          href={`/${company.toLowerCase()}`}
+          class="inline-block px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg font-medium transition-colors"
+        >
+          ← Back to {company} Overview
+        </a>
+      </div>
+    </main>
+  </div>
+</Layout>
+
+<style>
+  .highlight-flash {
+    animation: highlight 2s ease-in-out;
+  }
+
+  @keyframes highlight {
+    0%, 100% { background-color: transparent; }
+    50% { background-color: rgba(16, 185, 129, 0.2); }
+  }
+</style>
