@@ -1,0 +1,326 @@
+{
+  "metadata": {
+    "company": "Nutrien",
+    "year": "2020",
+    "analysis_date": "2025-10-22T19:18:48.451928",
+    "model_used": "D-RAG",
+    "source": "D-Rag baseline data (imported)",
+    "documents_analyzed": [
+      "Unknown - D-Rag data"
+    ],
+    "processing_info": {
+      "total_cost": "$0.00 (imported data)",
+      "total_tokens": 0,
+      "questions_analyzed": 13
+    }
+  },
+  "completeness_summary": {
+    "total_questions": 13,
+    "classified_YES": 1,
+    "classified_PARTIAL": 0,
+    "classified_UNCLEAR": 0,
+    "classified_NONE": 12,
+    "total_financial_disclosures_found": 0
+  },
+  "analysis_results": [
+    {
+      "question_id": "99903",
+      "question_number": 1,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to human health problems from its products? Please return NONE if there is no disclose at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks related to human health problems.",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "The provided documents, primarily 2019 financial statements for employee savings plans and a 2019 annual report, do not contain any disclosure regarding financial risks related to human health problems from Nutrien's products. The documents focus on plan administration, investments, and general financial reporting, with no mention of product safety, health liabilities, or related financial impacts.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "The provided documents, primarily 2019 financial statements for employee savings plans and a 2019 annual report, do not contain any disclosure regarding financial risks related to human health problems from Nutrien's products. The documents focus on plan administration, investments, and general financial reporting, with no mention of product safety, health liabilities, or related financial impacts.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T02:47:07.850060",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99908",
+      "question_number": 2,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to demand destruction as organic farming and alternatives gain market share? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "No relevant documents available to analyse for year 2020",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "No relevant documents available to analyse for year 2020",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T02:56:09.960544",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99905",
+      "question_number": 3,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to reduced soil fertility caused by its pesticides?  Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "The provided documents are financial reports related to employee savings plans and audit fees for the fiscal year ended December 31, 2019. There is no information or disclosure within these documents regarding financial risks related to reduced soil fertility caused by the company's pesticides. The documents do not mention environmental risks, pesticides, or soil fertility in any context, financial or otherwise.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "The provided documents are financial reports related to employee savings plans and audit fees for the fiscal year ended December 31, 2019. There is no information or disclosure within these documents regarding financial risks related to reduced soil fertility caused by the company's pesticides. The documents do not mention environmental risks, pesticides, or soil fertility in any context, financial or otherwise.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T02:53:31.348442",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99907",
+      "question_number": 4,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to drinking water contamination from leaching of applied products? Please return NONE if there is no disclosure at all, UNSURE if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "The provided documents consist of financial statements for retirement and savings plans. These documents do not contain any information regarding financial risks related to drinking water contamination from the leaching of applied products.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "The provided documents consist of financial statements for retirement and savings plans. These documents do not contain any information regarding financial risks related to drinking water contamination from the leaching of applied products.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-09-23T16:12:54.366569",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99916",
+      "question_number": 5,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to negative public perception of chemical-intensive agriculture",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "The provided documents are primarily financial statements for employee savings plans and a truncated annual report for 2019. These documents detail accounting policies, investment performance, and plan administration. There is no mention or disclosure of financial risks related to negative public perception of chemical-intensive agriculture within the provided content.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "The provided documents are primarily financial statements for employee savings plans and a truncated annual report for 2019. These documents detail accounting policies, investment performance, and plan administration. There is no mention or disclosure of financial risks related to negative public perception of chemical-intensive agriculture within the provided content.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-20T16:28:13.795776",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99915",
+      "question_number": 6,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks associated with rising compliance and testing costs for registration and re-registration?",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "The provided documents, primarily financial statements and annual reports from 2019, do not contain any information regarding financial risks associated with rising compliance and testing costs for registration and re-registration. The content focuses on financial accounting, investments, and tax status, with no mention of environmental or product-related compliance costs or their financial impact.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "The provided documents, primarily financial statements and annual reports from 2019, do not contain any information regarding financial risks associated with rising compliance and testing costs for registration and re-registration. The content focuses on financial accounting, investments, and tax status, with no mention of environmental or product-related compliance costs or their financial impact.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-14T00:10:38.677757",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99913",
+      "question_number": 7,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks or liabilities related to restoration of contaminated manufacturing sites?",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "[UPDATED BY CONSISTENCY CHECK] The 2021 evidence explicitly states 'At the end of 2020, our discounted asset retirement obligations (\"AROs\") were $1.2 billion.' This directly contradicts the 2020 finding of 'NONE', indicating that relevant financial information for 2020 was available.. Original explanation: The provided documents, primarily financial statements for employee savings plans and auditor fee disclosures, do not contain any information regarding financial risks or liabilities related to the restoration of contaminated manufacturing sites for Nutrien. There is no mention of such risks, nor any quantification or qualitative discussion of their financial impact.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "[UPDATED BY CONSISTENCY CHECK] The 2021 evidence explicitly states 'At the end of 2020, our discounted asset retirement obligations (\"AROs\") were $1.2 billion.' This directly contradicts the 2020 finding of 'NONE', indicating that relevant financial information for 2020 was available.. Original explanation: The provided documents, primarily financial statements for employee savings plans and auditor fee disclosures, do not contain any information regarding financial risks or liabilities related to the restoration of contaminated manufacturing sites for Nutrien. There is no mention of such risks, nor any quantification or qualitative discussion of their financial impact.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-19T22:52:47.568786",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99904",
+      "question_number": 8,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to carbon taxes? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "The provided documents, primarily financial statements for employee savings plans and a 2019 annual report, do not contain any disclosure regarding financial risks specifically related to carbon taxes. While one document mentions a 'greenhouse gas emission engagement,' it does not link this to financial risks or carbon taxation.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "The provided documents, primarily financial statements for employee savings plans and a 2019 annual report, do not contain any disclosure regarding financial risks specifically related to carbon taxes. While one document mentions a 'greenhouse gas emission engagement,' it does not link this to financial risks or carbon taxation.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T02:50:17.699858",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99910",
+      "question_number": 9,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to disposal of chemical waste, such as gypstacks? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "The provided documents are financial statements and general annual report filings that do not contain any information regarding financial risks related to the disposal of chemical waste, such as gypstacks. There is no mention of this specific environmental financial risk in any of the documents available up to and including 2020.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "The provided documents are financial statements and general annual report filings that do not contain any information regarding financial risks related to the disposal of chemical waste, such as gypstacks. There is no mention of this specific environmental financial risk in any of the documents available up to and including 2020.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T03:03:48.507926",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99909",
+      "question_number": 10,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to waterway pollution and eutrophication from nutrient runoff? Please return NONE if there is no disclose at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks related to human health problems.",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "The provided documents, primarily financial reports and savings plan statements from 2019, do not contain any information regarding waterway pollution, eutrophication from nutrient runoff, or any associated financial risks for Nutrien. There is no disclosure of this specific environmental risk in any form, financial or otherwise.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "The provided documents, primarily financial reports and savings plan statements from 2019, do not contain any information regarding waterway pollution, eutrophication from nutrient runoff, or any associated financial risks for Nutrien. There is no disclosure of this specific environmental risk in any form, financial or otherwise.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T02:59:36.918636",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99902",
+      "question_number": 11,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to soil degradation caused by its fertiliser products?  Please return NONE if there is no disclosure at all, UNSURE if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "The provided documents, which are primarily financial reports and retirement plan statements from 2019, do not contain any disclosure regarding financial risks related to soil degradation caused by Nutrien's fertilizer products. There is no mention of environmental risks in this context.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "The provided documents, which are primarily financial reports and retirement plan statements from 2019, do not contain any disclosure regarding financial risks related to soil degradation caused by Nutrien's fertilizer products. There is no mention of environmental risks in this context.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T00:38:16.893968",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99911",
+      "question_number": 12,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks or liabilities related to restoration of mining sites?  Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "The provided documents, primarily 401(k) plan financial statements and a general annual report, do not contain any disclosure regarding financial risks or liabilities specifically related to the restoration of mining sites. The annual report mentions mineral reserves and mine safety but does not address restoration liabilities in financial terms.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "The provided documents, primarily 401(k) plan financial statements and a general annual report, do not contain any disclosure regarding financial risks or liabilities specifically related to the restoration of mining sites. The annual report mentions mineral reserves and mine safety but does not address restoration liabilities in financial terms.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-10T16:50:22.700023",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99912",
+      "question_number": 13,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks of technological developments such as new seeds requiring fewer pesticides/fertiliser?  Please return NONE if there is no disclosure at all, UNSURE if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "The provided documents are financial statements and accounting policies for employee savings plans. They do not contain any information regarding the company's disclosure of financial risks related to technological developments such as new seeds requiring fewer pesticides/fertilizer.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "The provided documents are financial statements and accounting policies for employee savings plans. They do not contain any information regarding the company's disclosure of financial risks related to technological developments such as new seeds requiring fewer pesticides/fertilizer.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-09-23T15:43:57.522582",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    }
+  ]
+}

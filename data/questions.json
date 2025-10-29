@@ -1,0 +1,382 @@
+{
+  "_meta": {
+    "description": "Risk disclosure questions for agricultural companies",
+    "version": "2.0",
+    "last_updated": "2025-10-15",
+    "total_canonical_questions": 18,
+    "sector_codes": {
+      "P": "Pesticides - Questions applicable to pesticide/crop protection companies",
+      "F": "Fertilizers - Questions applicable to fertilizer companies",
+      "PF": "Both - Questions applicable to both pesticides and fertilizers"
+    }
+  },
+  "canonical_questions": [
+    {
+      "id": "99901",
+      "sector": "P",
+      "category": "Product Risk",
+      "text": "Does the company consider financial risks related to pesticide resistance?",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true
+    },
+    {
+      "id": "99902",
+      "sector": "F",
+      "category": "Environmental Risk",
+      "text": "Does the company consider financial risks related to soil degradation caused by its fertiliser products?",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true
+    },
+    {
+      "id": "99903",
+      "sector": "PF",
+      "category": "Health Risk",
+      "text": "Does the company consider financial risks related to human health problems from its products?",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true
+    },
+    {
+      "id": "99904",
+      "sector": "PF",
+      "category": "Regulatory Risk",
+      "text": "Does the company consider financial risks related to carbon taxes?",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true
+    },
+    {
+      "id": "99905",
+      "sector": "P",
+      "category": "Environmental Risk",
+      "text": "Does the company consider financial risks related to reduced soil fertility caused by its pesticides?",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true
+    },
+    {
+      "id": "99906",
+      "sector": "P",
+      "category": "Operational Risk",
+      "text": "Does the company consider financial risks related to factory workplace hazards including chemical exposure during production of pesticides?",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true
+    },
+    {
+      "id": "99907",
+      "sector": "PF",
+      "category": "Environmental Risk",
+      "text": "Does the company consider financial risks related to drinking water contamination from leaching of applied products?",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true
+    },
+    {
+      "id": "99908",
+      "sector": "PF",
+      "category": "Market Risk",
+      "text": "Does the company consider financial risks related to demand destruction as organic farming and alternatives gain market share?",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true
+    },
+    {
+      "id": "99909",
+      "sector": "PF",
+      "category": "Environmental Risk",
+      "text": "Does the company consider financial risks related to waterway pollution and eutrophication from nutrient runoff when the company's products are applied by farmers? Do not consider factory sources of pollution.",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true,
+      "notes": "Primary relevance: Fertilizer companies (nutrient runoff). For pesticide companies, see 99909-A variant."
+    },
+    {
+      "id": "99910",
+      "sector": "F",
+      "category": "Environmental Risk",
+      "text": "Does the company consider financial risks related to disposal of chemical waste, such as gypstacks?",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true,
+      "notes": "Gypstacks are phosphogypsum waste stacks specific to phosphate fertilizer production."
+    },
+    {
+      "id": "99911",
+      "sector": "F",
+      "category": "Environmental Risk",
+      "text": "Does the company consider financial risks or liabilities related to restoration of mining sites?",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true,
+      "notes": "Applicable to mining-based fertilizer companies (potash, phosphate rock). See 99913 for manufacturing site restoration."
+    },
+    {
+      "id": "99912",
+      "sector": "PF",
+      "category": "Regulatory Risk",
+      "text": "Does the company consider financial risks of increasing pesticide bans and restrictions reducing market access?",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true,
+      "notes": "Covers broad regulatory restrictions on products."
+    },
+    {
+      "id": "99912-original",
+      "sector": "PF",
+      "category": "Technology Risk",
+      "text": "Does the company consider financial risks of technological developments such as new seeds requiring fewer pesticides/fertiliser?",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true,
+      "notes": "Original question 99912 preserved - addresses long-term demand destruction from agricultural innovation (CRISPR, drought-resistant seeds, nitrogen-fixing crops)."
+    },
+    {
+      "id": "99913",
+      "sector": "PF",
+      "category": "Environmental Risk",
+      "text": "Does the company consider financial risks or liabilities related to restoration of contaminated manufacturing sites?",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true,
+      "notes": "Covers chemical production facilities, not mining sites (see 99911 for mining)."
+    },
+    {
+      "id": "99914",
+      "sector": "P",
+      "category": "Environmental Risk",
+      "text": "Does the company consider financial risks or liabilities related to loss of pollinators and beneficial insects, such as bees, from the use of its products due to ecosystem collapse?",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true,
+      "notes": "CRITICAL for pesticide companies - neonicotinoid insecticides linked to pollinator decline."
+    },
+    {
+      "id": "99915",
+      "sector": "PF",
+      "category": "Regulatory Risk",
+      "text": "Does the company consider financial risks associated with rising compliance and testing costs for registration and re-registration?",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true,
+      "notes": "Increasing regulatory burden for product approvals (EPA, EU REACH, etc.)."
+    },
+    {
+      "id": "99916",
+      "sector": "PF",
+      "category": "Reputational Risk",
+      "text": "Does the company consider financial risks related to negative public perception of chemical-intensive agriculture?",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true,
+      "notes": "Reputational and market risk from ESG concerns, consumer preferences for 'natural' products."
+    },
+    {
+      "id": "99917",
+      "sector": "PF",
+      "category": "Legal Risk",
+      "text": "Does the company consider financial risks related to class action lawsuits and legal challenges from health/environmental claims?",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true,
+      "notes": "Broad litigation risk covering product liability, environmental damage claims."
+    },
+    {
+      "id": "99918",
+      "sector": "F",
+      "category": "Environmental Risk",
+      "text": "Does the company consider financial risks related to high energy production processes and N2O emissions from field application?",
+      "verbatim": true,
+      "require_source": true,
+      "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+      "require_financial_quantification": true,
+      "notes": "Specific to nitrogen fertilizer production (energy-intensive Haber-Bosch process) and nitrous oxide emissions."
+    }
+  ],
+  "company_specific_variants": {
+    "Syngenta": [
+      {
+        "id": "99909-A",
+        "canonical_id": "99909",
+        "sector": "P",
+        "category": "Environmental Risk",
+        "text": "Does the company consider financial risks related to waterway pollution from pesticide runoff and contamination?",
+        "verbatim": true,
+        "require_source": true,
+        "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+        "require_financial_quantification": true,
+        "adaptation_reason": "Adapted from 99909 to focus on pesticide runoff instead of nutrient runoff (fertilizer issue)."
+      },
+      {
+        "id": "99910-A",
+        "canonical_id": "99910",
+        "sector": "P",
+        "category": "Environmental Risk",
+        "text": "Does the company consider financial risks related to disposal of pesticide manufacturing waste and chemical byproducts?",
+        "verbatim": true,
+        "require_source": true,
+        "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+        "require_financial_quantification": true,
+        "adaptation_reason": "Adapted from 99910 (gypstacks) to pesticide-specific chemical waste."
+      },
+      {
+        "id": "99912-A",
+        "canonical_id": "99912",
+        "sector": "P",
+        "category": "Regulatory Risk",
+        "text": "Does the company consider financial risks from specific pesticide active ingredient bans (e.g., atrazine, paraquat, chlorpyrifos, neonicotinoids)?",
+        "verbatim": true,
+        "require_source": true,
+        "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+        "require_financial_quantification": true,
+        "adaptation_reason": "More specific than canonical 99912 - names actual banned/restricted Syngenta products."
+      },
+      {
+        "id": "99917-A",
+        "canonical_id": "99917",
+        "sector": "P",
+        "category": "Legal Risk",
+        "text": "Does the company consider financial risks from glyphosate litigation and related product liability lawsuits?",
+        "verbatim": true,
+        "require_source": true,
+        "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+        "require_financial_quantification": true,
+        "adaptation_reason": "Specific variant of 99917 focusing on glyphosate (Roundup-style) litigation risk.",
+        "notes": "Glyphosate litigation has resulted in multi-billion dollar settlements for competitors (Bayer/Monsanto). Highly material risk."
+      },
+      {
+        "id": "99917-B",
+        "canonical_id": "99917",
+        "sector": "P",
+        "category": "Legal Risk",
+        "text": "Does the company consider financial risks from paraquat litigation and related product liability lawsuits?",
+        "verbatim": true,
+        "require_source": true,
+        "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+        "require_financial_quantification": true,
+        "adaptation_reason": "Specific variant for paraquat litigation (linked to Parkinson's disease claims).",
+        "notes": "Syngenta is a major paraquat producer. Growing litigation similar to glyphosate pattern."
+      },
+      {
+        "id": "99915-A",
+        "canonical_id": "99915",
+        "sector": "P",
+        "category": "Regulatory Risk",
+        "text": "Does the company consider financial risks from GMO seed regulatory changes and approval delays in key markets?",
+        "verbatim": true,
+        "require_source": true,
+        "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+        "require_financial_quantification": true,
+        "adaptation_reason": "Specific to Syngenta's seed business - GMO approval delays can lock products out of major markets (China, EU).",
+        "notes": "This question previously identified the $1.51 billion Viptera settlement - KEEP THIS!"
+      },
+      {
+        "id": "99914-A",
+        "canonical_id": "99914",
+        "sector": "P",
+        "category": "Regulatory Risk",
+        "text": "Does the company consider financial risks from neonicotinoid bans and restrictions on specific pesticide active ingredients affecting pollinator health?",
+        "verbatim": true,
+        "require_source": true,
+        "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+        "require_financial_quantification": true,
+        "adaptation_reason": "More specific than canonical 99914 - focuses on regulatory response to pollinator decline (neonicotinoid bans in EU, etc.).",
+        "notes": "Syngenta produces thiamethoxam and other neonicotinoids banned in EU. Major revenue impact."
+      },
+      {
+        "id": "99918-A",
+        "canonical_id": "99918",
+        "sector": "F",
+        "category": "Environmental Risk",
+        "text": "Does the company consider financial risks related to high energy production processes and N2O emissions from nitrogen fertilizer manufacturing and field application (Haber-Bosch process)?",
+        "verbatim": true,
+        "require_source": true,
+        "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+        "require_financial_quantification": true,
+        "adaptation_reason": "Enhanced with technical context (Haber-Bosch) for fertilizer companies.",
+        "notes": "NOT APPLICABLE to Syngenta (pesticide company). Relevant for Nutrien, Yara, CF Industries.",
+        "applicable_companies": ["Nutrien", "Yara", "CF_Industries", "Mosaic"]
+      },
+      {
+        "id": "99908-A",
+        "canonical_id": "99908",
+        "sector": "P",
+        "category": "Market Risk",
+        "text": "Does the company consider financial risks from changing agricultural practices and consumer preferences toward organic/sustainable farming and biological pesticide alternatives?",
+        "verbatim": true,
+        "require_source": true,
+        "classification_scale": ["NONE", "UNCLEAR", "PARTIAL", "YES"],
+        "require_financial_quantification": true,
+        "adaptation_reason": "More specific than canonical - emphasizes biological pesticides as direct competitive threat."
+      }
+    ],
+    "Mosaic": [],
+    "Nutrien": [],
+    "Yara": [],
+    "CF_Industries": [],
+    "SQM": []
+  },
+  "analysis_instructions": {
+    "question_selection": {
+      "description": "How to select questions for a specific company analysis",
+      "steps": [
+        "1. Load company profile from company_profiles.json",
+        "2. Include ALL canonical questions matching company's sector (P, F, or PF)",
+        "3. Add company-specific variants from the variants section",
+        "4. Exclude questions explicitly marked as not applicable in company profile",
+        "5. Prioritize questions based on company profile's priority rankings"
+      ]
+    },
+    "classification_scale": {
+      "NONE": "No disclosure found - company does not mention this risk",
+      "UNCLEAR": "Risk is mentioned but no clear link to financial impact",
+      "PARTIAL": "Company acknowledges financial risk but does not quantify",
+      "YES": "Company discloses quantified financial risks (dollar amounts, ranges, provisions, settlements)"
+    },
+    "output_requirements": {
+      "verbatim_extraction": "Extract exact quotes from documents - do not paraphrase",
+      "source_citations": "MUST include: Document name, Page number, Section title (from TOC if available)",
+      "financial_quantification": "Extract ANY dollar amounts: settlements, provisions, reserves, estimated impacts, ranges, litigation values",
+      "classification_justification": "Explain why you classified as NONE/UNCLEAR/PARTIAL/YES with specific evidence"
+    },
+    "environmental_health_focus": {
+      "priority": "HIGH",
+      "guidance": "This analysis prioritizes ENVIRONMENTAL and HEALTH impacts over pure legal/regulatory outcomes. Look for:",
+      "environmental_indicators": [
+        "Ecosystem damage (pollinator loss, aquatic toxicity, biodiversity)",
+        "Water contamination (drinking water, surface water, groundwater)",
+        "Soil health impacts (fertility, degradation, microbiome)",
+        "Waste and site contamination (manufacturing sites, disposal)",
+        "Climate/emissions impacts (N2O, energy use, carbon taxes)"
+      ],
+      "health_indicators": [
+        "Worker exposure (manufacturing, application)",
+        "Consumer exposure (residues in food)",
+        "Community health (drinking water contamination, air quality)",
+        "Acute and chronic health effects",
+        "Litigation related to health claims"
+      ],
+      "search_beyond_litigation": "Do not only look for settled lawsuits. Look for forward-looking risk disclosures about potential environmental/health impacts even if no litigation has occurred yet."
+    }
+  }
+}

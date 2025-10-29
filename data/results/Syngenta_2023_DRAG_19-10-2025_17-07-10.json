@@ -1,0 +1,614 @@
+{
+  "metadata": {
+    "company": "Syngenta",
+    "year": "2023",
+    "analysis_date": "2025-10-19T17:07:10.270424",
+    "model_used": "D-RAG",
+    "source": "D-Rag baseline data (imported)",
+    "documents_analyzed": [
+      "Unknown - D-Rag data"
+    ],
+    "processing_info": {
+      "total_cost": "$0.00 (imported data)",
+      "total_tokens": 0,
+      "questions_analyzed": 16
+    }
+  },
+  "completeness_summary": {
+    "total_questions": 16,
+    "classified_YES": 6,
+    "classified_PARTIAL": 3,
+    "classified_UNCLEAR": 6,
+    "classified_NONE": 1,
+    "total_financial_disclosures_found": 0
+  },
+  "analysis_results": [
+    {
+      "question_id": "99913",
+      "question_number": 1,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks or liabilities related to restoration of contaminated manufacturing sites?",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "Syngenta has explicitly disclosed specific financial valuations for environmental provisions related to remediation activities. The company reported $156 million in environmental provisions for 2023 and provided details on cash outflows for remediation, as well as a quantified potential increase in these provisions. This indicates a clear quantification of financial risks related to the restoration of contaminated manufacturing sites.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Syngenta/financial-report-2023_content.md",
+            "text": "In 2023, $10 million of environmental provisions were released due to updated estimates of costs for remediation activity (2022: costs recognized of $4 million). In 2023, a further $10 million of environmental provisions were recognized in relation to a third party contractor’s facility experiencing extensive operational and regulatory issues where regulators have required companies who used the facility to share the costs of remedial action (2022: $10 million). Syngenta has a 16% percent share of these costs. Otherwise, in 2023 and 2022, except for $13 million (2022: $21 million) of cash outflows reflecting remediation activity, there were no significant changes to environmental provisions. Proposals have been made suggesting remediation of the existing contamination on certain shared sites in preference to monitoring and containment. Syngenta will negotiate the proposals with the relevant authorities but the final adopted solution is subject to regulatory uncertainty and the ultimate liability may be higher or lower than the amount provided. Taken together, the provisions at December 31, 2023, for these shared sites comprise approximately 26 percent of total environmental provisions. The top ten exposures at the end of 2023 comprise approximately 85 percent of the total environmental provisions. In the opinion of management, reasonably possible increases in the provisions related to these top 10 exposures would not exceed 122 percent of the total environmental provision recognized at December 31, 2023."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/Syngenta AG (SYT-CH) - Annual Report for period end 31-Dec-2023 (English) - PDF_20240402-a1204169-8ffa-ee11-abde-12bc89a8f273_0_content.md",
+            "text": "Environmental provisions | 156 | 169"
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/Syngenta AG (SYT-CH) - Annual Report for period end 31-Dec-2023 (English) - PDF_20240402-a1204169-8ffa-ee11-abde-12bc89a8f273_0_content.md",
+            "text": "At December 31, 2023, Syngenta reported in Note 19 provisions for environmental remediation of $156 million (2022: $170 million), some of which are included within restructuring provisions. Remediation of environmental damage at sites with which Syngenta is associated typically takes a long time to complete due to the substantial amount of planning and regulatory approvals normally required before remediation activities can begin."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/Syngenta AG (SYT-CH) - Annual Report for period end 31-Dec-2023 (English) - PDF_20240402-a1204169-8ffa-ee11-abde-12bc89a8f273_0_content.md",
+            "text": "Syngenta has recorded provisions for environmental liabilities at some currently or formerly owned, leased and third-party sites throughout the world. These provisions are estimates of amounts payable or expected to become payable and take into consideration the number of other potentially responsible parties at each site and the identity and financial positions of such parties in light of the joint and several nature of certain of the liabilities. The material components of Syngenta's environmental provisions are based on a risk assessment involving investigation of the various sites."
+          },
+          {
+            "evidence_number": 5,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/Syngenta AG (SYT-CH) - Annual Report for period end 31-Dec-2023 (English) - PDF_20240402-a1204169-8ffa-ee11-abde-12bc89a8f273_0_content.md",
+            "text": "Provisions for remediation costs are made when there is a present obligation, and it is probable that expenditure for the remediation work will be required within ten years (or a longer period if specified by a legal obligation)."
+          }
+        ],
+        "summary": "Syngenta has explicitly disclosed specific financial valuations for environmental provisions related to remediation activities. The company reported $156 million in environmental provisions for 2023 and provided details on cash outflows for remediation, as well as a quantified potential increase in these provisions. This indicates a clear quantification of financial risks related to the restoration of contaminated manufacturing sites.",
+        "notes": "D-Rag evidence count: 5. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T17:14:27.245787",
+        "programme_code": "FLU",
+        "evidence_count": 5,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99912",
+      "question_number": 2,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks of of increasing pesticide bans and restrictions reducing market access?",
+      "priority": "standard",
+      "answer": {
+        "classification": "UNCLEAR",
+        "classification_justification": "Syngenta acknowledges 'increasing restrictions on tools and techniques' for farmers and actively manages its product portfolio, including Highly Hazardous Pesticides, and invests in R&D for products with preferable residue characteristics. However, these mentions are in the context of sustainability, product stewardship, and innovation, rather than a direct disclosure of the financial risk or impact of increasing pesticide bans and restrictions reducing market access.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/ESG Report 2023_20240429-212E5417-5B2D-EF11-ABE1-020716C124E7_content.md",
+            "text": "Farmers large and small face increasing problems caused by climate change, soil erosion and biodiversity loss. They must also adapt to evolving consumer expectations and perceptions of agricultural technology, and navigate increasing restrictions on tools and techniques. Innovations are needed to address these challenges in ways that benefit growers, consumers, and the environment."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/ESG Report 2023_20240429-212E5417-5B2D-EF11-ABE1-020716C124E7_content.md",
+            "text": "All crop protection products, including Highly Hazardous Pesticides (HHP), are rigorously tested, safety assessed, and approved for use according regulators' label instructions before to being placed on the market. The United Nations Food and Agriculture Organization (FAO) defines HHPs, and Syngenta is a signatory to the FAO International Code of Conduct on Pesticide Management. Syngenta regularly reviews its product portfolio and manages HHPs and all its products."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/ESG Report 2023_20240429-212E5417-5B2D-EF11-ABE1-020716C124E7_content.md",
+            "text": "To drive progress against the commitment to innovation, Syngenta is accelerating the R&D of CP products with preferable residue characteristics, offering protocols, services, and tools that optimize the amount of pesticides used."
+          }
+        ],
+        "summary": "Syngenta acknowledges 'increasing restrictions on tools and techniques' for farmers and actively manages its product portfolio, including Highly Hazardous Pesticides, and invests in R&D for products with preferable residue characteristics. However, these mentions are in the context of sustainability, product stewardship, and innovation, rather than a direct disclosure of the financial risk or impact of increasing pesticide bans and restrictions reducing market access.",
+        "notes": "D-Rag evidence count: 3. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T17:13:16.731791",
+        "programme_code": "FLU",
+        "evidence_count": 3,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99909",
+      "question_number": 3,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to waterway pollution and eutrophication from nutrient runoff when the company's products are applied by farmers? Do not consider factory sources of pollution.",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "Syngenta has disclosed financial provisions for legal and product liability settlements, which include 'tort claims relating to the release of chemicals into the environment'. While this acknowledges a financial risk associated with chemical releases from its products, the disclosure does not specifically detail financial risks related to waterway pollution and eutrophication from nutrient runoff when its products are applied by farmers. The company has not provided specific valuations for this particular aspect of chemical release risk, but acknowledges a broader financial exposure.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Syngenta/financial-report-2023_content.md",
+            "text": "Provisions for legal and product liability settlements... relate to various legal proceedings incidental to the normal conduct of Syngenta's business, including proceedings involving product liability claims, commercial claims, employment and wrongful termination claims, patent infringement claims, competition law claims, indirect tax assessment claims, regulatory compliance claims, waste disposal claims and tort claims relating to the release of chemicals into the environment."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Syngenta/financial-report-2023_content.md",
+            "text": "Provisions at December 31, 2023 and 2022 are as follows: ($m)    2023  2022 ----  ----  ---- Restructuring provisions    29    62 Employee benefits: Pensions (Note 21)    170   155 Other post-retirement benefits (Note 21)    20    18 Other long-term employee benefits    58    55 Environmental provisions    156   169 Provisions for legal and product liability settlements  224   127 Other provisions    97    86"
+          }
+        ],
+        "summary": "Syngenta has disclosed financial provisions for legal and product liability settlements, which include 'tort claims relating to the release of chemicals into the environment'. While this acknowledges a financial risk associated with chemical releases from its products, the disclosure does not specifically detail financial risks related to waterway pollution and eutrophication from nutrient runoff when its products are applied by farmers. The company has not provided specific valuations for this particular aspect of chemical release risk, but acknowledges a broader financial exposure.",
+        "notes": "D-Rag evidence count: 2. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T17:12:39.828059",
+        "programme_code": "FLU",
+        "evidence_count": 2,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99908",
+      "question_number": 4,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to demand destruction as organic farming and alternatives gain market share? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "UNCLEAR",
+        "classification_justification": "Syngenta acknowledges 'Consumer demand shifts' as a Tier 3 topic in its materiality analysis for 2023. While this indicates awareness of evolving consumer preferences, the documents do not explicitly link these shifts to financial risks such as demand destruction from organic farming or alternatives. There are no discussions of potential financial impacts or quantification of such risks.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Syngenta/Syngenta-AG-ESG-Report-2023_content.md",
+            "text": "Syngenta Group conducted the first materiality assessment in 2023. This materiality assessment replaces previous materiality assessments conducted at Syngenta AG in 2021. The materiality assessment undertaken in 2023 by Syngenta Group identified 20 potentially relevant topics, of which four were classified as material (Tier 1 below). More details on the materiality assessment can be found in the Syngenta Group ESG Report 2023, as well as Syngenta Group Materiality Assessment Report 2023, which has description of the methodology and the process to assess the different non-financial risks and impacts of all identified topics. In this report, a number of topics from our materiality assessment are discussed, as outlined below.  | Topic    | Disclosure    | | :---- | :---- | | **Tier 1 - Material topics**    |    | | Agricultural technology    | 3.1.1 Innovation in agriculture    | | Biodiversity    | 3.1.2 Regenerative agriculture practices    | | Climate change and greenhouse gases    | 3.2.1 GHG emissions    | | Product safety and responsibility    | 3.1.3 Safe and responsible use of products    | | **Tier 2**    |    | | Business ethics and corporate governance    | 3.5.1 Corporate conduct    | | Community and stakeholder relations    | 3.4.3 Community engagement    | | Employee empowerment    | 3.3.1 Employee engagement and development    | | Employee health, safety and well-being    | 3.3.2 Diversity, equity and inclusion    | |    | 3.3.3 Health and safety    | | Food security    |    | | Labor standards and human rights    | 3.4.1 Human rights    | |    | 3.4.2 Supply chain    | | Natural ecosystem conversion    |    | | Regenerative agriculture and soil health    | 3.1.2 Regenerative agriculture practices    | | Resource efficiency and waste management    | 3.2.2 Energy    | |    | 3.2.5 Waste    | | Rural prosperity and poverty reduction    |    | | Water conservation and management    | 3.2.4 Water and wastewater    | | Economic and geopolitical pressures    |    | | **Tier 3**    |    | | Animal welfare    |    | | Consumer demand shifts    |    | | Policy and regulations on agricultural inputs |    | | Security management    |    |  8"
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/ESG Report 2023_20240429-212E5417-5B2D-EF11-ABE1-020716C124E7_content.md",
+            "text": "Farmers large and small face increasing problems caused by climate change, soil erosion and biodiversity loss. They must also adapt to evolving consumer expectations and perceptions of agricultural technology, and navigate increasing restrictions on tools and techniques. Innovations are needed to address these challenges in ways that benefit growers, consumers, and the environment."
+          }
+        ],
+        "summary": "Syngenta acknowledges 'Consumer demand shifts' as a Tier 3 topic in its materiality analysis for 2023. While this indicates awareness of evolving consumer preferences, the documents do not explicitly link these shifts to financial risks such as demand destruction from organic farming or alternatives. There are no discussions of potential financial impacts or quantification of such risks.",
+        "notes": "D-Rag evidence count: 2. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T17:11:05.543781",
+        "programme_code": "FLU",
+        "evidence_count": 2,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99917",
+      "question_number": 5,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to class action lawsuits and legal challenges from health/environmental claims?",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "Syngenta has disclosed a specific financial valuation for provisions related to legal and product liability settlements, which explicitly includes \"product liability claims\" and \"tort claims relating to the release of chemicals into the environment.\" For 2023, this provision amounted to $224 million, indicating a quantified financial risk related to health/environmental claims.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Syngenta/financial-report-2023_content.md",
+            "text": "Provisions for legal and product liabilities includes settlement of all material claims by exporter plaintiffs related to Viptera (see Litigation matters section), which was paid in January 2024. Otherwise, provisions for legal and product liability settlements, all of which are individually immaterial, relate to various legal proceedings incidental to the normal conduct of Syngenta's business, including proceedings involving product liability claims, commercial claims, employment and wrongful termination claims, patent infringement claims, competition law claims, indirect tax assessment claims, regulatory compliance claims, waste disposal claims and tort claims relating to the release of chemicals into the environment."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/Syngenta AG (SYT-CH) - Annual Report for period end 31-Dec-2023 (English) - PDF_20240402-a1204169-8ffa-ee11-abde-12bc89a8f273_0_content.md",
+            "text": "Provisions for legal and product liability settlements | 127 | 141 | (25) | (6) | - | - | (13) | 224"
+          }
+        ],
+        "summary": "Syngenta has disclosed a specific financial valuation for provisions related to legal and product liability settlements, which explicitly includes \"product liability claims\" and \"tort claims relating to the release of chemicals into the environment.\" For 2023, this provision amounted to $224 million, indicating a quantified financial risk related to health/environmental claims.",
+        "notes": "D-Rag evidence count: 2. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T17:26:15.453248",
+        "programme_code": "FLU",
+        "evidence_count": 2,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99915",
+      "question_number": 6,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks associated with rising compliance and testing costs for registration and re-registration?",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "Syngenta's financial reports for 2023 acknowledge that costs for re-registering active ingredients and expenses incurred during the regulatory process for products are expensed as incurred, or capitalized in the case of development and testing costs for new products. This indicates that the company considers these as financial costs to its operations and accounts for them. However, the documents do not provide specific financial valuations or estimates of the potential impact of *rising* compliance and testing costs, nor do they discuss these costs as a specific financial risk that is being quantified.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Syngenta/financial-report-2023_content.md",
+            "text": "Costs of projects to re-register active ingredients with existing approvals are expensed as incurred because such projects are considered to maintain existing intangible assets rather than create new ones."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/Syngenta AG (SYT-CH) - Annual Report for period end 31-Dec-2023 (English) - PDF_20240402-a1204169-8ffa-ee11-abde-12bc89a8f273_0_content.md",
+            "text": "Research and development includes the expenses of Syngenta's research sites and third party research collaboration agreements, expenses incurred during the regulatory process for Syngenta products and the costs of Syngenta's global field trials organization."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Syngenta/financial-report-2023_content.md",
+            "text": "The cost of internally generated intangible assets consists of direct internal and external design, development, and testing costs incurred to make the asset ready for use in the manner intended by management."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Syngenta/financial-report-2023_content.md",
+            "text": "Costs incurred in the design, development and testing of new or improved non-GM or deregulated GM seed varieties and hybrids, of formulations of existing registered chemical active ingredients or projects to extend the application range of existing crop protection products, or of new and improved production processes that do not themselves require regulatory approval and that can be applied to products which have already obtained approval, are capitalized if the processes are technically feasible, Syngenta intends and has sufficient resources to complete the development, the product or process will generate future economic benefits, and expenditure attributable to developing the product or process can be measured reliably."
+          }
+        ],
+        "summary": "Syngenta's financial reports for 2023 acknowledge that costs for re-registering active ingredients and expenses incurred during the regulatory process for products are expensed as incurred, or capitalized in the case of development and testing costs for new products. This indicates that the company considers these as financial costs to its operations and accounts for them. However, the documents do not provide specific financial valuations or estimates of the potential impact of *rising* compliance and testing costs, nor do they discuss these costs as a specific financial risk that is being quantified.",
+        "notes": "D-Rag evidence count: 4. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T17:24:33.432836",
+        "programme_code": "FLU",
+        "evidence_count": 4,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99903",
+      "question_number": 7,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to human health problems from its products? Please return NONE if there is no disclose at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks related to human health problems.",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "Syngenta has disclosed a quantified financial risk related to human health problems from its products. The company reports a \"Provisions for legal and product liability settlements\" of $224 million as of December 31, 2023. This provision explicitly includes \"product liability claims\" and the financial reports detail ongoing litigation where plaintiffs allege Syngenta's paraquat products caused Parkinson's disease, directly linking product liability to human health issues.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/Syngenta AG (SYT-CH) - Annual Report for period end 31-Dec-2023 (English) - PDF_20240402-a1204169-8ffa-ee11-abde-12bc89a8f273_0_content.md",
+            "text": "Provisions for legal and product liabilities includes settlement of all material claims by exporter plaintiffs related to Viptera (see Litigation matters section), which was paid in January 2024. Otherwise, provisions for legal and product liability settlements, all of which are individually immaterial, relate to various legal proceedings incidental to the normal conduct of Syngenta's business, including proceedings involving product liability claims, commercial claims, employment and wrongful termination claims, patent infringement claims, competition law claims, indirect tax assessment claims, regulatory compliance claims, waste disposal claims and tort claims relating to the release of chemicals into the environment. Movements in provisions for the year ended December 31, 2023 are as follows: ($m) | January 1 | Charged to income | Release of provisions credited to income | Payments | Actuarial (gains)/ losses | Transfers offset in defined benefit pension assets | Currency translation effects/ other | December 31 --- | --- | --- | --- | --- | --- | --- | --- | --- **Provisions for legal and product liability settlements** | 127 | 141 | (25) | (6) | - | - | (13) | 224"
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Syngenta/financial-report-2023_content.md",
+            "text": "Canadian Litigation. Lawsuits alleging that Syngenta's paraquat products to have caused their Parkinson's disease have been filed by plaintiffs seeking class certification in Quebec, Ontario, and British Columbia."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/Syngenta AG (SYT-CH) - Annual Report for period end 31-Dec-2023 (English) - PDF_20240402-a1204169-8ffa-ee11-abde-12bc89a8f273_0_content.md",
+            "text": "Defect; (2) Strict Liability - Failure to Warn; (3) Negligence; (4) Public Nuisance; (5) Violation of Consumer Fraud & Deceptive Business Practices Acts; (6) Breach of Implied Warranty of Merchantability; and (7) Punitive Damages. Certain suits also include claims by the spouses of individuals with Parkinson's disease for Loss of Consortium. The pending state court cases are in California, Delaware, Illinois, Pennsylvania, Washington, and West Virginia."
+          }
+        ],
+        "summary": "Syngenta has disclosed a quantified financial risk related to human health problems from its products. The company reports a \"Provisions for legal and product liability settlements\" of $224 million as of December 31, 2023. This provision explicitly includes \"product liability claims\" and the financial reports detail ongoing litigation where plaintiffs allege Syngenta's paraquat products caused Parkinson's disease, directly linking product liability to human health issues.",
+        "notes": "D-Rag evidence count: 3. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T17:03:25.110841",
+        "programme_code": "FLU",
+        "evidence_count": 3,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99916",
+      "question_number": 8,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to negative public perception of chemical-intensive agriculture",
+      "priority": "standard",
+      "answer": {
+        "classification": "UNCLEAR",
+        "classification_justification": "The company acknowledges 'consumer expectations and perceptions of agricultural technology' and lists 'Consumer demand shifts' as a Tier 3 topic in its materiality assessment. It discusses adapting to these expectations to strengthen its value proposition and align with market needs, implying potential business impact. However, there is no explicit disclosure of this as a financial risk with quantified or unquantified financial impacts.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/ESG Report 2023_20240429-212E5417-5B2D-EF11-ABE1-020716C124E7_content.md",
+            "text": "Syngenta conducts stakeholder research to understand consumers’ perception of topics associated with the agtech industry. Syngenta also performs regular materiality assessments to evaluate stakeholder concerns and expectations (See Materiality analysis)."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/ESG Report 2023_20240429-212E5417-5B2D-EF11-ABE1-020716C124E7_content.md",
+            "text": "| Topic    | Disclosure    | | :---- | :---- | | **Tier 3**    |    | | Animal welfare    |    | | Consumer demand shifts    |    | | Policy and regulations on agricultural inputs    |    | | Security management    |    |"
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/ESG Report 2023_20240429-212E5417-5B2D-EF11-ABE1-020716C124E7_content.md",
+            "text": "Farmers large and small face increasing problems caused by climate change, soil erosion and biodiversity loss. They must also adapt to evolving consumer expectations and perceptions of agricultural technology, and navigate increasing restrictions on tools and techniques. Innovations are needed to address these challenges in ways that benefit growers, consumers, and the environment."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/ESG Report 2023_20240429-212E5417-5B2D-EF11-ABE1-020716C124E7_content.md",
+            "text": "Syngenta continuously engages with and seeks input from diverse external stakeholders to address sustainability trade-offs and dilemmas linked to new technologies. Through this engagement, Syngenta wants to strengthen the company’s value proposition, increase alignment with new societal and market needs, and build stronger collaboration with partners along the value chain."
+          }
+        ],
+        "summary": "The company acknowledges 'consumer expectations and perceptions of agricultural technology' and lists 'Consumer demand shifts' as a Tier 3 topic in its materiality assessment. It discusses adapting to these expectations to strengthen its value proposition and align with market needs, implying potential business impact. However, there is no explicit disclosure of this as a financial risk with quantified or unquantified financial impacts.",
+        "notes": "D-Rag evidence count: 4. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T17:25:19.772246",
+        "programme_code": "FLU",
+        "evidence_count": 4,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99905",
+      "question_number": 9,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to reduced soil fertility caused by its pesticides?  Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "UNCLEAR",
+        "classification_justification": "[UPDATED BY CONSISTENCY CHECK] The explanation for 2023 states that the company's ESG reports 'mention commitments to improving soil health and ensuring products do not adversely affect soil'. This constitutes 'some mention of risk' rather than 'no disclosure at all', aligning with an 'UNCLEAR' finding. The progression from 'UNCLEAR' in 2022 to 'NONE' in 2023 is also suspicious and inconsistent with the provided text.. Original explanation: The company's ESG reports mention commitments to improving soil health and ensuring products do not adversely affect soil, but they do not disclose any financial risks related to reduced soil fertility caused by their pesticides. Financial reports contain general environmental provisions, but these are tied to remediation at owned or leased sites, not product-related impacts on soil fertility.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "[UPDATED BY CONSISTENCY CHECK] The explanation for 2023 states that the company's ESG reports 'mention commitments to improving soil health and ensuring products do not adversely affect soil'. This constitutes 'some mention of risk' rather than 'no disclosure at all', aligning with an 'UNCLEAR' finding. The progression from 'UNCLEAR' in 2022 to 'NONE' in 2023 is also suspicious and inconsistent with the provided text.. Original explanation: The company's ESG reports mention commitments to improving soil health and ensuring products do not adversely affect soil, but they do not disclose any financial risks related to reduced soil fertility caused by their pesticides. Financial reports contain general environmental provisions, but these are tied to remediation at owned or leased sites, not product-related impacts on soil fertility.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T17:06:22.187450",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99907",
+      "question_number": 10,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to drinking water contamination from leaching of applied products?",
+      "priority": "standard",
+      "answer": {
+        "classification": "UNCLEAR",
+        "classification_justification": "Syngenta acknowledges the importance of managing water resources and ensuring product safety to prevent adverse environmental effects, including those on water quality. The company also states that its environmental safety data assures regulators that products will not adversely affect water. However, the documents do not specifically disclose financial risks related to drinking water contamination from the leaching of applied products, nor do they provide any quantification of such risks.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/ESG Report 2023_20240429-212E5417-5B2D-EF11-ABE1-020716C124E7_content.md",
+            "text": "Also, unacceptable traces of crop protection products could remain in crops destined for food or feed and/or in the environment (e.g., water streams, soil, animals) if not applied correctly."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/ESG Report 2023_20240429-212E5417-5B2D-EF11-ABE1-020716C124E7_content.md",
+            "text": "As a producer of crop protection products, Syngenta is concerned about the potential impact crop protection residues could have on natural ecosystems and human health if products are not appropriately applied."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Syngenta/Syngenta-AG-ESG-Report-2023_content.md",
+            "text": "Syngenta's environmental safety data also assures regulators that the product will not adversely affect soil, water, air, flora or fauna."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/ESG Report 2023_20240429-212E5417-5B2D-EF11-ABE1-020716C124E7_content.md",
+            "text": "Treating wastewater ensures communities have access to safe drinking water, sanitation, and agriculture. Water availability is crucial for economic development, particularly in rural areas where agriculture is the main source of livelihood. Treating wastewater ensures communities have access to safe drinking water, sanitation, and agriculture. Management approach As stated in our HSE Policy and Standards, Syngenta actively promotes environmental protection, including the appropriate management of water and wastewater through the tailored HSE management system. Syngenta monitors and improves performance on its sites. Syngenta manufacturing sites continuously look for ways to optimize and, if possible, reduce water use. Syngenta is also working to improve water efficiency in our supply chain, where most of Syngenta's water consumption takes place. As outlined in the internal HSE Code of Practice on Water Resources and Supply, all Syngenta sites must ensure water supplies, including those from groundwater and surface water, are managed appropriately, and water quality is suitable for the intended use. The HSE Code of Practice on Wastewater outlines that the sites must also ensure that wastewater is managed appropriately from generation until final discharge. This includes process effluents, sanitary wastewater and stormwater discharges."
+          }
+        ],
+        "summary": "Syngenta acknowledges the importance of managing water resources and ensuring product safety to prevent adverse environmental effects, including those on water quality. The company also states that its environmental safety data assures regulators that products will not adversely affect water. However, the documents do not specifically disclose financial risks related to drinking water contamination from the leaching of applied products, nor do they provide any quantification of such risks.",
+        "notes": "D-Rag evidence count: 4. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T17:09:52.230808",
+        "programme_code": "FLU",
+        "evidence_count": 4,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99910",
+      "question_number": 11,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to disposal of chemical waste, such as gypstacks? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "Syngenta discloses quantified financial risks related to environmental liabilities, which would encompass the disposal of chemical waste. The company reports \"Environmental provisions\" of $156 million in its 2023 Financial Report. Additionally, the company explicitly mentions \"waste disposal claims\" as part of its legal and product liability settlements in both the 2023 and 2022 Financial Reports.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/Syngenta AG (SYT-CH) - Annual Report for period end 31-Dec-2023 (English) - PDF_20240402-a1204169-8ffa-ee11-abde-12bc89a8f273_0_content.md",
+            "text": "Environmental provisions | 169 | 2 | (10) | (12) | - | - | 7 | 156"
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/Syngenta AG (SYT-CH) - Annual Report for period end 31-Dec-2023 (English) - PDF_20240402-a1204169-8ffa-ee11-abde-12bc89a8f273_0_content.md",
+            "text": "Provisions for legal and product liability settlements, all of which are individually immaterial, relate to various legal proceedings incidental to the normal conduct of Syngenta's business, including proceedings involving product liability claims, commercial claims, employment and wrongful termination claims, patent infringement claims, competition law claims, indirect tax assessment claims, regulatory compliance claims, waste disposal claims and tort claims relating to the release of chemicals into the environment."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/Syngenta AG (SYT-CH) - Annual Report for period end 31-Dec-2022 (English) - PDF_20230322-6085a66e-44ce-ed11-abc4-12bc89a8f273_0_content.md",
+            "text": "Syngenta has recorded provisions for environmental liabilities at some currently or formerly owned, leased and third party sites throughout the world."
+          }
+        ],
+        "summary": "Syngenta discloses quantified financial risks related to environmental liabilities, which would encompass the disposal of chemical waste. The company reports \"Environmental provisions\" of $156 million in its 2023 Financial Report. Additionally, the company explicitly mentions \"waste disposal claims\" as part of its legal and product liability settlements in both the 2023 and 2022 Financial Reports.",
+        "notes": "D-Rag evidence count: 3. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T00:51:37.091516",
+        "programme_code": "FLU",
+        "evidence_count": 3,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99911",
+      "question_number": 12,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks or liabilities related to restoration of mining sites?  Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "NONE",
+        "classification_justification": "The provided documents for Syngenta in 2023 do not contain any disclosure related to financial risks or liabilities associated with the restoration of mining sites. There is no mention of mining activities, restoration efforts, or any associated financial implications in the available reports.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [],
+        "summary": "The provided documents for Syngenta in 2023 do not contain any disclosure related to financial risks or liabilities associated with the restoration of mining sites. There is no mention of mining activities, restoration efforts, or any associated financial implications in the available reports.",
+        "notes": "D-Rag evidence count: 0. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-09T10:01:32.304408",
+        "programme_code": "FLU",
+        "evidence_count": 0,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99914",
+      "question_number": 13,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks or liabilities related to loss of pollinators and beneficial insects, such as bees, from the use of its products due to ecosystem collapse?",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "Syngenta has disclosed specific financial liabilities related to lawsuits concerning harm to bees from its products. The company provides a monetary value for general and punitive damages claimed in Canadian class-action lawsuits brought by beekeepers, demonstrating a clear quantification of potential financial risk.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Syngenta/financial-report-2023_content.md",
+            "text": "In September 2014, a claim was filed in Ontario, Canada by two proposed representative members on behalf of a putative class comprising all beekeepers who have owned or continue to own and operate honey producing, pollinating, and/or queen bee rearing businesses in Canada since January 1, 2006, against a number of Syngenta legal entities together with certain entities of a second manufacturer of neonicotinoid insecticides. Plaintiffs allege negligence through the sale by that manufacturer and by Syngenta of products containing such insecticides in the knowledge that they would be injurious to bees and by virtue of misrepresentations and concealment relating thereto. Plaintiffs claim 400 million Canadian dollars (USD 302 million at December 31, 2023, exchange rates) general and 50 million Canadian dollars (USD 38 million at December 31, 2023, exchange rates) punitive damages."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/Syngenta AG (SYT-CH) - Annual Report for period end 31-Dec-2023 (English) - PDF_20240402-a1204169-8ffa-ee11-abde-12bc89a8f273_0_content.md",
+            "text": "Canada beekeeper lawsuits In September 2014, a claim was filed in Ontario, Canada by two proposed representative members on behalf of a putative class comprising all beekeepers who have owned or continue to own and operate honey producing, pollinating, and/or queen bee rearing businesses in Canada since January 1, 2006, against a number of Syngenta legal entities together with certain entities of a second manufacturer of neonicotinoid insecticides. Plaintiffs allege negligence through the sale by that manufacturer and by Syngenta of products containing such insecticides in the knowledge that they would be injurious to bees and by virtue of misrepresentations and concealment relating thereto. Plaintiffs claim 400 million Canadian dollars (USD 302 million at December 31, 2023, exchange rates) general and 50 million Canadian dollars (USD 38 million at December 31, 2023, exchange rates) punitive damages."
+          }
+        ],
+        "summary": "Syngenta has disclosed specific financial liabilities related to lawsuits concerning harm to bees from its products. The company provides a monetary value for general and punitive damages claimed in Canadian class-action lawsuits brought by beekeepers, demonstrating a clear quantification of potential financial risk.",
+        "notes": "D-Rag evidence count: 2. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T17:16:27.686965",
+        "programme_code": "FLU",
+        "evidence_count": 2,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99904",
+      "question_number": 14,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to carbon taxes? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "Syngenta acknowledges climate-related financial risks and opportunities through its support for the TCFD recommendations, which aim to help financial markets understand these material risks. The company also reports on the percentage of its Scope 1 emissions covered under 'emissions-limiting regulations', indicating an awareness of regulatory financial impacts. However, the documents do not specifically mention 'carbon taxes' or provide any quantified financial impact related to them.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Syngenta/Syngenta-AG-ESG-Report-2023_content.md",
+            "text": "The Task force on Climate-related Financial Disclosures (TCFD) established recommendations for voluntary climate-related financial disclosures to help financial markets better understand the material climate-related risks and opportunities to which companies are exposed, and how companies oversee and manage them. Syngenta supports the TCFD's recommendations and has been working to ensure that the climate related disclosures are produced in accordance with the recommendations."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Syngenta/Syngenta-AG-ESG-Report-2023_content.md",
+            "text": "Describe the impacts of climate-related risks and opportunities on the organization's business, strategy and financial planning"
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/ESG Report 2023_20240429-212E5417-5B2D-EF11-ABE1-020716C124E7_content.md",
+            "text": "RT-CH-110a.1 | Gross global Scope 1 emissions, percentage covered under emissions-limiting regulations | PARTIAL | See Notes"
+          }
+        ],
+        "summary": "Syngenta acknowledges climate-related financial risks and opportunities through its support for the TCFD recommendations, which aim to help financial markets understand these material risks. The company also reports on the percentage of its Scope 1 emissions covered under 'emissions-limiting regulations', indicating an awareness of regulatory financial impacts. However, the documents do not specifically mention 'carbon taxes' or provide any quantified financial impact related to them.",
+        "notes": "D-Rag evidence count: 3. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T17:04:51.222405",
+        "programme_code": "FLU",
+        "evidence_count": 3,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99901",
+      "question_number": 15,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to pesticide resistance?",
+      "priority": "standard",
+      "answer": {
+        "classification": "UNCLEAR",
+        "classification_justification": "[REFINED ANALYSIS] Syngenta acknowledges 'resistant pests and diseases' as a challenge that their productive seeds aim to overcome, indicating a strategic consideration and investment in R&D to address the issue. However, the company does not explicitly frame 'pesticide resistance' or its related forms as a direct financial risk, nor does it provide any quantified financial impacts or valuations associated with this challenge in the provided documents.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/ESG Report 2023_20240429-212E5417-5B2D-EF11-ABE1-020716C124E7_content.md",
+            "text": "Syngenta also focuses on producing more productive seeds that are adapted to the changing climate and help overcome resistant pests and diseases."
+          }
+        ],
+        "summary": "[REFINED ANALYSIS] Syngenta acknowledges 'resistant pests and diseases' as a challenge that their productive seeds aim to overcome, indicating a strategic consideration and investment in R&D to address the issue. However, the company does not explicitly frame 'pesticide resistance' or its related forms as a direct financial risk, nor does it provide any quantified financial impacts or valuations associated with this challenge in the provided documents.",
+        "notes": "D-Rag evidence count: 1. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T17:02:36.333043",
+        "programme_code": "FLU",
+        "evidence_count": 1,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99906",
+      "question_number": 16,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to factory workplace hazards including chemical exposure during production of pesticides? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "[UPDATED BY CONSISTENCY CHECK] The company reports a quantified provision ($224 million) for 'legal and product liability settlements' that includes 'employment and wrongful termination claims.' Furthermore, the evidence explicitly states that 'Almost all injuries sustained in 2023 were caused by chemical exposure,' directly linking the specific risk to employment claims that have a quantified provision. This clearly fits the 'YES' definition.. Original explanation: Syngenta acknowledges chemical exposure as a significant cause of injuries among its employees in its ESG report for 2023. While the company does not provide a specific financial valuation or estimate for factory workplace hazards related to chemical exposure, its financial report includes a quantified provision of $224 million for legal and product liability settlements, which encompasses \"employment and wrongful termination claims.\" This indicates that the company recognizes potential financial consequences from workplace-related legal issues, even if the specific financial impact of chemical exposure is not separately quantified.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/ESG Report 2023_20240429-212E5417-5B2D-EF11-ABE1-020716C124E7_content.md",
+            "text": "Almost all injuries sustained in 2023 were caused by chemical exposure, hand injuries, motor vehicle incidents, or slips, trips and falls."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/Syngenta AG (SYT-CH) - Annual Report for period end 31-Dec-2023 (English) - PDF_20240402-a1204169-8ffa-ee11-abde-12bc89a8f273_0_content.md",
+            "text": "Provisions for legal and product liability settlements | 224 | 127 ..."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/05HF52-E/Syngenta AG (SYT-CH) - Annual Report for period end 31-Dec-2023 (English) - PDF_20240402-a1204169-8ffa-ee11-abde-12bc89a8f273_0_content.md",
+            "text": "Provisions for legal and product liability settlements, all of which are individually immaterial, relate to various legal proceedings incidental to the normal conduct of Syngenta's business, including proceedings involving product liability claims, commercial claims, employment and wrongful termination claims, patent infringement claims, competition law claims, indirect tax assessment claims, regulatory compliance claims, waste disposal claims and tort claims relating to the release of chemicals into the environment."
+          }
+        ],
+        "summary": "[UPDATED BY CONSISTENCY CHECK] The company reports a quantified provision ($224 million) for 'legal and product liability settlements' that includes 'employment and wrongful termination claims.' Furthermore, the evidence explicitly states that 'Almost all injuries sustained in 2023 were caused by chemical exposure,' directly linking the specific risk to employment claims that have a quantified provision. This clearly fits the 'YES' definition.. Original explanation: Syngenta acknowledges chemical exposure as a significant cause of injuries among its employees in its ESG report for 2023. While the company does not provide a specific financial valuation or estimate for factory workplace hazards related to chemical exposure, its financial report includes a quantified provision of $224 million for legal and product liability settlements, which encompasses \"employment and wrongful termination claims.\" This indicates that the company recognizes potential financial consequences from workplace-related legal issues, even if the specific financial impact of chemical exposure is not separately quantified.",
+        "notes": "D-Rag evidence count: 3. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-17T17:08:10.722623",
+        "programme_code": "FLU",
+        "evidence_count": 3,
+        "evidence_validation_passed": true
+      }
+    }
+  ]
+}

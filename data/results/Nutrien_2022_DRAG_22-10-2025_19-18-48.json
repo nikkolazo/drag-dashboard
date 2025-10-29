@@ -1,0 +1,539 @@
+{
+  "metadata": {
+    "company": "Nutrien",
+    "year": "2022",
+    "analysis_date": "2025-10-22T19:18:48.453196",
+    "model_used": "D-RAG",
+    "source": "D-Rag baseline data (imported)",
+    "documents_analyzed": [
+      "Unknown - D-Rag data"
+    ],
+    "processing_info": {
+      "total_cost": "$0.00 (imported data)",
+      "total_tokens": 0,
+      "questions_analyzed": 13
+    }
+  },
+  "completeness_summary": {
+    "total_questions": 13,
+    "classified_YES": 5,
+    "classified_PARTIAL": 7,
+    "classified_UNCLEAR": 1,
+    "classified_NONE": 0,
+    "total_financial_disclosures_found": 0
+  },
+  "analysis_results": [
+    {
+      "question_id": "99907",
+      "question_number": 1,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to drinking water contamination from leaching of applied products? Please return NONE if there is no disclosure at all, UNSURE if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "Nutrien discloses a financial penalty of $668,100 as part of an EPA settlement related to improper application of dicamba, a crop protection product. While not explicitly stating \"drinking water contamination from leaching,\" this incident represents a direct financial risk and consequence stemming from issues related to the application of products, which the report broadly discusses as contributing to \"Loss to water\" through leaching and runoff. The specific monetary value qualifies the finding as YES.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Nutrien and EPA Resolution In 2021, Nutrien Ag Solutions agreed to settle claims made by the EPA, that the Nutrien Ag Solutions located in Galva, KS: (1) applied over-the-top dicamba in wind speeds higher than permitted, and (2) failed to keep records in acceptable condition. Nutrien Ag Solutions agreed to pay $668,100 and has taken the additional steps of conducting trainings on chemical application; working with applicators to comply fully with label requirements; and improving recordkeeping practices."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Loss to water: When fertilizers containing nitrogen and phosphorus are improperly applied to crops, some nutrients may leach into groundwater or reach surface water by runoff. Nutrient enrichment of water bodies contributes to algae growth and reduced oxygen availability, which can adversely affect water quality and aquatic life. Runoff or overapplication of crop protection products can also impact ground and surface waters. We promote improved management practices, and products and technologies where appropriate, to minimize the risk of runoff and leaching."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "We specifically aim to foster circularity in the nutrient lifecycle from production to harvest, which is where we have the largest influence. Within the nutrient lifecycle, the largest risk of losses occurs when nutrients are applied to fields."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "The W-SIT's objectives are to review Nutrien’s water footprint, identify water-related risks and opportunities across our value chain, and develop context-based water targets that are most relevant and impactful to our business and the environment."
+          }
+        ],
+        "summary": "Nutrien discloses a financial penalty of $668,100 as part of an EPA settlement related to improper application of dicamba, a crop protection product. While not explicitly stating \"drinking water contamination from leaching,\" this incident represents a direct financial risk and consequence stemming from issues related to the application of products, which the report broadly discusses as contributing to \"Loss to water\" through leaching and runoff. The specific monetary value qualifies the finding as YES.",
+        "notes": "D-Rag evidence count: 4. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-09-23T16:12:54.366569",
+        "programme_code": "FLU",
+        "evidence_count": 4,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99913",
+      "question_number": 2,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks or liabilities related to restoration of contaminated manufacturing sites?",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "Nutrien explicitly quantifies its financial liabilities related to site restoration and environmental remediation. The company reports specific figures for Asset Retirement Obligations (AROs) and accrued environmental costs, detailing both the total amounts and their breakdown as current and non-current liabilities. This demonstrates a clear financial disclosure of these risks.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Nutrien/2022 Nutrien Annual Report_content.md",
+            "text": "Note 22 and Note 30 | Asset retirement obligations (“AROs”) and accrued environmental costs (“ERLs”) – measurement <br> The Potash and Phosphate segments have AROs and ERLs (which have a high degree of estimation uncertainty for future costs and estimated timelines) associated with their mining operations while the Corporate and Others segment has these liabilities associated with non-operational mines."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Nutrien/2022 Nutrien Annual Report_content.md",
+            "text": "Asset retirement obligations and accrued environmental costs include * reclamation and restoration costs at our potash and phosphate mining operations, including management of materials generated by mining and mineral processing, such as various mine tailings and gypsum; * land reclamation and revegetation programs; * decommissioning of underground and surface operating facilities; * general clean-up activities aimed at returning the areas to an environmentally acceptable condition; and * post-closure care and maintenance. We consider the following factors as we estimate our provisions: * environmental laws and regulations and interpretations by regulatory authorities, including updates on climate change, could change or circumstances affecting our operations could change, either of which could result in significant changes to current plans; * the nature, extent and timing of current and proposed reclamation and closure techniques in view of present environmental laws and regulations; * appropriate technical resources, including outside consultants, assist us in developing specific site closure and post-closure plans in accordance with the jurisdiction requirements; and * timing of settlement of the obligations, which is typically correlated with mine life estimates except for certain land reclamation programs. It is reasonably possible that the ultimate costs could change in the future and that changes to these estimates could have a material effect on our consolidated financial statements. We review our estimates for any changes in assumptions at the end of each reporting period."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "At the end of 2021, our discounted asset retirement obligations (“AROs”) were $1.2 billion. Retirement obligations and their estimated costs to reclaim a site are drawn upon when the asset reaches its end of life; for Phosphate sites, the majority of these costs are expected to be paid over the next 18 years, while costs for Potash are expected to be paid after that time. We have spent $177 million toward our AROs over the last two years. **2 Reclamation Projects** Nutrien’s Phosphate operations are currently mining at a combined rate of approximately 860 acres per year, and we reclaim land continuously as our mining operations progress. In the past three years, we have successfully returned more than 2,700 acres of land back to productive use after phosphate rock mining: * Nutrien’s Aurora, NC Phosphate operation has pioneered a land reclamation process that has earned state and national awards over the years. We reclaimed about 130 acres in 2021 and 390 acres in 2020. During this time, we planted approximately 144,000 trees. * At our White Springs, FL Phosphate mine, we strive to reclaim more land than we mine on an annual basis. In 2021, we reclaimed 550 acres, adding to the nearly 1,680 acres reclaimed in 2020 and 2019. Over the three-year period, we planted approximately 981,000 trees. **Remediation** At the end of 2021, we had accrued environmental costs of approximately $505 million for costs associated with site assessment and remediation related to the clean-up of impacted sites currently or formerly associated with Nutrien or our predecessors’ businesses. At that time, the current portion of these costs totaled $55 million."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Nutrien/2022 Nutrien Annual Report_content.md",
+            "text": "We are engaged in ongoing site assessment and/or remediation activities at a number of facilities and sites. Anticipated costs associated with these matters are added to accrued environmental costs in the manner described in Note 22. We have established provisions for environmental site assessment and/or remediation matters to the extent that we consider expenses associated with those matters likely to be incurred. Except for the uncertainties described below, we do not believe that our future obligations with respect to these matters are reasonably likely to have a material adverse effect on our consolidated financial statements."
+          },
+          {
+            "evidence_number": 5,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Nutrien/2022 Nutrien Annual Report_content.md",
+            "text": "| | Asset Retirement Obligations | Accrued Environmental Costs | Total | | :---- | :---- | :---- | :---- | | Balance – December 31, 2021 | 1,231 | 505 | 1,736 | | Disposals | – | (7) | (7) | | Change in estimates | 36 | 2 | 38 | | Settlements | (81) | (41) | (122) | | Accretion | 27 | 2 | 29 | | Foreign currency translation and other | (26) | (11) | (37) | | Balance – December 31, 2022 | 1,187 | 450 | 1,637 |  Balance – December 31, 2022 is composed of: Current liabilities | | Payables and accrued charges (Note 20) | 165 | 69 | 234 | | :---- | :---- | :-- | :-- | :-- | | Non-current liabilities | | | | | | Asset retirement obligations and accrued environmental costs | 1,022 | 381 | 1,403 |"
+          }
+        ],
+        "summary": "Nutrien explicitly quantifies its financial liabilities related to site restoration and environmental remediation. The company reports specific figures for Asset Retirement Obligations (AROs) and accrued environmental costs, detailing both the total amounts and their breakdown as current and non-current liabilities. This demonstrates a clear financial disclosure of these risks.",
+        "notes": "D-Rag evidence count: 5. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-19T22:52:47.568786",
+        "programme_code": "FLU",
+        "evidence_count": 5,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99915",
+      "question_number": 3,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks associated with rising compliance and testing costs for registration and re-registration?",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "Nutrien acknowledges compliance-related costs due to current and increasing regulation of GHGs, explicitly stating that these may lead to increased production, raw material, energy, or transportation costs, and additional costs in the form of taxes or carbon pricing mechanisms. They also mention that increased input costs and compliance-related costs for agricultural customers could result in lower demand and reduced revenues. While they provide an estimated capital investment for emission intensity reduction projects, they do not quantify the specific financial risk associated with 'rising compliance and testing costs for registration and re-registration' directly, but rather discuss compliance costs more broadly.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Current and increasing regulation of GHGs may impact our operations by *   requiring changes to our production processes; *   increasing raw material, energy, production or transportation costs in order to ensure compliance; *   additional costs in the form of taxes, emission allowances or other carbon pricing mechanisms; *   increased input costs and compliance-related costs for agricultural customers, which could result in lower demand for our products and reduced revenues."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Our product labels and SDSs are compliant with the local laws and regulations where we sell our products (for example, the US EPA, Canada Pest Management Regulatory Agency (\\\"PMRA\\\"), European REACH, Fertilizer Act and Chemical Labelling and Packaging (\\\"CLP\\\"), Canadian Food Inspection Agency (\\\"CFIA\\\"), and the US Occupational Safety and Health Administration (\\\"OSHA\\\")."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Our product stewardship team periodically reviews and updates the information on our labels and in our fertilizer manufacturing and retail data systems to ensure regulatory compliance and safe use of our products."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Pesticides and herbicides are highly regulated products in the markets where we operate. We comply with regulations applicable to our business and have policies and procedures for the safe and appropriate use of the products we sell."
+          },
+          {
+            "evidence_number": 5,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Nutrien Ag Solutions agreed to settle claims made by the EPA, that the Nutrien Ag Solutions located in Galva, KS: (1) applied over-the-top dicamba in wind speeds higher than permitted, and (2) failed to keep records in acceptable condition. Nutrien Ag Solutions agreed to pay $668,100 and has taken the additional steps of conducting trainings on chemical application; working with applicators to comply fully with label requirements; and improving recordkeeping practices."
+          }
+        ],
+        "summary": "Nutrien acknowledges compliance-related costs due to current and increasing regulation of GHGs, explicitly stating that these may lead to increased production, raw material, energy, or transportation costs, and additional costs in the form of taxes or carbon pricing mechanisms. They also mention that increased input costs and compliance-related costs for agricultural customers could result in lower demand and reduced revenues. While they provide an estimated capital investment for emission intensity reduction projects, they do not quantify the specific financial risk associated with 'rising compliance and testing costs for registration and re-registration' directly, but rather discuss compliance costs more broadly.",
+        "notes": "D-Rag evidence count: 5. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-14T00:10:38.677757",
+        "programme_code": "FLU",
+        "evidence_count": 5,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99908",
+      "question_number": 4,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to demand destruction as organic farming and alternatives gain market share? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "Nutrien acknowledges the risk of changing customer behavior and the development of substitutes or more efficient crop input applications, which could adversely affect demand for their products and their results of operations. While it notes a \"Medium\" magnitude of impact on reduced demand, it does not provide specific financial valuations or estimates of this risk.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "### 3 Changing customer behavior | Time horizon | Likelihood of the impact | Main mechanism of impact | Magnitude of the impact | | :---- | :---- | :---- | :---- | | Medium-term  | Likely    | Reduced demand for current offerings | <chart_annotation>A bar chart indicating 'Medium' magnitude of impact.</chart_annotation> Medium    |  **What is the risk?** **Growers expected to reduce emissions:** As the globe transitions to lower-carbon options for all consumer products including food, it is expected that growers could potentially be impacted by key stakeholder expectations for changing growing practices and crop inputs used. **New technology:** The advancement and adoption of technology and digital innovations in agriculture and across the value chain have increased and are expected to further accelerate as grower demographics shift and pressures from consumer preferences, governments and climate change initiatives evolve. Demand for new types of seeds or services: The development of seeds that require less crop nutrients, development of full or partial substitutes for our products, or developments in the application of crop nutrients such as improved nutrient-use efficiency through use of precision agriculture could also emerge, all of which have the potential to adversely affect the demand for our products and results of operations."
+          }
+        ],
+        "summary": "Nutrien acknowledges the risk of changing customer behavior and the development of substitutes or more efficient crop input applications, which could adversely affect demand for their products and their results of operations. While it notes a \"Medium\" magnitude of impact on reduced demand, it does not provide specific financial valuations or estimates of this risk.",
+        "notes": "D-Rag evidence count: 1. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T02:56:09.960544",
+        "programme_code": "FLU",
+        "evidence_count": 1,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99904",
+      "question_number": 5,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to carbon taxes? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "Nutrien discloses the financial impact of carbon taxes by stating that opportunities reduce \"attributed carbon taxes in Alberta, Canada at approximately CDN$50/tonne by 2022\". This provides a specific monetary figure for the carbon tax rate that directly affects their operations, allowing for a quantification of the financial risk, even if a total aggregated cost is not explicitly provided. The company also notes that efficiency projects reduce \"carbon tax expense\".",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Energy efficiency projects focus on improving the amount of energy consumed per tonne of product produced, thereby reducing not only overall total GHG emissions but the GHG intensity per tonne as well – effectively reducing carbon tax expense and input energy costs."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "At the same time, these opportunities reduce emissions from facilities and attributed carbon taxes in Alberta, Canada at approximately CDN$50/tonne by 2022."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Current and increasing regulation of GHGs may impact our operations by... additional costs in the form of taxes, emission allowances or other carbon pricing mechanisms;"
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "In the medium to long term, by reducing our emissions, we can decrease carbon taxes paid or potentially decrease the risk of any other emerging regulatory action against GHG emitters."
+          },
+          {
+            "evidence_number": 5,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Mitigation: By setting GHG emissions reduction targets and committing capital to objectives, we can decrease carbon taxes paid or potentially decrease the risk of any other regulatory action against GHG emitters."
+          }
+        ],
+        "summary": "Nutrien discloses the financial impact of carbon taxes by stating that opportunities reduce \"attributed carbon taxes in Alberta, Canada at approximately CDN$50/tonne by 2022\". This provides a specific monetary figure for the carbon tax rate that directly affects their operations, allowing for a quantification of the financial risk, even if a total aggregated cost is not explicitly provided. The company also notes that efficiency projects reduce \"carbon tax expense\".",
+        "notes": "D-Rag evidence count: 5. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T02:50:17.699858",
+        "programme_code": "FLU",
+        "evidence_count": 5,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99903",
+      "question_number": 6,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to human health problems from its products? Please return NONE if there is no disclose at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks related to human health problems.",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "[UPDATED BY CONSISTENCY CHECK] The financial settlement in 2022 is a regulatory fine for improper product application and record-keeping, not a direct financial risk specifically from human health problems caused by products. While it is a quantified financial impact related to product handling and compliance, it does not fully meet the stringent definition of 'YES' as a risk 'related to human health problems'. It aligns more accurately with 'PARTIAL'.. Original explanation: The company disclosed a specific, quantified financial settlement of $668,100 in 2021 related to an EPA resolution for improper application and record-keeping of dicamba. Although the resolution doesn't explicitly state \"human health problems\" as the direct cause of the fine, it is a financial penalty arising from issues with a chemical product's application, which implicitly relates to human and environmental safety risks from products.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Nutrien and EPA Resolution: In 2021, Nutrien Ag Solutions agreed to settle claims made by the EPA, that the Nutrien Ag Solutions located in Galva, KS: (1) applied over-the-top dicamba in wind speeds higher than permitted, and (2) failed to keep records in acceptable condition. Nutrien Ag Solutions agreed to pay $668,100 and has taken the additional steps of conducting trainings on chemical application; working with applicators to comply fully with label requirements; and improving recordkeeping practices. Nutrien Ag Solutions operates roughly 1,530 chemical applicators and treats millions of acres per year. This incident involved four applicators at the Galva, KS location. Nutrien Ag Solutions strives to apply chemicals correctly and to minimize error,"
+          }
+        ],
+        "summary": "[UPDATED BY CONSISTENCY CHECK] The financial settlement in 2022 is a regulatory fine for improper product application and record-keeping, not a direct financial risk specifically from human health problems caused by products. While it is a quantified financial impact related to product handling and compliance, it does not fully meet the stringent definition of 'YES' as a risk 'related to human health problems'. It aligns more accurately with 'PARTIAL'.. Original explanation: The company disclosed a specific, quantified financial settlement of $668,100 in 2021 related to an EPA resolution for improper application and record-keeping of dicamba. Although the resolution doesn't explicitly state \"human health problems\" as the direct cause of the fine, it is a financial penalty arising from issues with a chemical product's application, which implicitly relates to human and environmental safety risks from products.",
+        "notes": "D-Rag evidence count: 1. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T02:47:07.850060",
+        "programme_code": "FLU",
+        "evidence_count": 1,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99910",
+      "question_number": 7,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to disposal of chemical waste, such as gypstacks? Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "Nutrien acknowledges the existence and management of phosphogypsum stacks (gypstacks). While they discuss environmental management and regulatory compliance for these stacks, the company explicitly mentions that reusing phosphogypsum could reduce 'liabilities associated with gypstack closure'. This indicates an awareness of financial risk (liabilities) related to gypstack disposal but does not provide any quantified financial estimates or valuations.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Reuse of phosphogypsum for alternate purposes could reduce the environmental footprint and liabilities associated with gypstack closure."
+          }
+        ],
+        "summary": "Nutrien acknowledges the existence and management of phosphogypsum stacks (gypstacks). While they discuss environmental management and regulatory compliance for these stacks, the company explicitly mentions that reusing phosphogypsum could reduce 'liabilities associated with gypstack closure'. This indicates an awareness of financial risk (liabilities) related to gypstack disposal but does not provide any quantified financial estimates or valuations.",
+        "notes": "D-Rag evidence count: 1. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T03:03:48.507926",
+        "programme_code": "FLU",
+        "evidence_count": 1,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99905",
+      "question_number": 8,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to reduced soil fertility caused by its pesticides?  Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "UNCLEAR",
+        "classification_justification": "The company acknowledges stakeholder concerns regarding chemical use and the environmental impact of its products, and discusses the importance of soil health and product stewardship. It also mentions developing product risk profiles that consider \"ecosystem degradation\" as a sustainability factor. However, the documents do not explicitly disclose any specific financial risks to the company related to reduced soil fertility directly caused by its pesticides. While market risks related to changing grower practices are mentioned, they are not directly tied to the company's pesticides causing soil fertility reduction.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "We acknowledge stakeholder concerns related to the necessary use of chemicals in agriculture. ... We have a strong and continually evolving product stewardship program to manage the environmental and safety impact of our products while maintaining their functionality."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Impacts to land: Growing healthy crops is one of the best ways to maintain soil health on farmland. Nutrients in excess or deficit can weaken crops and reduce yields. Nutrien’s agronomists and crop advisors recommend the optimal balance of macro- and micronutrients to support soil and crop health. Utilization of precision agricultural technologies enables growers to better match requirements by field to improve yields and soil health, while reducing nutrient loss to the environment."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Product risk rating profiles: We are developing a holistic product risk rating approach that can be used to create future product risk profiles. Each profile may incorporate information such as ingredient origin, regulatory compliance, product chemical hazard classification (for example, not hazardous, toxic to the environment, corrosive), sustainability (for example, potential to contribute to ecosystem degradation, conflict material rating) and supply chain risk factors..."
+          }
+        ],
+        "summary": "The company acknowledges stakeholder concerns regarding chemical use and the environmental impact of its products, and discusses the importance of soil health and product stewardship. It also mentions developing product risk profiles that consider \"ecosystem degradation\" as a sustainability factor. However, the documents do not explicitly disclose any specific financial risks to the company related to reduced soil fertility directly caused by its pesticides. While market risks related to changing grower practices are mentioned, they are not directly tied to the company's pesticides causing soil fertility reduction.",
+        "notes": "D-Rag evidence count: 3. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T02:53:31.348442",
+        "programme_code": "FLU",
+        "evidence_count": 3,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99916",
+      "question_number": 9,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to negative public perception of chemical-intensive agriculture",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "[REFINED ANALYSIS] Nutrien disclosed a quantified regulatory compliance cost of $668,100 in its 2022 annual report. This cost relates to a settlement with the EPA for claims of improper chemical application (dicamba) and record-keeping, which falls under regulatory compliance costs associated with chemical-intensive agriculture. While the disclosure does not explicitly link this fine to \"negative public perception\" as its direct cause, it is a quantified financial impact resulting from practices in chemical-intensive agriculture.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Nutrien and EPA Resolution In 2021, Nutrien Ag Solutions agreed to settle claims made by the EPA, that the Nutrien Ag Solutions located in Galva, KS: (1) applied over-the-top dicamba in wind speeds higher than permitted, and (2) failed to keep records in acceptable condition. Nutrien Ag Solutions agreed to pay $668,100 and has taken the additional steps of conducting trainings on chemical application; working with applicators to comply fully with label requirements; and improving recordkeeping practices."
+          }
+        ],
+        "summary": "[REFINED ANALYSIS] Nutrien disclosed a quantified regulatory compliance cost of $668,100 in its 2022 annual report. This cost relates to a settlement with the EPA for claims of improper chemical application (dicamba) and record-keeping, which falls under regulatory compliance costs associated with chemical-intensive agriculture. While the disclosure does not explicitly link this fine to \"negative public perception\" as its direct cause, it is a quantified financial impact resulting from practices in chemical-intensive agriculture.",
+        "notes": "D-Rag evidence count: 1. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-20T16:28:13.795776",
+        "programme_code": "FLU",
+        "evidence_count": 1,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99911",
+      "question_number": 10,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks or liabilities related to restoration of mining sites?  Please return NONE if there is no disclosure at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "YES",
+        "classification_justification": "Nutrien explicitly discloses quantified financial risks related to the restoration of mining sites through \"Asset Retirement Obligations\" and \"Accrued Environmental Costs.\" The company reports the balance of these obligations as of December 31, 2022, totaling $1,637 million, and notes total undiscounted cash flows of $4.0 billion for these liabilities. Additionally, the company details $391 million in surety bonds and letters of credit related to closure and post-closure obligations.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Nutrien/2022 Nutrien Annual Report_content.md",
+            "text": "Note 22 and Note 30 | Asset retirement obligations (–AROs–) and accrued environmental costs (–ERLs–) – measurement <br> The Potash and Phosphate segments have AROs and ERLs (which have a high degree of estimation uncertainty for future costs and estimated timelines) associated with their mining operations while the Corporate and Others segment has these liabilities associated with non-operational mines."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Nutrien/2022 Nutrien Annual Report_content.md",
+            "text": "Asset retirement obligations and accrued environmental costs include * reclamation and restoration costs at our potash and phosphate mining operations, including management of materials generated by mining and mineral processing, such as various mine tailings and gypsum; * land reclamation and revegetation programs; * decommissioning of underground and surface operating facilities; * general clean-up activities aimed at returning the areas to an environmentally acceptable condition; and * post-closure care and maintenance."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Nutrien/2022 Nutrien Annual Report_content.md",
+            "text": "| | Asset Retirement Obligations | Accrued Environmental Costs | Total | | :---- | :---- | :---- | :---- | | Balance – December 31, 2021 | 1,231 | 505 | 1,736 | | Disposals | – | (7) | (7) | | Change in estimates | 36 | 2 | 38 | | Settlements | (81) | (41) | (122) | | Accretion | 27 | 2 | 29 | | Foreign currency translation and other | (26) | (11) | (37) | | Balance – December 31, 2022 | 1,187 | 450 | 1,637 |"
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Nutrien/2022 Nutrien Annual Report_content.md",
+            "text": "Total undiscounted cash flows are $4.0 billion. For the Potash segment, this represents total undiscounted cash flows in the first year of decommissioning. This excludes subsequent years of tailings dissolution, fine tails capping, tailings management area reclamation, post-reclamation activities and monitoring, and final decommissioning, which are estimated to take an additional 125 to 433 years."
+          },
+          {
+            "evidence_number": 5,
+            "source_url": "https://intel.tracker-group.org/org_library/Manual/Nutrien/2022 Nutrien Annual Report_content.md",
+            "text": "We are subject to numerous environmental requirements under federal, provincial, state and local laws in the countries in which we operate. We have gypsum stack capping, and closure and post-closure obligations through our subsidiaries, PCS Phosphate Company, Inc. in White Springs, Florida, and PCS Nitrogen Inc. in Geismar, Louisiana, pursuant to the financial assurance regulatory requirements in those states. As at December 31, 2022, we had $391 in surety bonds and letters of credit outstanding relating to these financial assurance obligations. The recorded provisions may not necessarily reflect our obligations under these financial assurances."
+          }
+        ],
+        "summary": "Nutrien explicitly discloses quantified financial risks related to the restoration of mining sites through \"Asset Retirement Obligations\" and \"Accrued Environmental Costs.\" The company reports the balance of these obligations as of December 31, 2022, totaling $1,637 million, and notes total undiscounted cash flows of $4.0 billion for these liabilities. Additionally, the company details $391 million in surety bonds and letters of credit related to closure and post-closure obligations.",
+        "notes": "D-Rag evidence count: 5. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-10T16:50:22.700023",
+        "programme_code": "FLU",
+        "evidence_count": 5,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99909",
+      "question_number": 11,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks related to waterway pollution and eutrophication from nutrient runoff? Please return NONE if there is no disclose at all, UNCLEAR if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks related to human health problems.",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "Nutrien acknowledges the environmental risk of nutrient runoff, specifically mentioning it as a \"significant risk\" in the context of the Great Barrier Reef and government regulations. While the company does not provide specific financial valuations for this risk, the mention of strict government guidelines implies a financial impact through compliance costs or potential penalties. The company describes actions to help growers comply with these regulations, indirectly addressing the financial implications of the risk.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Heavy rainfall common in this area makes nutrient (specifically phosphorus and nitrogen) loss through runoff into the coral reef a significant risk. The Queensland government has imposed strict guidelines on the use of these nutrients."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Loss to water: When fertilizers containing nitrogen and phosphorus are improperly applied to crops, some nutrients may leach into groundwater or reach surface water by runoff. Nutrient enrichment of water bodies contributes to algae growth and reduced oxygen availability, which can adversely affect water quality and aquatic life. Runoff or overapplication of crop protection products can also impact ground and surface waters. We promote improved management practices, and products and technologies where appropriate, to minimize the risk of runoff and leaching."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "We promote improved management practices, and products and technologies where appropriate, to minimize the risk of runoff and leaching."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Water is also an essential input to our operations, especially in mining and fertilizer production. As it is a shared resource, it is important for Nutrien and our growers to use water efficiently and protect water quality, helping to maintain positive environmental impacts and ensuring long-term operational stability and viability."
+          }
+        ],
+        "summary": "Nutrien acknowledges the environmental risk of nutrient runoff, specifically mentioning it as a \"significant risk\" in the context of the Great Barrier Reef and government regulations. While the company does not provide specific financial valuations for this risk, the mention of strict government guidelines implies a financial impact through compliance costs or potential penalties. The company describes actions to help growers comply with these regulations, indirectly addressing the financial implications of the risk.",
+        "notes": "D-Rag evidence count: 4. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T02:59:36.918636",
+        "programme_code": "FLU",
+        "evidence_count": 4,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99902",
+      "question_number": 12,
+      "category": "Unknown",
+      "question_text": "Does the company consider financial risks related to soil degradation caused by its fertiliser products?  Please return NONE if there is no disclosure at all, UNSURE if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "[UPDATED BY CONSISTENCY CHECK] The 2022 evidence describes efforts to comply with 'strict guidelines' to reduce nutrient runoff and the development of product risk profiles considering 'ecosystem degradation'. These indicate an acknowledgment of risks with financial implications (e.g., compliance costs, potential fines), which aligns with 'PARTIAL' (mention of financial risk) rather than 'UNCLEAR' (some mention of risk but no link to financial risk).. Original explanation: Nutrien acknowledges the importance of soil health and the potential environmental impacts of fertilizer use, such as nutrient loss and broad 'ecosystem degradation'. The company also details its efforts in product stewardship and grower support to mitigate these impacts and ensure regulatory compliance. However, the documents do not explicitly disclose that soil degradation caused by its fertilizer products poses a specific financial risk to Nutrien, nor do they quantify any such financial exposure.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Impacts to land: Growing healthy crops is one of the best ways to maintain soil health on farmland. Nutrients in excess or deficit can weaken crops and reduce yields. Nutrien’s agronomists and crop advisors recommend the optimal balance of macro- and micronutrients to support soil and crop health. Utilization of precision agricultural technologies enables growers to better match requirements by field to improve yields and soil health, while reducing nutrient loss to the environment."
+          },
+          {
+            "evidence_number": 2,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Product risk rating profiles: We are developing a holistic product risk rating approach that can be used to create future product risk profiles. Each profile may incorporate information such as ingredient origin, regulatory compliance, product chemical hazard classification (for example, not hazardous, toxic to the environment, corrosive), sustainability (for example, potential to contribute to ecosystem degradation, conflict material rating) and supply chain risk factors (for example, security potential for illegal use)."
+          },
+          {
+            "evidence_number": 3,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Within the nutrient lifecycle, the largest risk of losses occurs when nutrients are applied to fields. Closing the loop through the 4R Nutrient Stewardship, or “4Rs” (Right Source of plant nutrients at the Right Rate, Right Time and Right Place), for example, reduces losses to the environment and keeps nutrients in the soil for crops to grow."
+          },
+          {
+            "evidence_number": 4,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Heavy rainfall common in this area makes nutrient (specifically phosphorus and nitrogen) loss through runoff into the coral reef a significant risk. The Queensland government has imposed strict guidelines on the use of these nutrients. Nutrien has a team of agronomists in North Queensland that have been government approved to create specific Nutrient Management Plans for canegrowers. These farm-specific Nutrient Management Plans encompass soil testing and geospatial mapping to apply the correct amount of nutrients to the crop to ensure maximum yield while complying with government regulations to reduce nutrient runoff into the Great Barrier Reef lagoon system."
+          }
+        ],
+        "summary": "[UPDATED BY CONSISTENCY CHECK] The 2022 evidence describes efforts to comply with 'strict guidelines' to reduce nutrient runoff and the development of product risk profiles considering 'ecosystem degradation'. These indicate an acknowledgment of risks with financial implications (e.g., compliance costs, potential fines), which aligns with 'PARTIAL' (mention of financial risk) rather than 'UNCLEAR' (some mention of risk but no link to financial risk).. Original explanation: Nutrien acknowledges the importance of soil health and the potential environmental impacts of fertilizer use, such as nutrient loss and broad 'ecosystem degradation'. The company also details its efforts in product stewardship and grower support to mitigate these impacts and ensure regulatory compliance. However, the documents do not explicitly disclose that soil degradation caused by its fertilizer products poses a specific financial risk to Nutrien, nor do they quantify any such financial exposure.",
+        "notes": "D-Rag evidence count: 4. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-10-01T00:38:16.893968",
+        "programme_code": "FLU",
+        "evidence_count": 4,
+        "evidence_validation_passed": true
+      }
+    },
+    {
+      "question_id": "99912",
+      "question_number": 13,
+      "category": "Unknown",
+      "question_text": "Does the company disclose financial risks of technological developments such as new seeds requiring fewer pesticides/fertiliser?  Please return NONE if there is no disclosure at all, UNSURE if there is some mention of risk but no link to financial risk, PARTIAL if there is mention of financial risk, YES if there are numbers attached to financial risks disclosure.",
+      "priority": "standard",
+      "answer": {
+        "classification": "PARTIAL",
+        "classification_justification": "Nutrien acknowledges the risk that new types of seeds requiring fewer crop nutrients, or other technological developments leading to improved nutrient-use efficiency, could adversely affect the demand for their products and results of operations. This is a clear disclosure of financial risk stemming from technological developments in line with the ask, but no specific financial numbers are attached to this risk.",
+        "financial_quantification": "Not disclosed by D-Rag",
+        "evidence": [
+          {
+            "evidence_number": 1,
+            "source_url": "https://intel.tracker-group.org/org_library/FactSet/Filings/0HTSZC-E/2022 ESG REPORT_20220331-2AC5B777-9661-ED11-ABC3-12BC89A8F273_content.md",
+            "text": "Demand for new types of seeds or services: The development of seeds that require less crop nutrients, development of full or partial substitutes for our products, or developments in the application of crop nutrients such as improved nutrient-use efficiency through use of precision agriculture could also emerge, all of which have the potential to adversely affect the demand for our products and results of operations."
+          }
+        ],
+        "summary": "Nutrien acknowledges the risk that new types of seeds requiring fewer crop nutrients, or other technological developments leading to improved nutrient-use efficiency, could adversely affect the demand for their products and results of operations. This is a clear disclosure of financial risk stemming from technological developments in line with the ask, but no specific financial numbers are attached to this risk.",
+        "notes": "D-Rag evidence count: 1. Human verified: False"
+      },
+      "drag_metadata": {
+        "human_verified": false,
+        "human_verification_notes": "",
+        "analysis_last_updated": "2025-09-23T15:43:57.522582",
+        "programme_code": "FLU",
+        "evidence_count": 1,
+        "evidence_validation_passed": true
+      }
+    }
+  ]
+}
