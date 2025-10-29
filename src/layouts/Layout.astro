@@ -7,10 +7,13 @@ interface Props {
 }
 
 const { title = 'Disclosure of Companies' } = Astro.props;
-// Compute a normalized base that always starts and ends with '/'
-let base = Astro.base ?? '/';
-if (!base.startsWith('/')) base = '/' + base;
-if (!base.endsWith('/')) base = base + '/';
+// Use an empty-string fallback during dev so links are relative.
+// Only normalize (add leading/trailing slashes) when a base is provided (production).
+let base = Astro.base ?? '';
+if (base !== '') {
+	if (!base.startsWith('/')) base = '/' + base;
+	if (!base.endsWith('/')) base = base + '/';
+}
 ---
 
 <!doctype html>

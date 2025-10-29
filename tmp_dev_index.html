@@ -1,0 +1,1297 @@
+﻿<!DOCTYPE html><html lang="en" class="dark"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.15.1"><title>Disclosure of Companies - Home</title><script>
+			// Initialize theme before page renders to avoid flash
+			const theme = localStorage.getItem('theme') || 'dark';
+			document.documentElement.classList.toggle('dark', theme === 'dark');
+		</script><style data-vite-dev-id="H:/D_and_M/Ag_project/drag-dashboard/src/styles/main.css">/*! tailwindcss v4.1.16 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    --color-red-400: oklch(70.4% 0.191 22.216);
+    --color-orange-400: oklch(75% 0.183 55.934);
+    --color-orange-500: oklch(70.5% 0.213 47.604);
+    --color-amber-400: oklch(82.8% 0.189 84.429);
+    --color-emerald-400: oklch(76.5% 0.177 163.223);
+    --color-emerald-500: oklch(69.6% 0.17 162.48);
+    --color-emerald-600: oklch(59.6% 0.145 163.225);
+    --color-cyan-400: oklch(78.9% 0.154 211.53);
+    --color-blue-400: oklch(70.7% 0.165 254.624);
+    --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-indigo-500: oklch(58.5% 0.233 277.117);
+    --color-purple-400: oklch(71.4% 0.203 305.504);
+    --color-purple-500: oklch(62.7% 0.265 303.9);
+    --color-slate-50: oklch(98.4% 0.003 247.858);
+    --color-slate-100: oklch(96.8% 0.007 247.896);
+    --color-slate-200: oklch(92.9% 0.013 255.508);
+    --color-slate-300: oklch(86.9% 0.022 252.894);
+    --color-slate-400: oklch(70.4% 0.04 256.788);
+    --color-slate-500: oklch(55.4% 0.046 257.417);
+    --color-slate-600: oklch(44.6% 0.043 257.281);
+    --color-slate-700: oklch(37.2% 0.044 257.287);
+    --color-slate-800: oklch(27.9% 0.041 260.031);
+    --color-slate-900: oklch(20.8% 0.042 265.755);
+    --color-gray-50: oklch(98.5% 0.002 247.839);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-900: oklch(21% 0.034 264.665);
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --container-lg: 32rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --leading-relaxed: 1.625;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden="until-found"])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
+  .visible {
+    visibility: visible;
+  }
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+  .static {
+    position: static;
+  }
+  .sticky {
+    position: sticky;
+  }
+  .-top-5 {
+    top: calc(var(--spacing) * -5);
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .top-4 {
+    top: calc(var(--spacing) * 4);
+  }
+  .right-4 {
+    right: calc(var(--spacing) * 4);
+  }
+  .bottom-full {
+    bottom: 100%;
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+  .left-1\/2 {
+    left: calc(1/2 * 100%);
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .z-50 {
+    z-index: 50;
+  }
+  .z-\[100\] {
+    z-index: 100;
+  }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
+  .mx-1 {
+    margin-inline: calc(var(--spacing) * 1);
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
+  .mb-1 {
+    margin-bottom: calc(var(--spacing) * 1);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
+  .mb-12 {
+    margin-bottom: calc(var(--spacing) * 12);
+  }
+  .ml-6 {
+    margin-left: calc(var(--spacing) * 6);
+  }
+  .block {
+    display: block;
+  }
+  .contents {
+    display: contents;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .hidden {
+    display: none;
+  }
+  .inline-block {
+    display: inline-block;
+  }
+  .inline-flex {
+    display: inline-flex;
+  }
+  .table {
+    display: table;
+  }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
+  .h-64 {
+    height: calc(var(--spacing) * 64);
+  }
+  .h-96 {
+    height: calc(var(--spacing) * 96);
+  }
+  .h-auto {
+    height: auto;
+  }
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-16 {
+    width: calc(var(--spacing) * 16);
+  }
+  .w-24 {
+    width: calc(var(--spacing) * 24);
+  }
+  .w-64 {
+    width: calc(var(--spacing) * 64);
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-lg {
+    max-width: var(--container-lg);
+  }
+  .min-w-\[300px\] {
+    min-width: 300px;
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .flex-shrink-0 {
+    flex-shrink: 0;
+  }
+  .grow {
+    flex-grow: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .-translate-x-1\/2 {
+    --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .resize {
+    resize: both;
+  }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .items-baseline {
+    align-items: baseline;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+  .space-y-2 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-6 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-8 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 8) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .rounded-md {
+    border-radius: var(--radius-md);
+  }
+  .rounded-t {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-l {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 1px;
+  }
+  .border-l-4 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 4px;
+  }
+  .border-slate-600 {
+    border-color: var(--color-slate-600);
+  }
+  .border-slate-700 {
+    border-color: var(--color-slate-700);
+  }
+  .border-slate-800 {
+    border-color: var(--color-slate-800);
+  }
+  .bg-blue-500 {
+    background-color: var(--color-blue-500);
+  }
+  .bg-emerald-500 {
+    background-color: var(--color-emerald-500);
+  }
+  .bg-indigo-500 {
+    background-color: var(--color-indigo-500);
+  }
+  .bg-orange-500 {
+    background-color: var(--color-orange-500);
+  }
+  .bg-purple-500 {
+    background-color: var(--color-purple-500);
+  }
+  .bg-slate-700 {
+    background-color: var(--color-slate-700);
+  }
+  .bg-slate-800 {
+    background-color: var(--color-slate-800);
+  }
+  .bg-slate-800\/30 {
+    background-color: color-mix(in srgb, oklch(27.9% 0.041 260.031) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-slate-800) 30%, transparent);
+    }
+  }
+  .bg-slate-800\/50 {
+    background-color: color-mix(in srgb, oklch(27.9% 0.041 260.031) 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-slate-800) 50%, transparent);
+    }
+  }
+  .bg-slate-900 {
+    background-color: var(--color-slate-900);
+  }
+  .fill-slate-100 {
+    fill: var(--color-slate-100);
+  }
+  .fill-slate-400 {
+    fill: var(--color-slate-400);
+  }
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
+  .pt-3 {
+    padding-top: calc(var(--spacing) * 3);
+  }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .leading-relaxed {
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .whitespace-nowrap {
+    white-space: nowrap;
+  }
+  .text-amber-400 {
+    color: var(--color-amber-400);
+  }
+  .text-blue-400 {
+    color: var(--color-blue-400);
+  }
+  .text-cyan-400 {
+    color: var(--color-cyan-400);
+  }
+  .text-emerald-400 {
+    color: var(--color-emerald-400);
+  }
+  .text-orange-400 {
+    color: var(--color-orange-400);
+  }
+  .text-purple-400 {
+    color: var(--color-purple-400);
+  }
+  .text-red-400 {
+    color: var(--color-red-400);
+  }
+  .text-slate-100 {
+    color: var(--color-slate-100);
+  }
+  .text-slate-200 {
+    color: var(--color-slate-200);
+  }
+  .text-slate-300 {
+    color: var(--color-slate-300);
+  }
+  .text-slate-400 {
+    color: var(--color-slate-400);
+  }
+  .text-slate-500 {
+    color: var(--color-slate-500);
+  }
+  .text-slate-600 {
+    color: var(--color-slate-600);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .italic {
+    font-style: italic;
+  }
+  .opacity-0 {
+    opacity: 0%;
+  }
+  .shadow-lg {
+    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-xl {
+    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .ring {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .ring-2 {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .ring-emerald-400 {
+    --tw-ring-color: var(--color-emerald-400);
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .filter {
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-opacity {
+    transition-property: opacity;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .ease-in-out {
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
+  }
+  .group-hover\:block {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        display: block;
+      }
+    }
+  }
+  .group-hover\:opacity-100 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        opacity: 100%;
+      }
+    }
+  }
+  .hover\:scale-105 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 105%;
+        --tw-scale-y: 105%;
+        --tw-scale-z: 105%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:border-emerald-500\/50 {
+    &:hover {
+      @media (hover: hover) {
+        border-color: color-mix(in srgb, oklch(69.6% 0.17 162.48) 50%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          border-color: color-mix(in oklab, var(--color-emerald-500) 50%, transparent);
+        }
+      }
+    }
+  }
+  .hover\:bg-emerald-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-emerald-600);
+      }
+    }
+  }
+  .hover\:bg-slate-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-slate-600);
+      }
+    }
+  }
+  .hover\:bg-slate-700 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-slate-700);
+      }
+    }
+  }
+  .hover\:bg-slate-800 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-slate-800);
+      }
+    }
+  }
+  .hover\:bg-slate-800\/50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, oklch(27.9% 0.041 260.031) 50%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-slate-800) 50%, transparent);
+        }
+      }
+    }
+  }
+  .hover\:text-emerald-400 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-emerald-400);
+      }
+    }
+  }
+  .hover\:underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline;
+      }
+    }
+  }
+  .hover\:opacity-80 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 80%;
+      }
+    }
+  }
+  .hover\:opacity-90 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 90%;
+      }
+    }
+  }
+  .md\:grid-cols-3 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-4 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-2 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .dark\:border-slate-600 {
+    @media (prefers-color-scheme: dark) {
+      border-color: var(--color-slate-600);
+    }
+  }
+  .dark\:bg-slate-700 {
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-slate-700);
+    }
+  }
+  .dark\:hover\:bg-slate-600 {
+    @media (prefers-color-scheme: dark) {
+      &:hover {
+        @media (hover: hover) {
+          background-color: var(--color-slate-600);
+        }
+      }
+    }
+  }
+}
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+body {
+  background-color: var(--color-slate-900);
+  color: var(--color-slate-50);
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--color-slate-900);
+  }
+  @media (prefers-color-scheme: dark) {
+    color: var(--color-slate-50);
+  }
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 200ms;
+  transition-duration: 200ms;
+}
+:root:not(.dark) body {
+  background-color: var(--color-gray-50);
+  color: var(--color-gray-900);
+}
+.card {
+  border-radius: var(--radius-lg);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  border-color: var(--color-slate-700);
+  background-color: var(--color-slate-800);
+  padding: calc(var(--spacing) * 6);
+  --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  @media (prefers-color-scheme: dark) {
+    border-color: var(--color-slate-700);
+  }
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--color-slate-800);
+  }
+}
+:root:not(.dark) .card {
+  border-color: var(--color-gray-200);
+  background-color: var(--color-white);
+}
+.btn {
+  border-radius: var(--radius-md);
+  padding-inline: calc(var(--spacing) * 4);
+  padding-block: calc(var(--spacing) * 2);
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 200ms;
+  transition-duration: 200ms;
+}
+.btn-primary {
+  background-color: var(--color-emerald-500);
+  color: var(--color-white);
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-emerald-600);
+    }
+  }
+}
+.btn-secondary {
+  background-color: var(--color-slate-700);
+  color: var(--color-white);
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-slate-600);
+    }
+  }
+}
+@keyframes highlight-flash {
+  0%, 100% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: rgba(16, 185, 129, 0.2);
+  }
+}
+.highlight-flash {
+  animation: highlight-flash 2s ease-in-out;
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-space-y-reverse: 0;
+      --tw-border-style: solid;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
+      --tw-duration: initial;
+      --tw-ease: initial;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
+    }
+  }
+}
+</style><script type="module" src="/@vite/client"></script>
+<script type="module" src="/@fs/H:/D_and_M/Ag_project/drag-dashboard/node_modules/astro/dist/runtime/client/dev-toolbar/entrypoint.js?v=6541e8e5"></script>
+<script>window.__astro_dev_toolbar__ = {"root":"H:\\D_and_M\\Ag_project\\drag-dashboard\\","version":"5.15.1","debugInfo":"Astro                    v5.15.1\nNode                     v20.17.0\nSystem                   Windows (x64)\nPackage Manager          npm\nOutput                   static\nAdapter                  none\nIntegrations             none"}</script>
+<script type="module" src="/src/styles/main.css"></script></head> <body data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/layouts/Layout.astro" data-astro-source-loc="30:8"> <button id="theme-toggle" class="fixed top-4 right-4 z-50 p-3 rounded-full bg-slate-800 dark:bg-slate-700 border border-slate-700 dark:border-slate-600 hover:bg-slate-700 dark:hover:bg-slate-600 transition-colors shadow-lg" aria-label="Toggle theme" title="Toggle light/dark theme" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/components/ThemeToggle.astro" data-astro-source-loc="10:2"> <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/components/ThemeToggle.astro" data-astro-source-loc="11:99"> <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/components/ThemeToggle.astro" data-astro-source-loc="12:6"></path> </svg> <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/components/ThemeToggle.astro" data-astro-source-loc="14:100"> <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/components/ThemeToggle.astro" data-astro-source-loc="15:6"></path> </svg> </button> <script type="module" src="/src/components/ThemeToggle.astro?astro&type=script&index=0&lang.ts"></script>  <div class="min-h-screen bg-slate-900" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="42:42"> <!-- Header --> <header class="bg-slate-800 border-b border-slate-700" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="44:60"> <div class="container mx-auto px-6 py-8" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="45:48"> <h1 class="text-4xl font-bold text-emerald-400 mb-2" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="46:62">
+Disclosure of Companies
+</h1> <p class="text-slate-300 text-lg" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="49:43">
+Agricultural Risk Analysis Dashboard
+</p> <p class="text-slate-400 text-sm mt-2" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="52:48">
+D-RAG (Document Retrieval-Augmented Generation) baseline validation system
+</p> </div> </header> <!-- Summary Stats --> <section class="container mx-auto px-6 py-8" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="59:50"> <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="60:63"> <div class="card" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="61:27"> <div class="text-slate-400 text-sm mb-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="62:52">Total Analyses</div> <div class="text-3xl font-bold text-emerald-400" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="63:60">15</div> </div> <div class="card" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="65:27"> <div class="text-slate-400 text-sm mb-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="66:52">Companies Analyzed</div> <div class="text-3xl font-bold text-blue-400" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="67:57">3</div> </div> <div class="card" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="69:27"> <div class="text-slate-400 text-sm mb-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="70:52">Total Questions</div> <div class="text-3xl font-bold text-purple-400" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="71:59"> 220 </div> </div> </div> <!-- Company Cards --> <div class="grid grid-cols-1 lg:grid-cols-2 gap-6" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="78:58"> <div class="card hover:border-emerald-500/50 transition-all" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="80:72"> <div class="flex justify-between items-start mb-4" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="81:64"> <div data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="82:20"> <h2 class="text-2xl font-bold text-slate-100 mb-2" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="83:68"> Nutrien </h2> <div class="flex gap-4 text-sm text-slate-400" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="86:64"> <span data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="87:25">ð 5 years</span> <span data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="88:25">ð 5 analyses</span> <span data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="89:25">â 65 questions</span> </div> </div> <a href="/nutrien" class="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg text-sm font-medium transition-colors" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="95:16">
+View Details â
+</a> </div> <!-- Years --> <div class="mb-4" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="101:31"> <div class="text-xs text-slate-400 mb-2" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="102:56">Years Available:</div> <div class="flex flex-wrap gap-2" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="103:49"> <a href="/nutrien/2020" class="px-3 py-1 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded text-xs font-medium transition-colors" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="108:20"> 2020 </a><a href="/nutrien/2021" class="px-3 py-1 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded text-xs font-medium transition-colors" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="108:20"> 2021 </a><a href="/nutrien/2022" class="px-3 py-1 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded text-xs font-medium transition-colors" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="108:20"> 2022 </a><a href="/nutrien/2023" class="px-3 py-1 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded text-xs font-medium transition-colors" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="108:20"> 2023 </a><a href="/nutrien/2024" class="px-3 py-1 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded text-xs font-medium transition-colors" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="108:20"> 2024 </a> </div> </div> <!-- Category Stats --> <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-700" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="116:80"> <div data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="117:20"> <div class="text-xs text-slate-400 mb-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="118:58">Environmental</div> <div class="flex items-baseline gap-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="119:56"> <span class="text-lg font-semibold text-emerald-400" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="120:72"> 16 </span> <span class="text-xs text-slate-500" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="123:56">YES</span> </div> </div> <div data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="126:20"> <div class="text-xs text-slate-400 mb-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="127:58">Human Health</div> <div class="flex items-baseline gap-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="128:56"> <span class="text-lg font-semibold text-amber-400" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="129:70"> 27 </span> <span class="text-xs text-slate-500" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="132:56">PARTIAL</span> </div> </div> <div data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="135:20"> <div class="text-xs text-slate-400 mb-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="136:58">Transition</div> <div class="flex items-baseline gap-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="137:56"> <span class="text-lg font-semibold text-blue-400" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="138:69"> 7 </span> <span class="text-xs text-slate-500" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="141:56">UNCLEAR</span> </div> </div> </div> </div><div class="card hover:border-emerald-500/50 transition-all" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="80:72"> <div class="flex justify-between items-start mb-4" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="81:64"> <div data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="82:20"> <h2 class="text-2xl font-bold text-slate-100 mb-2" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="83:68"> SQM </h2> <div class="flex gap-4 text-sm text-slate-400" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="86:64"> <span data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="87:25">ð 5 years</span> <span data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="88:25">ð 5 analyses</span> <span data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="89:25">â 75 questions</span> </div> </div> <a href="/sqm" class="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg text-sm font-medium transition-colors" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="95:16">
+View Details â
+</a> </div> <!-- Years --> <div class="mb-4" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="101:31"> <div class="text-xs text-slate-400 mb-2" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="102:56">Years Available:</div> <div class="flex flex-wrap gap-2" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="103:49"> <a href="/sqm/2020" class="px-3 py-1 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded text-xs font-medium transition-colors" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="108:20"> 2020 </a><a href="/sqm/2021" class="px-3 py-1 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded text-xs font-medium transition-colors" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="108:20"> 2021 </a><a href="/sqm/2022" class="px-3 py-1 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded text-xs font-medium transition-colors" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="108:20"> 2022 </a><a href="/sqm/2023" class="px-3 py-1 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded text-xs font-medium transition-colors" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="108:20"> 2023 </a><a href="/sqm/2024" class="px-3 py-1 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded text-xs font-medium transition-colors" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="108:20"> 2024 </a> </div> </div> <!-- Category Stats --> <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-700" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="116:80"> <div data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="117:20"> <div class="text-xs text-slate-400 mb-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="118:58">Environmental</div> <div class="flex items-baseline gap-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="119:56"> <span class="text-lg font-semibold text-emerald-400" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="120:72"> 23 </span> <span class="text-xs text-slate-500" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="123:56">YES</span> </div> </div> <div data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="126:20"> <div class="text-xs text-slate-400 mb-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="127:58">Human Health</div> <div class="flex items-baseline gap-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="128:56"> <span class="text-lg font-semibold text-amber-400" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="129:70"> 21 </span> <span class="text-xs text-slate-500" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="132:56">PARTIAL</span> </div> </div> <div data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="135:20"> <div class="text-xs text-slate-400 mb-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="136:58">Transition</div> <div class="flex items-baseline gap-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="137:56"> <span class="text-lg font-semibold text-blue-400" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="138:69"> 4 </span> <span class="text-xs text-slate-500" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="141:56">UNCLEAR</span> </div> </div> </div> </div><div class="card hover:border-emerald-500/50 transition-all" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="80:72"> <div class="flex justify-between items-start mb-4" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="81:64"> <div data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="82:20"> <h2 class="text-2xl font-bold text-slate-100 mb-2" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="83:68"> Syngenta </h2> <div class="flex gap-4 text-sm text-slate-400" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="86:64"> <span data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="87:25">ð 5 years</span> <span data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="88:25">ð 5 analyses</span> <span data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="89:25">â 80 questions</span> </div> </div> <a href="/syngenta" class="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg text-sm font-medium transition-colors" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="95:16">
+View Details â
+</a> </div> <!-- Years --> <div class="mb-4" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="101:31"> <div class="text-xs text-slate-400 mb-2" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="102:56">Years Available:</div> <div class="flex flex-wrap gap-2" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="103:49"> <a href="/syngenta/2020" class="px-3 py-1 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded text-xs font-medium transition-colors" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="108:20"> 2020 </a><a href="/syngenta/2021" class="px-3 py-1 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded text-xs font-medium transition-colors" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="108:20"> 2021 </a><a href="/syngenta/2022" class="px-3 py-1 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded text-xs font-medium transition-colors" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="108:20"> 2022 </a><a href="/syngenta/2023" class="px-3 py-1 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded text-xs font-medium transition-colors" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="108:20"> 2023 </a><a href="/syngenta/2024" class="px-3 py-1 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded text-xs font-medium transition-colors" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="108:20"> 2024 </a> </div> </div> <!-- Category Stats --> <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-700" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="116:80"> <div data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="117:20"> <div class="text-xs text-slate-400 mb-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="118:58">Environmental</div> <div class="flex items-baseline gap-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="119:56"> <span class="text-lg font-semibold text-emerald-400" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="120:72"> 24 </span> <span class="text-xs text-slate-500" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="123:56">YES</span> </div> </div> <div data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="126:20"> <div class="text-xs text-slate-400 mb-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="127:58">Human Health</div> <div class="flex items-baseline gap-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="128:56"> <span class="text-lg font-semibold text-amber-400" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="129:70"> 28 </span> <span class="text-xs text-slate-500" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="132:56">PARTIAL</span> </div> </div> <div data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="135:20"> <div class="text-xs text-slate-400 mb-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="136:58">Transition</div> <div class="flex items-baseline gap-1" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="137:56"> <span class="text-lg font-semibold text-blue-400" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="138:69"> 14 </span> <span class="text-xs text-slate-500" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="141:56">UNCLEAR</span> </div> </div> </div> </div> </div> </section> <!-- Footer --> <footer class="container mx-auto px-6 py-8 mt-12 border-t border-slate-800" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="151:81"> <div class="text-center text-slate-500 text-sm" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="152:55"> <p data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="153:12">D-RAG Dashboard - Agricultural Risk Disclosure Analysis</p> <p class="mt-2" data-astro-source-file="H:/D_and_M/Ag_project/drag-dashboard/src/pages/index.astro" data-astro-source-loc="154:25">Powered by Astro + Tailwind CSS</p> </div> </footer> </div>  </body></html>
